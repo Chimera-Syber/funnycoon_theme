@@ -43,3 +43,22 @@ function funnycoon_setup() {
     ) );
 }
 add_action('after_setup_theme', 'funnycoon_setup');
+
+/**
+ * 
+ * Thumbnail custom setting (delete all sizes except thumbnail)
+ * 
+ */
+
+function devise_remove_default_image_sizes( $sizes) {
+    unset( $sizes['thumbnail']);
+    unset( $sizes['medium']);
+    unset( $sizes['medium_large']);
+    unset( $sizes['large']);
+    unset( $sizes['768x432'] );
+    unset( $sizes['1536x1536']); // disable 2x medium-large size
+	unset( $sizes['2048x2048']); // disable 2x large size
+    
+    return $sizes;
+}
+add_filter('intermediate_image_sizes_advanced', 'devise_remove_default_image_sizes');

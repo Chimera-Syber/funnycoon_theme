@@ -1,3 +1,23 @@
 .body {
     background-color: #180C1D;
 }
+
+.funnycoon_main {
+    display: block;
+    position: relative;
+    width: 1400px;
+    height: 100vh;
+    margin: 0 auto;
+    scroll-margin-top: 150px;
+    padding-top: 309px;
+    z-index: 1;
+}
+
+.funnycoon_main_wrapper {
+    display: block;
+    background-color: #1B1B1B;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    border-radius: 5px 5px 0 0;
+}
