@@ -15,7 +15,7 @@
                     <a href="#" class="funnycoon_header_icons vk" target="_blank"></a>
                 </div>
                 <div class="logo">
-                    <a class="logo_link" href="#"><?php echo get_bloginfo('name'); ?></a>
+                    <a class="logo_link" href="<?php echo get_home_url(); ?>"><?php echo get_bloginfo('name'); ?></a>
                 </div>
                 <div class="header_1_login_search">
                     <a href="#" class="funnycoon_header_icons search" target="_blank"></a>

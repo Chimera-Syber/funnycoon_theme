@@ -18,31 +18,26 @@
 function funnycoon_main_slider($wp_customizer) {
         
     $wp_customizer->add_section('funnycoon_main_slider', array(
-        'title'      => 'Main Slider',
-        //'priority'   => 30,
+        'title'      => 'Слайдер на главной странице',
     ) );
 
-    $wp_customizer->add_setting('funnycoon_slide_1', array(
-        'default' => '',
-        'transport' => 'refresh',
-    ) );
+    for ($i = 1; $i <= 5; $i++) {
 
-    $wp_customizer->add_control('funnycoon_slide_1', array(
-        'type' => 'number',
-        'label' => 'Post 1 ID',
-        'section' => 'funnycoon_main_slider',
-    ) );
+        $settingId = 'funnycoon_slide_' . $i;
+        $label = 'Post ' . $i . ' ID';
 
-    $wp_customizer->add_setting('funnycoon_slide_2', array(
-        'default' => '',
-        'transport' => 'refresh',
-    ) );
-
-    $wp_customizer->add_control('funnycoon_slide_2', array(
-        'type' => 'number',
-        'label' => 'Post 2 ID',
-        'section' => 'funnycoon_main_slider',
-    ) );
+        $wp_customizer->add_setting($settingId, array(
+            'default' => '',
+            'transport' => 'refresh',
+        ) );
+    
+        $wp_customizer->add_control($settingId, array(
+            'type' => 'number',
+            'label' => $label,
+            'description' => 'Вставьте в поле ID поста',
+            'section' => 'funnycoon_main_slider',
+        ) );
+    };
 
 };
 
