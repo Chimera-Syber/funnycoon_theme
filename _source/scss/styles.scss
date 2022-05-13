@@ -1,9 +1,14 @@
-/**
- * Import scss files
- */
+///
+/// Import scss files
+///
+/// @author: Martti Syber
+///
 
 @import "css-reset.scss";
 @import "fonts.scss";
+@import "animations.scss";
 @import "main.scss";
 @import "header.scss";
 @import "main-slider.scss";
+@import "main-hot.scss";
+@import "main-posts.scss";

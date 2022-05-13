@@ -2,7 +2,6 @@
 /**
  * 
  * Customizer core function
- * 
  * @author : Martti Syber
  * 
  * 

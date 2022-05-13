@@ -4,13 +4,14 @@
     $options = funnycoon_get_main_slider_options();
     $posts = [];
 
+    // Get Posts ID from options
     foreach($options as $value) {
         $posts[] = intval(get_theme_mod($value));
     }
        
 ?>
 
-<div class="main_slider">
+<section class="main_slider">
     <?php foreach($posts as $key => $post) { 
         
         // Get categoty title
@@ -44,4 +45,4 @@
         </div>
    <?php } ?>
     
-</div>
+</section>
