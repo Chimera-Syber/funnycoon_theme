@@ -57,6 +57,7 @@ require trailingslashit( get_template_directory() ) . 'inc/funnycoon-handlers.ph
  
  function funnycoon_setup() {
      add_theme_support('title-tag');
+     add_theme_support( 'post-thumbnails' );
      register_nav_menus( array(
          'header_menu' => "Меню в header'e",
      ) );

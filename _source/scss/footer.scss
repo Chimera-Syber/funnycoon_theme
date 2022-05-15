@@ -1,0 +1,22 @@
+.footer {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 1400px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: #1B1B1B;
+}
+
+.container_footer_1 {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    border-bottom: 1px solid #fff;
+}
+
+.container_footer_2 {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}

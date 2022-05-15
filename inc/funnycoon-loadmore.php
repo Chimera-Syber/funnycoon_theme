@@ -1,5 +1,11 @@
 <?php 
 
+/**
+ * Load more script call back
+ *
+ * @param bool $initial_request Initial Request( non-ajax request to load initial post ).
+ *
+ */
 function funnycoon_loadmore_ajax_handler( $initial_request = false ) {
 
     if ( ! $initial_request && ! check_ajax_referer( 'loadmore_post_nonce', 'ajax_nonce', false ) ) {
@@ -35,8 +41,6 @@ function funnycoon_loadmore_ajax_handler( $initial_request = false ) {
         while ( $query->have_posts() ): $query->the_post();
             get_template_part( 'template-parts/content/content-main-posts-card');
         endwhile;
-
-        // Need to add padination for Google (after test)
 
     else: 
 

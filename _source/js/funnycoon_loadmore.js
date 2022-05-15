@@ -23,6 +23,7 @@
                 return;
             }
 
+            this.totalPagesCount = $( '#post-pagination' ).data( 'max-pages' );
             this.loadMoreBtn.on( 'click', () => this.handleLoadMorePosts() );
 
         }
