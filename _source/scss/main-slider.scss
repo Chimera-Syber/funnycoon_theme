@@ -1,3 +1,5 @@
+// z-index: 2+
+
 .main_slider {
     display: grid;
     grid-template-columns: 700px 350px 350px;
@@ -41,7 +43,7 @@
         height: 450px;
     }
 
-    & > .slide_info {
+    & > .slider_link > .slide_info {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -108,9 +110,12 @@
         z-index: 4;
         width: 350px;
         height: 225px;
+        &:hover > .slide_info  .slider_post_info_wr > .slider_post_title {
+            color: #D3355B;
+        }
     }
 
-    & > .slide_info {
+    & > .slider_link > .slide_info {
         display: flex;
         flex-direction: column;
         justify-content: space-between;

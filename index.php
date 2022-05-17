@@ -7,6 +7,8 @@
         <?php get_template_part('/template-parts/content/content-main-hot'); ?>
 
         <?php get_template_part('/template-parts/content/content-main-posts'); ?>
+
+        <?php get_template_part('/template-parts/content/content-main-primary-posts'); ?>
     </div>
 </main>
 

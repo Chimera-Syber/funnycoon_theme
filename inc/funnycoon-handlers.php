@@ -3,8 +3,7 @@
 /**
  * Custom max chars in excerpt
  * 
- * @property integer $charLenght
- * @param $charLenght - max lenght (number of symbols) in excerpt
+ * @param integer $charLenght max lenght (number of symbols) in excerpt
  * @return string
  */
 
@@ -38,6 +37,7 @@
  * 					'week' => date( 'W' );
  * 				]
  * 			],
+ * @return query posts
  */
 
 function popular_posts_query() {
@@ -73,8 +73,42 @@ function popular_posts_query() {
 
        echo 'Постов нет';
 
+
     endif;
     
     wp_reset_postdata();
 
 } 
+
+/**
+ * WP_Query for primary posts
+ * 
+ * @param integer $category_id - category ID
+ * 
+ */
+function primary_post_query( $tag_id ) {
+
+	$args = [
+		'post_type' => 'post',
+		'tag_id' => $tag_id,
+		'orderby' => 'date',
+		'order' => 'DESC',
+		'posts_per_page' => 5,
+	];
+
+	$query = new WP_Query( $args );
+
+	if ( $query->have_posts() ):
+		// Loop Posts
+		while ( $query->have_posts() ): $query->the_post();
+			get_template_part('template-parts/content/content-main-primary-posts-card');
+		endwhile;
+	else: 
+
+		echo 'Постов нет';
+
+	endif;
+
+	wp_reset_postdata();
+
+}
