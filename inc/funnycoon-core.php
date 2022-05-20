@@ -12,10 +12,17 @@
     wp_enqueue_script( 'jquery' );
     wp_enqueue_style('funnycoon-styles', get_template_directory_uri() . '/assets/css/styles.css');
     wp_enqueue_script('funnycoon-scripts', get_template_directory_uri() . '/assets/js/funnycoon_scripts.js', [], false, true);
+    wp_enqueue_script('funnycoon-loadmore-script', get_template_directory_uri() . '/assets/js/funnycoon_loadmore.js', [], false, true);
+    wp_enqueue_script('funnycoon-review-loadmore-script', get_template_directory_uri() . '/assets/js/funnycoon_review_loadmore.js', [], false, true);
 
-    wp_localize_script('funnycoon-scripts', 'siteConfig', array(
+    wp_localize_script('funnycoon-loadmore-script', 'siteConfig', array(
         'ajaxUrl' => admin_url('admin-ajax.php'),
         'ajax_nonce' => wp_create_nonce('loadmore_post_nonce'),
+    ) );
+
+    wp_localize_script('funnycoon-review-loadmore-script', 'siteConfig', array(
+        'ajaxUrl' => admin_url('admin-ajax.php'),
+        'ajax_nonce' => wp_create_nonce('review_loadmore_post_nonce'),
     ) );
 
 };
@@ -26,10 +33,11 @@ add_action('wp_enqueue_scripts', 'funnycoon_scripts');
  require get_template_directory() . '/classes/Funnycoon_Menu.php';
 
  /**
-  * Implement load more function
+  * Implement load more functions
   */
 
 require trailingslashit( get_template_directory() ) . 'inc/funnycoon-loadmore.php';
+require trailingslashit( get_template_directory() ) . 'inc/funnycoon-review-loadmore.php';
 
 /**
  * Implement Handlers

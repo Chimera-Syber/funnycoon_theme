@@ -83,7 +83,7 @@ function popular_posts_query() {
 /**
  * WP_Query for primary posts
  * 
- * @param integer $category_id - category ID
+ * @param integer $tag_ID - tag ID
  * 
  */
 function primary_post_query( $tag_id ) {

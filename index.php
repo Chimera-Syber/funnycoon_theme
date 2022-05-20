@@ -9,6 +9,8 @@
         <?php get_template_part('/template-parts/content/content-main-posts'); ?>
 
         <?php get_template_part('/template-parts/content/content-main-primary-posts'); ?>
+
+        <?php get_template_part('/template-parts/content/content-main-tops-review'); ?>
     </div>
 </main>
 

@@ -53,7 +53,6 @@
             $.ajax( {
                 url: this.ajaxUrl,
                 type: 'post',
-                method: 'POST',
                 data: {
                     page: page,
                     action: 'load_more',

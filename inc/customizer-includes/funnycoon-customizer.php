@@ -84,3 +84,42 @@ function funnycoon_primary_posts($wp_customizer) {
 };
 
 add_action('customize_register', 'funnycoon_primary_posts');
+
+/**
+ * 
+ * Review and tops sections
+ * 
+ */
+
+function funnycoon_reviews_tops_section($wp_customizer) {
+
+    $wp_customizer->add_section('funnycoon_reviews_tops', array(
+        'title' => 'Reviews and Tops',
+    ) );
+
+    $wp_customizer->add_setting('funnycoon_reviews_tops_reviews', array(
+        'default'   => '',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customizer->add_control('funnycoon_reviews_tops_reviews', array(
+        'type'        => 'number',
+        'label'       => 'Tag ID for reviews',
+        'description' => 'Вставьте в поле ID тега',
+        'section'     => 'funnycoon_reviews_tops',
+    ) );
+
+    $wp_customizer->add_setting('funnycoon_reviews_tops_tops', array(
+        'default'   => '',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customizer->add_control('funnycoon_reviews_tops_tops', array(
+        'type'        => 'number',
+        'label'       => 'Tag ID for tops',
+        'description' => 'Вставьте в поле ID тега',
+        'section'     => 'funnycoon_reviews_tops',
+    ) );
+};
+
+add_action('customize_register', 'funnycoon_reviews_tops_section');
