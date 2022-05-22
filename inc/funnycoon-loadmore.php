@@ -83,7 +83,6 @@ function funnycoon_review_loadmore_ajax_handler( $initial_request = false ) {
                         strtolower( $_SERVER['HTTP_X_REQUESTED_WITH'] ) === 'xmlhttprequest';
 
     /**
-     * 
      * Page number.
      * If get_query_var( 'paged' ) is 2 or more, its a number pagination query.
      * If $_POST['page'] has a value which means its a loadmore request, which will take precedence.
@@ -91,6 +90,7 @@ function funnycoon_review_loadmore_ajax_handler( $initial_request = false ) {
     $page_no = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
     $page_no = ! empty( $_POST['page'] ) ? filter_var( $_POST['page'], FILTER_VALIDATE_INT ) + 1 : $page_no;
 
+    // Set tad id from theme options
     $tag_id = get_theme_mod('funnycoon_reviews_tops_reviews');
 
     // Default Argument.
@@ -160,7 +160,6 @@ function funnycoon_tops_loadmore_ajax_handler( $initial_request = false ) {
                         strtolower( $_SERVER['HTTP_X_REQUESTED_WITH'] ) === 'xmlhttprequest';
 
     /**
-     * 
      * Page number.
      * If get_query_var( 'paged' ) is 2 or more, its a number pagination query.
      * If $_POST['page'] has a value which means its a loadmore request, which will take precedence.
@@ -168,6 +167,7 @@ function funnycoon_tops_loadmore_ajax_handler( $initial_request = false ) {
     $page_no = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
     $page_no = ! empty( $_POST['page'] ) ? filter_var( $_POST['page'], FILTER_VALIDATE_INT ) + 1 : $page_no;
 
+    // Set tag id from theme options
     $tag_id = get_theme_mod('funnycoon_reviews_tops_tops');
 
     // Default Argument.

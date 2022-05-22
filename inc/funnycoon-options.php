@@ -1,11 +1,9 @@
 <?php 
 
 /**
- * 
  * Options for main slider
  * For each slide - one option
  * Each option has Post ID
- * 
  */
 
 function funnycoon_get_main_slider_options() {

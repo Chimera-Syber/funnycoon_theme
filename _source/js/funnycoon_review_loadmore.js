@@ -1,8 +1,6 @@
 ( function ( doc ) {
     /**
-     * 
      * Class Loadmore
-     * 
      */
 
     class ReviewLoadMore {
@@ -24,7 +22,6 @@
                 return;
             }
 
-            // this.totalPagesCount = $( '#post-pagination' ).data( 'max-pages' );
             this.loadMoreBtnPrev.on( 'click', () => this.handleReviewLoadMorePostsPrev() );
             this.loadMoreBtnNext.on( 'click', () => this.handleReviewLoadMorePostsNext() );
 
@@ -35,9 +32,6 @@
 		 *
 		 * 1.Make an ajax request, by incrementing the page no. by one on each request.
 		 * 2.Append new/more posts to the existing content.
-		 * 3.If the response is 0 ( which means no more posts available ), remove the load-more button from DOM.
-		 * Once the load-more button gets removed, the IntersectionObserverAPI callback will not be triggered, which means
-		 * there will be no further ajax request since there won't be any more posts available.
 		 *
 		 * @return null
          */ 
@@ -77,6 +71,14 @@
 
         }
 
+        /**
+		 * Load more posts.
+		 *
+		 * 1.Make an ajax request, by incrementing the page no. by one on each request.
+		 * 2.Append new/more posts to the existing content.
+		 *
+		 * @return null
+         */ 
         handleReviewLoadMorePostsNext() {
 
             const page = this.loadMoreBtnNext.data( 'page' );
@@ -114,18 +116,6 @@
 
 
         }
-       
-
-        /**
-		 * Remove Load more Button If on last page.
-		 *
-		 * @param {int} nextPage New Page.
-		 */
-		removeLoadMoreIfOnLastPage( nextPage ) {
-			if ( nextPage + 1 > this.totalPagesCount ) {
-				this.loadMoreBtn.remove();
-			}
-		}
 
     }
 
