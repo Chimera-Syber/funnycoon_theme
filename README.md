@@ -1,5 +1,7 @@
 # Funnycoon Theme for site Funnycoon.ru
 
+![Funnycoon Theme](https://github.com/Chimera-Syber/funnycoon_theme/blob/bb5ebbd67c991a50e451d0c1100bdfa3cd8b641e/screenshot.png)
+
 It's custom theme for site Funnycoon.ru. 
 
 **Requirements**
