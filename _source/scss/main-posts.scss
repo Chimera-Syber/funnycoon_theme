@@ -54,6 +54,9 @@
     z-index: 13;
     width: 320px;
     height: 280px;
+    &:hover .main_post_title {
+        color: #D3355B;
+    }
 }
 
 .main_post_info_wrp {
@@ -80,15 +83,17 @@
     color: #fff;
 }
 
+
+
 .main_post_desc {
     display: block;
-    font-family: 'Roboto';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
     line-height: 15px;
     margin-bottom: 5px;
-    color: #fff;
+    color: rgb(179, 179, 179);
 }
 
 .main_post_date_com_wrp {
@@ -99,7 +104,7 @@
 }
 
 .main_post_date {
-    font-family: 'Roboto';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -108,7 +113,7 @@
 }
 
 .main_post_comments {
-    font-family: 'Roboto';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -256,11 +261,11 @@
 
 .mps_post_card_desc {
     display: block;
-    font-family: 'Roboto';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 200;
     font-size: 15px;
     line-height: 15px;
-    color: #fff;
+    color: #b3b3b3;
     margin-left: 9px;
 }

@@ -2,15 +2,15 @@
 
 <main class="funnycoon_main">
     <div class="funnycoon_main_wrapper">
-        <?php get_template_part('/template-parts/content/content-main-slider'); ?>
+        <?php get_template_part('/template-parts/main/main-slider'); ?>
 
-        <?php get_template_part('/template-parts/content/content-main-hot'); ?>
+        <?php get_template_part('/template-parts/main/hot'); ?>
 
-        <?php get_template_part('/template-parts/content/content-main-posts'); ?>
+        <?php get_template_part('/template-parts/main/main-posts'); ?>
 
-        <?php get_template_part('/template-parts/content/content-main-primary-posts'); ?>
+        <?php get_template_part('/template-parts/main/primary-posts'); ?>
 
-        <?php get_template_part('/template-parts/content/content-main-tops-review'); ?>
+        <?php get_template_part('/template-parts/main/tops-review'); ?>
     </div>
 </main>
 

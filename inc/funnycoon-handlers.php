@@ -66,7 +66,7 @@ function popular_posts_query() {
     if ( $query->have_posts()  ):
         // Loop Posts.
         while ( $query->have_posts() ): $query->the_post();
-          	get_template_part( 'template-parts/content/content-main-posts-popular-posts-card');
+          	get_template_part( 'template-parts/main/popular-posts-card');
         endwhile;
 
     else: 
@@ -101,7 +101,7 @@ function primary_post_query( $tag_id ) {
 	if ( $query->have_posts() ):
 		// Loop Posts
 		while ( $query->have_posts() ): $query->the_post();
-			get_template_part('template-parts/content/content-main-primary-posts-card');
+			get_template_part('template-parts/main/primary-posts-card');
 		endwhile;
 	else: 
 
@@ -112,3 +112,51 @@ function primary_post_query( $tag_id ) {
 	wp_reset_postdata();
 
 }
+
+/**
+ * WP_Query for top commented posts in main posts section
+ * 
+ * 
+ * @example - current week
+ * 			'date_query' => [
+ * 				[
+ * 					'year' => date( 'Y' );
+ * 					'week' => date( 'W' );
+ * 				]
+ * 			],
+ * @return query posts
+ */
+
+function top_comments_posts_query() {
+
+	$args = [
+		'post_type' => 'post',
+		'date_query' => [
+			[
+				'year' => date( 'Y' ),
+				'monthnum' => date( 'n' ),
+			],
+		],
+		'orderby' => 'comment_count ',
+		'order' => 'DESC',
+		'posts_per_page' => 10,
+	];
+
+	$query = new WP_Query( $args );
+
+    if ( $query->have_posts()  ):
+        // Loop Posts.
+        while ( $query->have_posts() ): $query->the_post();
+          	get_template_part( 'template-parts/main/tops-review-sidebar-card');
+        endwhile;
+
+    else: 
+
+       echo 'Постов нет';
+
+
+    endif;
+    
+    wp_reset_postdata();
+
+} 

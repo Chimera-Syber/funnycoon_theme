@@ -14,6 +14,7 @@
     wp_enqueue_script('funnycoon-scripts', get_template_directory_uri() . '/assets/js/funnycoon_scripts.js', [], false, true);
     wp_enqueue_script('funnycoon-loadmore-script', get_template_directory_uri() . '/assets/js/funnycoon_loadmore.js', [], false, true);
     wp_enqueue_script('funnycoon-review-loadmore-script', get_template_directory_uri() . '/assets/js/funnycoon_review_loadmore.js', [], false, true);
+    wp_enqueue_script('funnycoon-tops-loadmore-script', get_template_directory_uri() . '/assets/js/funnycoon_tops_loadmore.js', [], false, true);
 
     wp_localize_script('funnycoon-loadmore-script', 'siteConfig', array(
         'ajaxUrl' => admin_url('admin-ajax.php'),
@@ -23,6 +24,11 @@
     wp_localize_script('funnycoon-review-loadmore-script', 'siteConfig', array(
         'ajaxUrl' => admin_url('admin-ajax.php'),
         'ajax_nonce' => wp_create_nonce('review_loadmore_post_nonce'),
+    ) );
+
+    wp_localize_script('funnycoon-tops-loadmore-script', 'siteConfig', array(
+        'ajaxUrl' => admin_url('admin-ajax.php'),
+        'ajax_nonce' => wp_create_nonce('tops_loadmore_post_nonce'),
     ) );
 
 };
@@ -37,7 +43,6 @@ add_action('wp_enqueue_scripts', 'funnycoon_scripts');
   */
 
 require trailingslashit( get_template_directory() ) . 'inc/funnycoon-loadmore.php';
-require trailingslashit( get_template_directory() ) . 'inc/funnycoon-review-loadmore.php';
 
 /**
  * Implement Handlers

@@ -5,15 +5,15 @@
      * 
      */
 
-    class ReviewLoadMore {
+    class TopsLoadMore {
         /**
          * Constructor 
          */
         constructor() {
             this.ajaxUrl = siteConfig?.ajaxUrl ?? '';
             this.ajaxNonce = siteConfig?.ajax_nonce ?? '';
-            this.loadMoreBtnPrev = $( '#reviews_button_left' );
-            this.loadMoreBtnNext = $( '#reviews_button_right' );
+            this.loadMoreBtnPrev = $( '#tops_button_left' );
+            this.loadMoreBtnNext = $( '#tops_button_right' );
 
             this.init();
         }
@@ -56,15 +56,15 @@
                 type: 'post',
                 data: {
                     page: prevPage,
-                    action: 'review_load_more',
+                    action: 'tops_load_more',
                     ajax_nonce: this.ajaxNonce,
                 },
                 success: ( response ) => {
                     if ( 0 === parseInt( response ) ) {
 
                     } else {
-                        $( '.reviews_slider' ).empty();
-                        $( '.reviews_slider').append( response );
+                        $( '.tops_slider' ).empty();
+                        $( '.tops_slider').append( response );
                         this.loadMoreBtnNext.data( 'page', page );
                         this.loadMoreBtnPrev.data( 'page', prevPage );
                     }
@@ -93,15 +93,15 @@
                 type: 'post',
                 data: {
                     page: page,
-                    action: 'review_load_more',
+                    action: 'tops_load_more',
                     ajax_nonce: this.ajaxNonce,
                 },
                 success: ( response ) => {
                     if ( 0 === parseInt( response ) ) {
                         console.log('123');
                     } else {
-                        $( '.reviews_slider' ).empty();
-                        $( '.reviews_slider ').append( response );
+                        $( '.tops_slider' ).empty();
+                        $( '.tops_slider').append( response );
                         this.loadMoreBtnPrev.data( 'page', page );
                         this.loadMoreBtnNext.data( 'page', nextPage );
                     }
@@ -129,6 +129,6 @@
 
     }
 
-    new ReviewLoadMore();
+    new TopsLoadMore();
 
 } )( document );

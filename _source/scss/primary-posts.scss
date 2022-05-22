@@ -148,6 +148,14 @@
         }
     }
 
+    & > .pps_info:hover {
+        & > .pps_title_wrp {
+            & > .pps_title {
+                color: #D3355B;
+            }
+        }
+    }
+
     & > .pps_img {
         width: 286px;
         height: 180px;

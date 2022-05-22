@@ -11,6 +11,11 @@
                 <button class="funnycoon_loadmore" id="load-more" data-page="1">Загрузить еще</button>
             </div>
         </div>
+        <div class="main_posts_adv_wrp">
+            <div class="main_posts_adv">
+
+            </div>
+        </div>
     </div>
     <div class="main_posts_sidebar">
         <div class="main_posts_sidebar_wrp">
@@ -19,6 +24,11 @@
             </div>
             <div class="main_posts_sidebar_popular_posts">
                 <?php popular_posts_query(); ?>
+                <div class="main_posts_sidebar_adv_wrp">
+                    <div class="main_posts_sidebar_adv">
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>

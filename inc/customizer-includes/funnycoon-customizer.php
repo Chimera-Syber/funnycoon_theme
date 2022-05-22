@@ -97,6 +97,22 @@ function funnycoon_reviews_tops_section($wp_customizer) {
         'title' => 'Reviews and Tops',
     ) );
 
+    // Title for reviews 
+    
+    $wp_customizer->add_setting('funnycoon_reviews_tops_reviews_title', array(
+        'default'   => '',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customizer->add_control('funnycoon_reviews_tops_reviews_title', array(
+        'type'        => 'text',
+        'label'       => 'Title for Reviews',
+        'description' => 'Название для слайдера с обзорами',
+        'section'     => 'funnycoon_reviews_tops',
+    ) );
+
+    // Settings for reviews
+
     $wp_customizer->add_setting('funnycoon_reviews_tops_reviews', array(
         'default'   => '',
         'transport' => 'refresh',
@@ -108,6 +124,22 @@ function funnycoon_reviews_tops_section($wp_customizer) {
         'description' => 'Вставьте в поле ID тега',
         'section'     => 'funnycoon_reviews_tops',
     ) );
+
+     // Title for tops 
+    
+     $wp_customizer->add_setting('funnycoon_reviews_tops_tops_title', array(
+        'default'   => '',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customizer->add_control('funnycoon_reviews_tops_tops_title', array(
+        'type'        => 'text',
+        'label'       => 'Title for Tops',
+        'description' => 'Название для слайдера с подборками',
+        'section'     => 'funnycoon_reviews_tops',
+    ) );
+
+    // Title for tops
 
     $wp_customizer->add_setting('funnycoon_reviews_tops_tops', array(
         'default'   => '',
