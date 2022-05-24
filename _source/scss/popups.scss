@@ -1,0 +1,236 @@
+.popup {
+    position: fixed;
+    z-index: 9995;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+
+.popup.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.popup_body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+.popup_content {
+    background-color: #fff;
+    color: #000;
+    width: 420px;
+    height: 429px;
+    border-radius: 5px;
+    padding: 9px;
+    position: relative;
+}
+
+.popup_close svg {
+    position: absolute;
+    left: 400px;
+}
+
+.popup_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.popup_title {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 35px;
+    margin-top: 24px;
+    color: #000;
+}
+
+.popup_subtitle {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 23px;
+    color: #000;
+    margin-top: 3px;
+}
+
+.input_field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 26px;
+}
+
+.remember_me {
+    margin-top: 0px;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.remember_me_label {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.submit {
+    margin-top: 24px;
+}
+
+.popup_input {
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 7px 14px;
+    height: 45px;
+    outline: none;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 12px;
+    width: 300px;
+    max-width: 300px;
+    box-shadow: none;
+    height: 48px;
+    text-align: center;
+    &::placeholder {
+        color: #928787;
+    }
+}
+
+.button {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px;
+    gap: 10px;
+    width: 300px;
+    height: 55px;
+    background: #D3355B;
+    border: 1px solid #D3355B;
+    border-radius: 5px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color: #fff;
+    transition: .3s ease;
+    &:hover {
+        background: #b42e4d;
+        border: 1px solid #b42e4d;
+    }
+}
+
+.popup_forget_ps_reg {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    margin-top: 26px;
+}
+
+.forget_password_link {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6C6868;
+    text-decoration: none;
+}
+
+.register_link {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #D3355B;
+    text-decoration: none;
+    &::before {
+        content: " ";
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: -2px;
+        left: 154px;
+        background-image: url("../img/icons/login-icon-popup.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+
+.popup_info {
+    display: inline-flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 23px;
+}
+
+.popup_info_text {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6C6868;
+}
+
+.popup_login {
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 9px;
+    position: relative;
+}
+
+.login_link {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #D3355B;
+    text-decoration: none;
+    &::before {
+        content: " ";
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: -2px;
+        left: 179px;
+        background-image: url("../img/icons/login-icon-popup.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}

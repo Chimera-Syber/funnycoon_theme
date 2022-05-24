@@ -7,7 +7,7 @@
     <?php wp_head(); ?>
 </head>
 <body class="body" id="body">
-    <header class="header">
+    <header class="header lock_padding">
         <div class="container_header_1">
             <div class="header_1_wrapper">
                 <div class="header_1_social">
@@ -19,7 +19,7 @@
                 </div>
                 <div class="header_1_login_search">
                     <a href="#" class="funnycoon_header_icons search" target="_blank"></a>
-                    <a href="#" class="login_info">
+                    <a href="#login" id="loginBtn" class="login_info">
                         <i class="funnycoon_header_icons login"></i>
                         Войти
                     </a>

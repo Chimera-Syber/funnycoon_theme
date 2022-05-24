@@ -1,4 +1,3 @@
-
 <footer class="footer">
     <div class="container_footer_1">
         <div class="footer_1_left">
@@ -27,6 +26,8 @@
         </div>
     </div>
 </footer>
+<?php get_template_part('/template-parts/account/login-popups'); ?>
+
 <?php wp_footer(); ?>
 
 </body>
