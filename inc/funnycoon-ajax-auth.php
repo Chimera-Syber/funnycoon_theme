@@ -63,8 +63,8 @@ function ajax_register(){
     $info['user_email'] = sanitize_email($_POST['email']);
 
     // Register the user
-
     $user_register = wp_insert_user( $info );
+    wp_new_user_notification($user_register, null, 'both');
     if ( is_wp_error($user_register) ) {
         $error = $user_register->get_error_codes();
         echo array_keys($error);
