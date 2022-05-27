@@ -21,7 +21,11 @@
                     <a href="#" class="funnycoon_header_icons search" target="_blank"></a>
                     <a href="#login" id="loginBtn" class="login_info">
                         <i class="funnycoon_header_icons login"></i>
+                        <?php if (is_user_logged_in()) { ?>
+                            <a href="<?php echo wp_logout_url( home_url() ); ?>">Logout</a>
+                        <?php } else { ?>
                         Войти
+                        <?php } ?>
                     </a>
                 </div>
             </div>

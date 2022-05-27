@@ -29,7 +29,7 @@
     background-color: #fff;
     color: #000;
     width: 420px;
-    height: 429px;
+    height: auto;
     border-radius: 5px;
     padding: 9px;
     position: relative;
@@ -46,6 +46,7 @@
     justify-content: center;
     width: 300px;
     margin: 0 auto;
+    margin-bottom: 5px;
 }
 
 .popup_title {
@@ -72,6 +73,34 @@
     line-height: 23px;
     color: #000;
     margin-top: 3px;
+}
+
+.form-message {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #ce0000;
+    margin-top: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #dfdfdf;
+    background-color: #fbfbfb; 
+    opacity: 0;
+}
+
+.error {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #ce0000;
 }
 
 .input_field {

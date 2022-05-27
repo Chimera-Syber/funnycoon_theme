@@ -1,3 +1,4 @@
+<?php if (!is_user_logged_in()) { ?>
 <div id="login" class="popup">
     <div class="popup_body">
         <div class="popup_content">
@@ -5,23 +6,24 @@
            <div class="popup_wrapper">
                 <div class="popup_title">Добро пожаловать!</div>
                 <div class="popup_subtitle">Войти в аккаунт</div>
-                <form action="#"  data-type="login" method="post" accept-charset="utf-8">
+                <form id="login" action="login" method="post">
                         <!-- Form Messages -->
-                        <div class="form-message"></div>
+                        <div class="form-message"></div> 
                         <div class="input_field">
-                            <input class="popup_input" type="text" name="username" placeholder="Имя пользователя" value="">
-                            <input class="popup_input" type="password" name="password" placeholder="Пароль" value="" autocomplete="on">
+                            <?php wp_nonce_field('ajax-login-nonce', 'security'); ?> 
+                            <input class="popup_input" type="text" id="username" name="username" placeholder="Имя пользователя" autocomplete="on">
+                            <input class="popup_input" type="password" id="password" name="password" placeholder="Пароль" autocomplete="on">
                         </div>
                         <div class="input_field remember_me">
                             <input type="checkbox" id="remember_me" name="remember_me" value="true">
                             <label for="remember_me" class="remember_me_label">Запомнить</label>
                         </div>
                         <div class="input_field submit">
-                            <input type="submit" name="login_button" class="button" value="Авторизоваться" data-process="" data-string="">
+                            <input type="submit" name="login_button" class="button" value="Авторизоваться">
                         </div>
                 </form>
                 <div class="popup_forget_ps_reg">
-                    <a href="#" class="forget_password_link">Забыли пароль?</a>
+                    <a href="<?php echo wp_lostpassword_url(); ?>" class="forget_password_link">Забыли пароль?</a>
                     <a href="#register" id="registerBtn" class="register_link">Зарегистрироваться</a>
                 </div>
             </div>
@@ -35,15 +37,18 @@
            <div class="popup_wrapper">
                 <div class="popup_title">Создать новый аккаунт</div>
                 <div class="popup_subtitle">Заполните форму регистрации</div>
-                <form action="#"  data-type="register" method="post" accept-charset="utf-8">
+                <form action="register"  id="register" method="post">
                         <!-- Form Messages -->
                         <div class="form-message"></div>
                         <div class="input_field">
-                            <input class="popup_input" type="text" name="email" placeholder="Введите адрес электронной почты" value="">
-                            <input class="popup_input" type="text" name="username" placeholder="Имя пользователя" value="">
+                            <?php wp_nonce_field('ajax-register-nonce', 'signonsecurity'); ?>   
+                            <input class="popup_input" type="text" id="signonemail" name="signonemail" placeholder="Введите адрес электронной почты" required>
+                            <input class="popup_input" type="text" id="signonname" name="signonname" placeholder="Имя пользователя" required>
+                            <input class="popup_input" type="password" id="signonpassword" name="signonpassword" placeholder="Пароль" required>
+                            <input class="popup_input" type="password" id="signonpassword2" name="signonpassword2" placeholder="Повторите пароль" required>
                         </div>
                         <div class="input_field submit">
-                            <input type="submit" name="register_button" class="button" value="Зарегистрироваться" data-process="" data-string="">
+                            <input type="submit" name="register_button" class="button" value="Зарегистрироваться">
                         </div>
                 </form>
                 <div class="popup_info">
@@ -56,3 +61,5 @@
         </div>
     </div>
 </div>
+
+<?php } 
