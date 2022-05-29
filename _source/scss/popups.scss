@@ -44,7 +44,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 300px;
+    align-items: center;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 5px;
 }
@@ -92,6 +93,8 @@
     border-radius: 5px;
     border: 1px solid #dfdfdf;
     background-color: #fbfbfb; 
+    width: 300px;
+    text-align: center;
     opacity: 0;
 }
 
@@ -184,7 +187,7 @@
 .popup_forget_ps_reg {
     display: inline-flex;
     justify-content: space-between;
-    width: 100%;
+    width: 300px;
     position: relative;
     margin-top: 26px;
 }
@@ -220,10 +223,32 @@
     }
 }
 
+.register_link_forget {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 25px;
+    color: #D3355B;
+    text-decoration: none;
+    &::before {
+        content: " ";
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: -2px;
+        left: 0px;
+        background-image: url("../img/icons/login-icon-popup.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+
 .popup_info {
     display: inline-flex;
     justify-content: flex-start;
-    width: 100%;
+    width: 300px;
     margin-top: 23px;
 }
 
@@ -239,7 +264,7 @@
 .popup_login {
     display: inline-flex;
     justify-content: flex-end;
-    width: 100%;
+    width: 300px;
     margin-top: 9px;
     position: relative;
 }

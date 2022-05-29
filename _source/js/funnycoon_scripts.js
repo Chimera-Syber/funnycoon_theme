@@ -1,41 +1,22 @@
-const loginBtn = document.querySelector('#loginBtn');
-const registerBtn = document.querySelector('#registerBtn')
-const loginBtn2 = document.querySelector('#loginBtn2');
 const body = document.querySelector('body');
 const lockPadding = document.querySelectorAll(".lock_padding");
+
+const popupLinks = document.querySelectorAll('.popup-link');
 
 let unlock = true;
 const timeout = 500;
 
-if (loginBtn) {
-    loginBtn.addEventListener("click", function (e) {
-        const popupName = loginBtn.getAttribute('href').replace('#', '');
-        const currentPopup = document.getElementById(popupName);
-        popupOpen(currentPopup);
-        e.preventDefault();
-    });
+if (popupLinks.length > 0) {
+    for (let index = 0; index < popupLinks.length; index++) {
+        const popupLink = popupLinks[index];
+        popupLink.addEventListener("click", function (e) {
+            const popupName = popupLink.getAttribute('href').replace('#', '');
+            const currentPopup = document.getElementById(popupName);
+            popupOpen(currentPopup);
+            e.preventDefault();
+        });
+    }
 }
-
-if (registerBtn) {
-    registerBtn.addEventListener("click", function (e) {
-        const popupName = registerBtn.getAttribute('href').replace('#', '');
-        const currentPopup = document.getElementById(popupName);
-        popupOpen(currentPopup);
-        e.preventDefault();
-    });
-}
-
-if (loginBtn2) {
-    loginBtn2.addEventListener("click", function (e) {
-        const popupName = loginBtn2.getAttribute('href').replace('#', '');
-        const currentPopup = document.getElementById(popupName);
-        popupOpen(currentPopup);
-        e.preventDefault();
-    });
-}
-
-
-
 
 const popupCloseIcon = document.querySelectorAll('.close_popup');
 if (popupCloseIcon.length > 0) {

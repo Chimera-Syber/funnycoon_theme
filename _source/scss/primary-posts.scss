@@ -192,15 +192,12 @@
 }
 
 
-.primary_posts_button_wrp {
+.primary_posts_button {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     border-top: 1px solid #4F4F4F;
-}
-
-.primary_posts_button {
     font-family: 'Segoe UI';
     font-style: normal;
     font-weight: 400;
@@ -208,7 +205,11 @@
     line-height: 27px;
     text-decoration: none;
     text-transform: uppercase;
-    margin-top: 27px;
-    margin-bottom: 27px;
+    padding-top: 27px;
+    padding-bottom: 27px;
     color: #1B1B1B;
+    &:hover {
+        border-radius: 0px 0px 5px 5px;
+        background: linear-gradient(0deg, rgb(142, 234, 247) 0%, rgba(194,223,227,1) 100%);
+    }
 }

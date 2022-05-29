@@ -12,7 +12,7 @@
     <div class="primary_posts_wrp">
         <?php primary_post_query($tag_id); ?>
     </div>
-    <div class="primary_posts_button_wrp">
-        <a href="<?php echo $tag_link; ?>" class="primary_posts_button">Посмотреть еще</a>
-    </div>
+    <a href="<?php echo $tag_link; ?>" class="primary_posts_button">
+        Посмотреть еще
+    </a>
 </section>

@@ -3,6 +3,7 @@ jQuery(document).ready(function($){
     function ajax_request(form) {
         $(form).on('submit', function (e) {
             if (!$(this).valid()) return false;
+            $('.form-message', this).css('opacity', 1);
             $('.form-message', this).show().text(ajax_auth_object.loadingmessage);
 
             action = 'ajaxlogin';
@@ -40,7 +41,30 @@ jQuery(document).ready(function($){
 
             e.preventDefault();
         });
+    }
 
+    function ajax_request_forgotpassword(form) {
+        $(form).on('submit', function (e){
+            if (!$(this).valid()) return false;
+            $('.form-message', this).show().text(ajax_auth_object.loadingmessage);
+            ctrl = $(this);
+            $.ajax({
+                type: 'POST',
+                dataType: 'json',
+                url: ajax_auth_object.ajaxurl,
+                data: {
+                    'action': 'ajaxforgotpassword',
+                    'user_login': $('#user_login').val(),
+                    'security': $('#forgotsecurity').val(),
+                },
+                success: function (data) {
+                    $('.form-message', ctrl).text(data.message);
+                    $('.form-message', ctrl).css('opacity', 1);
+                },
+            });
+            e.preventDefault();
+            //return false;
+        });
     }
 
     $('form#login').validate({
@@ -97,6 +121,20 @@ jQuery(document).ready(function($){
             },
         },
         submitHandler: ajax_request('form#register'),
+    });
+
+    $('form#forgotpassword').validate({
+        rules: {
+            user_login: {
+                required: true,
+            },
+        },
+        messages: {
+            user_login: {
+                required: 'Это поле необходимо для заполнения',
+            }
+        },
+        submitHandler: ajax_request_forgotpassword('form#forgotpassword'),
     });
 
 });

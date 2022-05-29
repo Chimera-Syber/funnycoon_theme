@@ -177,3 +177,83 @@
 .nav_menu .menu-item-has-children:hover > .sub-menu {
     display: block;
 }
+
+// Avatar and profile menu
+
+.profile_info {
+    display: block;
+    height: 100%;
+}
+
+.profile_wrp {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 61px;
+    text-decoration: none;
+    min-width: 180px;
+    &:hover + .profile_menu {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+.profile_avatar {
+    display: block;
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50px;
+    margin-right: 11px;
+}
+
+.profile_nickname {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-right: 7px;
+    text-decoration: none;
+}
+
+.profile_arrow {
+    display: block;
+}
+
+.profile_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    &:hover {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.profile_menu_link {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+    text-decoration: none;
+    height: 36px;
+    background-color: #262626;
+    padding-left: 22px;
+    &:first-child {
+        border-top: 3px solid #D3355B;
+    }
+    &:hover {
+        color: #D3355B;
+        background-color: #161515;
+    }
+}
