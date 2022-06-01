@@ -37,6 +37,13 @@
  * 					'week' => date( 'W' );
  * 				]
  * 			],
+ * @example - current month
+ * 			'date_query' => [
+ *			[
+ *				'year' => date( 'Y' ),
+ *				'monthnum' => date( 'n' ),
+ *			],
+ *		],
  * @return query posts
  */
 
@@ -52,8 +59,7 @@ function popular_posts_query() {
 		],
 		'date_query' => [
 			[
-				'year' => date( 'Y' ),
-				'monthnum' => date( 'n' ),
+				'after' => date( 'Y-m-d', strtotime('-30 days') ),
 			],
 		],
 		'orderby' => 'meta_value_num',
@@ -124,6 +130,13 @@ function primary_post_query( $tag_id ) {
  * 					'week' => date( 'W' );
  * 				]
  * 			],
+ * @example - current month
+ * 			'date_query' => [
+ *			[
+ *				'year' => date( 'Y' ),
+ *				'monthnum' => date( 'n' ),
+ *			],
+ *		],
  * @return query posts
  */
 
@@ -133,8 +146,7 @@ function top_comments_posts_query() {
 		'post_type' => 'post',
 		'date_query' => [
 			[
-				'year' => date( 'Y' ),
-				'monthnum' => date( 'n' ),
+				'after' => date( 'Y-m-d', strtotime('-30 days') ),
 			],
 		],
 		'orderby' => 'comment_count ',

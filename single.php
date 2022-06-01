@@ -44,13 +44,57 @@
                 </div>
                 <div class="single_post_content">
 
-                <?php the_content();
-            endwhile;
-        
-            ?>
+                    <?php the_content(); ?>
+
+                    <div class="single_tags">
+                        <span class="single_tag_title">Теги:</span>
+                        <div class="single_tags_wrp">
+                            <?php the_tags('<div class="single_tag">','</div><div class="single_tag">','</div>') ?>
+                        </div>        
+                    </div>
+                    <div class="single_adv_wrp">
+                            <div class="single_adv">
+
+                            </div>
+                    </div>
+                    <div class="single_prev_next_post_wrp">
+                            <div class="prev_post_wrp">
+                                <span class="prev_post_title">Предыдущий пост</span>
+                                <div class="prev_post_link">
+                                    <div class="prev_next_post_figure"></div>
+                                    <?php previous_post_link('%link'); ?>
+                                </div>
+                            </div>
+                            <div class="next_post_wrp">
+                                <span class="next_post_title">Следующий пост</span>
+                                <div class="next_post_link">
+                                    <div class="prev_next_post_figure"></div>
+                                    <?php next_post_link('%link'); ?>
+                                </div>
+                            </div>
+                    </div>
+                    <?php 
+                        if ( comments_open() || get_comments_number() ) {
+		                    comments_template();
+	                    } 
+                    ?>
+
+                <?php endwhile; ?>
                 </div>
             </div>
-            <div class="single_sidebar">123</div>
+            <div class="single_sidebar">
+                <div class="main_posts_sidebar_title_wrp">
+                    <span class="main_posts_sidebar_title">Популярные материалы</span>
+                </div>
+                <div class="main_posts_sidebar_popular_posts">
+                    <?php popular_posts_query(); ?>
+                    <div class="main_posts_sidebar_adv_wrp">
+                        <div class="main_posts_sidebar_adv">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </main>

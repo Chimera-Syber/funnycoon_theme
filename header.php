@@ -13,7 +13,10 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php wp_head(); ?>
+    <?php wp_head(); 
+    if ( is_singular() && get_option( 'thread_comments' ) )
+	    wp_enqueue_script( 'comment-reply' ); 
+    ?>
 </head>
 <body class="body" id="body">
     <header class="header lock_padding">

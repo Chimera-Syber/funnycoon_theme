@@ -35,12 +35,26 @@
 
 add_action('wp_enqueue_scripts', 'funnycoon_scripts');
 
- // Funnycoon Menu Class
- require get_template_directory() . '/classes/Funnycoon_Menu.php';
+/**
+ * Switch to HTML5
+ */
+add_theme_support(
+    'html5',
+    array(
+        'comment-list',
+        'comment-form',
+    )
+);
 
- /**
-  * Implement load more functions
-  */
+// Funnycoon Menu Class
+require get_template_directory() . '/classes/funnycoon-menu.php';
+
+// Funnycoon Comments Class
+require get_template_directory() . '/classes/funnycoon-comments.php';
+
+/**
+ * Implement load more functions
+ */
 
 require trailingslashit( get_template_directory() ) . 'inc/funnycoon-loadmore.php';
 
