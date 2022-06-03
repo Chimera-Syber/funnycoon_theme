@@ -16,7 +16,7 @@ $time = human_time_diff(get_post_time('U'), current_time('timestamp')) . " " . _
     <a href="<?php echo $post_permalink; ?>" class="reviews_slide_link">
         <div class="reviews_slide_info">
             <span class="reviews_slide_title"><?php echo $post_title; ?></span>
-            <span class="reviews_slide_time_comments"><?php echo esc_html($time); ?> | <?php                             comments_number('0 комментариев', '1 комментарий', '% коментариев'); ?></span>
+            <span class="reviews_slide_time_comments"><?php echo esc_html($time); ?> | <?php comments_number('0 комментариев', '1 комментарий', '% коментариев'); ?></span>
         </div>
         <div class="reviews_slide_gradient"></div>
     </a>
