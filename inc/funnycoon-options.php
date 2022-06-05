@@ -17,3 +17,20 @@ function funnycoon_get_main_slider_options() {
 
     return $options;
 }
+
+/**
+ * User profile Fields
+ */
+
+  function user_social_info() {
+
+      return array(
+        'pinterest'  => 'Pinterest',
+        'youtube'   => 'Youtube',
+        'reddit'    => 'Reddit',
+        'vk'        => 'Вконтакте',
+        'twitch'    => 'Twitch',
+        'url'       => 'Сайт',
+      );
+
+  }
