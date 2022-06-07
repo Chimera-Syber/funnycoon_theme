@@ -130,7 +130,7 @@
     line-height: 23px;
 }
 
-.submit {
+.submit_input {
     margin-top: 24px;
 }
 
@@ -158,7 +158,7 @@
     }
 }
 
-.button {
+.login_button, .register_button {
     cursor: pointer;
     display: flex;
     flex-direction: row;
@@ -168,7 +168,7 @@
     gap: 10px;
     width: 300px;
     height: 55px;
-    background: #D3355B;
+    background-color: #D3355B;
     border: 1px solid #D3355B;
     border-radius: 5px;
     font-family: 'Jost';
@@ -179,7 +179,7 @@
     color: #fff;
     transition: .3s ease;
     &:hover {
-        background: #b42e4d;
+        background-color: #b42e4d;
         border: 1px solid #b42e4d;
     }
 }

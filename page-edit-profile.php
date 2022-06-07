@@ -4,6 +4,11 @@
 
     require_once('inc/funnycoon-update-profile.php');
 
+    $current_user_profile_page = wp_get_current_user();
+    $avatar_img_profile_page = get_avatar( $current_user_profile_page->user_email, 200, '', $current_user_profile_page->user_login, array(
+        'class' => 'profile_page_avatar',
+    ));
+
 
 get_header(); ?>
 
@@ -11,7 +16,11 @@ get_header(); ?>
     <div class="funnycoon_main_wrapper">
         <div class="profile_edit_page_wrp">
             <div class="profile_edit_sidebar">
-                Avatar
+                <div class="profile_page_avatar_wrp">
+                    <?php echo $avatar_img_profile_page; ?>
+                    <span class="profile_page_nickname"><?php echo $current_user_profile_page->user_login; ?></span>
+                    <a href="<?php echo home_url() . '/change-email'; ?>" class="profile_change_email_link">Редактировать почту</a>
+                </div>
             </div>
             <div class="profile_edit_section">
                 <?php $current_user = wp_get_current_user(); ?>
@@ -34,12 +43,12 @@ get_header(); ?>
                         </div>
                     </div>
                     <span class="profile_section_title">Контактная информация</span>
-                    <div class="profile_info">
+                    <div class="profile_user_info">
                         <?php 
 
                             foreach( user_social_info() as $key => $value ) {
                                 
-                                echo '<div class="profile_info_item">
+                                echo '<div class="profile_user_info_item">
                                 <label class="profile_label" for="' . $key .  '">' . $value . '</label>
                                 <input class="profile_input" name="' . $key . '" type="text" id="' . $key . '" value="' . get_the_author_meta( $key, $current_user->ID ) . '"/></div>';
 

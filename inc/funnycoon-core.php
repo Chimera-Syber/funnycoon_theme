@@ -125,6 +125,10 @@ function ecs_add_post_state( $post_states, $post ) {
         $post_states[] = 'Profile edit page';
     }
 
+    if( $post->post_name == 'change-email' ) {
+        $post_states[] = 'Email edit page';
+    }
+
     return $post_states;
 }
 
@@ -138,7 +142,7 @@ function ecs_add_post_notice() {
 
     global $post;
 
-    if( isset( $post->post_name ) && ( $post->post_name == 'edit-profile' ) ) {
+    if( isset( $post->post_name ) && ( ( $post->post_name == 'edit-profile' ) || ( $post->post_name == 'change-email' ) ) ) {
 
         // Add a notice to the edit page
         add_action( 'edit_form_after_title', 'ecs_add_page_notice', 1 );
@@ -161,8 +165,11 @@ add_filter( 'admin_notice', 'ecs_add_post_notice' );
 function check_page_security() {
 
     if ( !is_user_logged_in() ) {
+
         wp_redirect( home_url() );
+
         exit();
+
     }
 
 }

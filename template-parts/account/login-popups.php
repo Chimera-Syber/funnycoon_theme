@@ -18,8 +18,8 @@
                             <input type="checkbox" id="remember_me" name="remember_me" value="true">
                             <label for="remember_me" class="remember_me_label">Запомнить</label>
                         </div>
-                        <div class="input_field submit">
-                            <input type="submit" name="login_button" class="button" value="Авторизоваться">
+                        <div class="input_field submit_input">
+                            <input type="submit" name="login_button" class="login_button" value="Авторизоваться">
                         </div>
                 </form>
                 <div class="popup_forget_ps_reg">
@@ -47,8 +47,8 @@
                             <input class="popup_input" type="password" id="signonpassword" name="signonpassword" placeholder="Пароль" required>
                             <input class="popup_input" type="password" id="signonpassword2" name="signonpassword2" placeholder="Повторите пароль" required>
                         </div>
-                        <div class="input_field submit">
-                            <input type="submit" name="register_button" class="button" value="Зарегистрироваться">
+                        <div class="input_field submit_input">
+                            <input type="submit" name="register_button" class="register_button" value="Зарегистрироваться">
                         </div>
                 </form>
                 <div class="popup_info">
@@ -75,8 +75,8 @@
                             <?php wp_nonce_field('ajax-forgot-nonce', 'forgotsecurity'); ?>   
                             <input class="popup_input" type="text" id="user_login" name="user_login" placeholder="Введите имя пользователя или email" required>
                         </div>
-                        <div class="input_field submit">
-                            <input type="submit" name="register_button" class="button" value="Восстановить пароль">
+                        <div class="input_field submit_input">
+                            <input type="submit" name="register_button" class="register_button" value="Восстановить пароль">
                         </div>
                 </form>
                 <div class="popup_forget_ps_reg">

@@ -9,7 +9,7 @@ $post_title = get_the_title();
 
 ?>
 
-<div class="mps_post_card">
+<div class="mps_post_card cards_animation">
     <a href="<?php echo esc_url( $post_permalink ); ?>" class="mps_post_card_title"><?php echo esc_html( $post_title ); ?></a>
     <a href="<?php echo esc_url( $post_permalink ); ?>" class="mps_post_card_info">
         <img class="mps_post_card_img" src="<?php echo get_the_post_thumbnail_url($post, 'full'); ?>" alt="">

@@ -4,10 +4,6 @@
     grid-template-rows: 1fr;
 }
 
-.profile_edit_sidebar {
-
-}
-
 .profile_edit_section {
     display: flex;
     flex-direction: column;
@@ -43,12 +39,12 @@
     color: #FFFFFF;
 }
 
-.profile_info {
+.profile_user_info {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.profile_info_item {
+.profile_user_info_item {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
@@ -94,4 +90,147 @@
     text-transform: uppercase;
     color: #FFFFFF;
     margin-top: 52px;
+}
+
+.profile_edit_sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 47px;
+}
+
+.profile_page_avatar_wrp {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid #D3355B;
+}
+
+.profile_page_nickname {
+    display: block;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 35px;
+    color: #FFFFFF;
+    margin-top: 10px;;
+}
+
+.profile_page_avatar {
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile_change_email_link {
+    display: block;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 29px;
+    color: #D3355B;
+    text-decoration: none;
+    margin-top: 45px;
+    &:hover {
+        color: #fff;
+    }
+}
+
+// Plugin fix 
+
+
+#wp_user_profile_avatar_remove, 
+#wp_user_profile_avatar_update_profile,
+#wp_user_profile_avatar_undo {
+    display: block;
+    cursor: pointer;
+    background: #D3355B;
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 5px;
+    width: 300px;
+    transition: .3s ease;
+    &:hover {
+        background: #b42e4d;
+        border: 1px solid #b42e4d;
+    }
+}
+
+.regular-text {
+    display: block;
+    width: 300px;
+    padding: 12px;
+    background-color: #272727;
+    border: 1px solid #D3355B;
+    border-radius: 5px;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #666666;
+    &:focus {
+        border: 1px solid #D3355B;
+    }
+}
+
+.form-table p {
+    font-family: "Segoe UI";
+    margin: 5px 0px 5px 0px;
+}
+
+#wp_user_profile_avatar_preview {
+    & img {
+        margin-bottom: 5px;
+    }
+}
+
+#wp_user_profile_avatar_thumbnail {
+    & img {
+        margin-bottom: 5px;
+    }
+}
+
+.input-text.wp-user-profile-avatar-image {
+    display: block;
+    cursor: pointer;
+    background: #D3355B;
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    color: #FFFFFF;
+    margin-top: 5px;
+    width: 300px;
+}
+
+// Error block
+
+.custom_pages_messages {
+    display: block;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #D0DDB8;
+    margin-top: 10px;
 }
