@@ -11,6 +11,7 @@
     wp_register_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js');
     wp_enqueue_script( 'jquery' );
     wp_enqueue_style('funnycoon-styles', get_template_directory_uri() . '/assets/css/styles.css');
+    wp_enqueue_style('funnycoon-fontawesome', get_template_directory_uri() . '/assets/fontawesome/css/all.min.css');
     wp_enqueue_script('funnycoon-scripts', get_template_directory_uri() . '/assets/js/funnycoon_scripts.js', [], false, true);
     wp_enqueue_script('funnycoon-loadmore-script', get_template_directory_uri() . '/assets/js/funnycoon_loadmore.js', [], false, true);
     wp_enqueue_script('funnycoon-review-loadmore-script', get_template_directory_uri() . '/assets/js/funnycoon_review_loadmore.js', [], false, true);
@@ -116,7 +117,7 @@ require trailingslashit( get_template_directory() ) . 'inc/funnycoon-handlers.ph
  add_filter('intermediate_image_sizes_advanced', 'devise_remove_default_image_sizes');
 
  /**
-  *  Add post state to the project page (Edit profile page)
+  *  Add post state to the project page (Edit profile page, Email edit page, Change password page)
   */
 
 function ecs_add_post_state( $post_states, $post ) {
@@ -127,6 +128,10 @@ function ecs_add_post_state( $post_states, $post ) {
 
     if( $post->post_name == 'change-email' ) {
         $post_states[] = 'Email edit page';
+    }
+
+    if( $post->post_name == 'change-password') {
+        $post_states[] = 'Change password page';
     }
 
     return $post_states;
@@ -142,7 +147,7 @@ function ecs_add_post_notice() {
 
     global $post;
 
-    if( isset( $post->post_name ) && ( ( $post->post_name == 'edit-profile' ) || ( $post->post_name == 'change-email' ) ) ) {
+    if( isset( $post->post_name ) && ( ( $post->post_name == 'edit-profile' ) || ( $post->post_name == 'change-email' ) || ( $post->post_name == 'change-password' ) ) ) {
 
         // Add a notice to the edit page
         add_action( 'edit_form_after_title', 'ecs_add_page_notice', 1 );

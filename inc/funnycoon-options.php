@@ -20,6 +20,12 @@ function funnycoon_get_main_slider_options() {
 
 /**
  * User profile Fields
+ * @return 'pinterest'  => 'Pinterest',
+        'youtube'   => 'Youtube',
+        'reddit'    => 'Reddit',
+        'vk'        => 'Вконтакте',
+        'twitch'    => 'Twitch',
+        'url'       => 'Сайт',
  */
 
   function user_social_info() {

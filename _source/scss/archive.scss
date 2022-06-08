@@ -11,7 +11,7 @@
     display: block;
 }
 
-.archive-title {
+.archive_title {
     display: block;
     margin-left: 22px;
     font-family: 'Segoe UI';
@@ -145,5 +145,73 @@
         bottom: 1px;
         width: 19px;
         height: 19px;
+    }
+}
+
+// Author page
+
+.author_info_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #272727;
+    border: 1px solid #2D2D2D;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 41px;
+    margin-right: 24px;
+    margin-bottom: 22px;
+    padding: 45px 34px 45px 59px;
+}
+
+.author_info_avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.author_page_avatar {
+    display: block;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.author_info_wrp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 24px;
+    min-height: 160px;
+}
+
+.author_page_nickname {
+    display: block;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 43px;
+    color: #FFFFFF;
+}
+
+.author_page_description {
+    display: block;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 86.69%;
+    color: #BAB5B5;
+}
+
+.author_socials_list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 32px;
+    & a {
+        margin-right: 15px;
     }
 }

@@ -59,7 +59,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' && !empty( $_POST['action'] )  && $_POS
 }
 
 /**
- * For change password page (page-change-email.php)
+ * For change email page (page-change-email.php)
  */
 
 if( $_SERVER['REQUEST_METHOD'] == 'POST' && !empty( $_POST['action'] ) && $_POST['action'] == 'change-email' ) {
@@ -122,10 +122,61 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' && !empty( $_POST['action'] ) && $_POST
 }
 
 /**
+ * For change password page (page-change-password.php)
+ */
+
+if( $_SERVER['REQUEST_METHOD'] == 'POST' && !empty( $_POST['action'] ) && $_POST['action'] == 'change-password' ) {
+
+    $current_user = wp_get_current_user();
+
+    // Check nonce first to see if this is a legit request 
+
+    if( !isset( $_POST['_wpnonce'] ) || !wp_verify_nonce( $_POST['_wpnonce'], 'change-password' ) ) {
+        wp_redirect( get_permalink() . '?validation=unknown');
+        exit;
+    }
+
+    // Check funnycoonpot for automated requests 
+
+    if( !empty( $_POST['funnycoonpot'] ) ) {
+        wp_redirect( get_permalink() . '?validation=unknown' );
+        exit;
+    }
+
+    if( !empty( $_POST['pass'] ) && !empty( $_POST['newpass1'] ) && !empty( $_POST['newpass2'] ) ) {
+        
+        $old_password = $_POST['pass'];
+        $new_password1 = $_POST['newpass1'];
+        $new_password2 = $_POST['newpass2'];
+        $hash = $current_user->data->user_pass;
+
+        if( wp_check_password( $old_password, $hash ) ) {
+            if( $new_password1 == $new_password2 ) {
+                wp_update_user( array( 'ID' => $current_user->ID, 'user_pass' => $new_password1 ) );
+            } else {
+                wp_redirect( get_permalink() . '?validation==errornewpassword' );
+                exit;
+            }
+        } else {
+            wp_redirect( get_permalink() . '?validation=erroroldpassword' );
+            exit;
+        }
+    }
+
+    do_action( 'edit_user_profile_update', $current_user->ID );
+
+    // We got here, assuming everything went OK 
+    wp_redirect( get_permalink() . '?password_updated=true' );
+    exit;
+
+}
+
+
+/**
  * Errors to frontend
  */
 
- function change_email_messages() {
+ function update_profile_messages() {
 
     if( isset($_GET['user_updated']) ) {
 
@@ -138,6 +189,13 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' && !empty( $_POST['action'] ) && $_POST
 
         if( $_GET['email_updated'] == 'true' ) {
             return '<span class="custom_pages_messages">Ваша почта обновлена</span>';
+        }
+    }
+
+    if( isset($_GET['password_updated']) ) {
+
+        if( $_GET['password_updated'] == 'true' ) {
+            return '<span class="custom_pages_messages">Ваш пароль обновлен</span>';
         }
     }
 
@@ -159,7 +217,14 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' && !empty( $_POST['action'] ) && $_POST
             return '<span class="custom_pages_messages">Неверный пароль</span>';
         }
 
+        if( $_GET['validation'] == 'erroroldpassword') {
+            return '<span class="custom_pages_messages">Неверный старый пароль</span>';
+        }
+
+        if( $_GET['validation'] == 'errornewpassword') {
+            return '<span class="custom_pages_messages">Новые пароль не соответствуют друг другу</span>';
+        }
 
     }
 
- }
+}

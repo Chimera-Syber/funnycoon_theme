@@ -128,7 +128,7 @@
     border-radius: 50%;
 }
 
-.profile_change_email_link {
+.profile_change_email_link, .profile_change_password_link {
     display: block;
     font-family: 'Jost';
     font-style: normal;
@@ -141,6 +141,10 @@
     &:hover {
         color: #fff;
     }
+}
+
+.profile_change_password_link {
+    margin-top: 0px;
 }
 
 // Plugin fix 

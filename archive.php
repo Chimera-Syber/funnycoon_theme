@@ -16,7 +16,7 @@ add_filter( 'get_the_archive_title', function( $title ){
                         <a href="#">Главная</a>&nbsp;/&nbsp; 
                         <?php echo get_the_category_list( '&nbsp;/&nbsp;'); ?>
                     </div>
-                    <?php the_archive_title( '<h1 class="archive-title">', '</h1>' ); ?>
+                    <?php the_archive_title( '<h1 class="archive_title">', '</h1>' ); ?>
                     <?php the_archive_description( '<div class="archive_description">', '</div>' ); ?>
                 </div>
                 <div class="archive_posts_wrp">

@@ -241,3 +241,45 @@ function funnycoon_numeric_posts_nav() {
     echo '</ul></div>' . "\n";
  
 }
+
+// Socials on author page
+
+function get_socials_author_page() {
+
+    $author_id = get_the_author_meta('ID');
+
+    $output = '';
+
+    foreach( user_social_info() as $key => $value ) {
+
+        $current_social = get_the_author_meta( $key, $author_id );
+
+        if( !empty($current_social) ) {
+            switch ($key) {
+                case 'pinterest': 
+                    $output .= '<a target="_blank" href="https://www.pinterest.ru/' . $current_social . '"><span style="color: white;"><i class="fa-brands fa-pinterest fa-2xl"></i></span></a>';
+                    break;
+                case 'reddit': 
+                    $output .= '<a target="_blank" href="https://www.reddit.com/user/' . $current_social . '"><span style="color: white;"><i class="fa-brands fa-reddit fa-2xl"></i></span></a>';
+                    break;
+                case 'youtube': 
+                    $output .= '<a target="_blank" href="https://www.youtube.com/channel/' . $current_social . '"><span style="color: white;"><i class="fa-brands fa-youtube fa-2xl"></i></span></a>';
+                    break;
+                case 'twitch': 
+                    $output .= '<a target="_blank" href="https://www.twitch.tv/' . $current_social . '"><span style="color: white;"><i class="fa-brands fa-twitch fa-2xl"></i></span></a>';
+                    break;
+                case 'vk': 
+                    $output .= '<a target="_blank" href="https://vk.com/' . $current_social . '"><span style="color: white;"><i class="fa-brands fa-vk fa-2xl"></i></span></a>';
+                    break;
+                case 'url': 
+                    $output .= '<a target="_blank" href="' . esc_url($current_social) . '"><span style="color: white;"><i class="fa-solid fa-globe fa-2xl"></i></span></a>';
+                    break;
+            }
+
+        }
+
+    }
+
+    return $output;
+
+}
