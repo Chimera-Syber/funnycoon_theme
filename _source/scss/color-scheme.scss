@@ -1,0 +1,148 @@
+/** 
+ * Color scheme (light and dark)
+ */
+
+:root {
+
+    /**
+     * adv.scss
+     */
+
+    --sidebar-adv-color: rgba(255, 0, 0, 0.2);
+    --sidebar-posts-adv-color: rgba(255, 0, 0, 0.2);
+    --sidebar-review-adv-color: rgba(255, 0, 0, 0.2);
+
+    /** 
+     * archive.scss
+     */
+
+    --archive-title-color: #fff;
+    --archive-description-color: #C7C7C7;
+    --archive-post-wrp-color: #292424;
+    --archive-post-img-border-color: #D3355B;
+    --archive-post-title-wrp-hover-color: #D3355B;
+    --archive-post-title-color: #fff;
+    --archive-post-author-color: #fff;
+    --archive-author-nickname-color: #D33558;
+    --archive-post-description-color: #fff;
+    --archive-post-date-color: #D7FBE5;
+    --archive-post-comment-count-color: #D7FBE5;
+    --archive-author-info-background-color: #272727;
+    --archive-author-info-border-color: #2D2D2D;
+    --archive-author-page-nickname-color: #fff;
+    --archive-author-page-description-color: #BAB5B5;
+
+    /**
+     * edit-profile-page.scss
+     */
+
+    --profile-form-background-color: #272727;
+    --profile-form-text-color: #fff;
+    --profile-form-border-color: #2D2D2D;
+    --profile-section-title-color: #fff;
+    --profile-label-color: #fff;
+    --profile-input-background-color: #272727;
+    --profile-input-border-color: #D3355B;
+    --profile-input-text-color: #666666;
+    --profile-submit-button-background-color: #D3355B;
+    --profile-submit-button-text-color: #fff;
+    --profile-page-avatar-wrp-border-color: #D3355B;
+    --profile-page-nickname-color: #fff;
+    --profile-change-text-color: #D3355B;
+    --profile-change-text-hover-color: #fff;
+
+    --wp-user-profile-background-color: #D3355B;
+    --wp-user-profile-text-color: #fff;
+    --wp-user-profile-hover-background-color: #b42e4d;
+    --wp-user-profile-hover-border-color: #b42e4d;
+    --wp-user-regular-text-background-color: #272727;
+    --wp-user-regular-text-border-color: #D3355B;
+    --wp-user-regular-text-color: #666666;
+    --wp-user-regular-text-focus-border-color: #D3355B;
+    --wp-user-input-text-profile-avatar-background-color: #D3355B;
+    --wp-user-input-text-profile-avatar-text-color: #fff;
+
+    --custom-pages-messages-color: #D0DDB8;
+
+    /** 
+     * footer.scss
+     */
+
+    --footer-background-color: #1B1B1B;
+    --container-footer-1-border-color: #fff;
+    --footer-2-links-text-color: #fff;
+    --footer-2-links-hover-text-color: #D3355B;
+    --rars-border-color: #fff;
+    --rars-text-color: #fff;
+    --copyright-text-color: #fff;
+
+    /**
+     * header.scss
+     */
+
+    --header-background-color: #1B1B1B;
+    --container-header-1-border-color: #fff;
+    --logo-link-text-color: #fff;
+    --login-info-text-color: #fff;
+    --menu-item-a-text-color: #fff;
+    --sub-menu-background-color: #1B1B1B;
+    --sub-menu-border-color: #fff;
+    --menu-item-has-children-hover-text-color: #123;
+    --profile-nichname-color: #fff;
+    --profile-menu-link-text-color: #fff;
+    --profile-menu-link-background-color: #262626;
+    --profile-menu-link-first-child-border-color: #D3355B;
+    --profile-menu-link-hover-text-color: #D3355B;
+    --profile-menu-link-hover-background-color: #161515;
+
+    /**
+     * main-hot.scss
+     */
+
+    --main-hot-background-color: #000;
+    --hot-title-color: #D3355B;
+    --hot-tag-text-color: #fff;
+    --hot-tag-hover-text-color: #D3355B;
+
+    /**
+     * main-post.scss
+     */
+
+    --main-posts-title-color: #fff;
+    --main-posts-link-hover-text-color: #D3355B;
+    --main-post-title-color: #fff;
+    --main-post-desc-color: #B3B3B3;
+    --main-post-date: #fff;
+    --main-post-comments-color: #fff;
+    --main-post-gradient-first-color: rgba(34, 34, 34, 0);
+    --main-post-gradient-second-color: #222222;
+    --funnycoon-loadmore-gradient-first-color: #C2DFE3;
+    --funnycoon-loadmore-gradient-second-color: #C2DFE3;
+    --funnycoon-loadmore-gradient-hover-first-color: #D3355B;
+    --funnycoon-loadmore-gradient-hover-second-color: #e44a6e;
+    --funnycoon-loadmore-hover-text-color: #fff;
+    --main-posts-sidebar-title-color: #fff;
+    --mps-post-card-title-color: #fff;
+    --mps-post-card-title-hover-color: #D3355B;
+    --mps-post-card-desc-color: #B3B3B3;
+
+    /** 
+     * main-slider.scss
+     */
+
+    --slider-gradient-first-color: rgba(0, 0, 0, 0);
+    --slider-gradient-second-color: rgba(0, 0, 0, 0.8);
+    
+    /**
+     * main.scss
+     */
+
+    --body-color: #180C1D;
+    --main-wrapper: #1B1B1B;
+    --body-webkit-shadow: rgba(0,0,0,0.3);
+    --body-webkit-scrollbar-track: #1d1d1d;
+    --body-webkit-scrollbar: #1d1d1d;
+    --body-webkit-scrollbar-thumb-shadow: rgba(0,0,0,.3);
+    --body-webkit-scrollbar-thumb: #555;
+
+}

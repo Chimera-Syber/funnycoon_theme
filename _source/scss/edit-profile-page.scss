@@ -17,15 +17,15 @@
 .profile_form {
     display: flex;
     flex-direction: column;
-    background-color: #272727;
+    background-color: var(--profile-form-background-color);
     border-radius: 5px;
     padding-left: 39px;
     padding-top: 12px;
     padding-bottom: 37px;
     margin-bottom: 20px;
     width: 100%;
-    color: #fff;
-    border: 1px solid #2D2D2D;
+    color: var(--profile-form-text-color);
+    border: 1px solid var(--profile-form-border-color);
 }
 
 .profile_section_title {
@@ -36,7 +36,7 @@
     font-weight: 400;
     font-size: 26px;
     line-height: 35px;
-    color: #FFFFFF;
+    color: var(--profile-section-title-color);
 }
 
 .profile_user_info {
@@ -57,7 +57,7 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 24px;
-    color: #FFFFFF;
+    color: var(--profile-label-color);
     margin-bottom: 7px;
 }
 
@@ -65,20 +65,20 @@
     display: block;
     width: 338px;
     padding: 12px;
-    background-color: #272727;
-    border: 1px solid #D3355B;
+    background-color: var(--profile-input-background-color);
+    border: 1px solid var(--profile-input-border-color);
     border-radius: 5px;
     font-family: 'Segoe UI';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
-    color: #666666;
+    color: var(--profile-input-text-color);
 }
 
 .profile_submit_button {
     cursor: pointer;
-    background: #D3355B;
+    background: var(--profile-submit-button-background-color);
     border: 0px;
     border-radius: 5px;
     padding: 10px;
@@ -88,7 +88,7 @@
     font-size: 18px;
     line-height: 26px;   
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--profile-submit-button-text-color);
     margin-top: 52px;
 }
 
@@ -106,7 +106,7 @@
     align-items: center;
     border-radius: 5px;
     padding: 20px;
-    border: 1px solid #D3355B;
+    border: 1px solid var(--profile-page-avatar-wrp-border-color);
 }
 
 .profile_page_nickname {
@@ -116,7 +116,7 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 35px;
-    color: #FFFFFF;
+    color: var(--profile-page-nickname-color);
     margin-top: 10px;;
 }
 
@@ -135,11 +135,11 @@
     font-weight: 300;
     font-size: 20px;
     line-height: 29px;
-    color: #D3355B;
+    color: var(--profile-change-text-color);
     text-decoration: none;
     margin-top: 45px;
     &:hover {
-        color: #fff;
+        color: var(--profile-change-text-hover-color);
     }
 }
 
@@ -155,7 +155,7 @@
 #wp_user_profile_avatar_undo {
     display: block;
     cursor: pointer;
-    background: #D3355B;
+    background: var(--wp-user-profile-background-color);
     border: 0px;
     border-radius: 5px;
     padding: 10px;
@@ -165,13 +165,13 @@
     font-size: 18px;
     line-height: 26px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--wp-user-profile-text-color);
     margin-top: 5px;
     width: 300px;
     transition: .3s ease;
     &:hover {
-        background: #b42e4d;
-        border: 1px solid #b42e4d;
+        background: var(--wp-user-profile-hover-background-color);
+        border: 1px solid var(--wp-user-profile-hover-border-color);
     }
 }
 
@@ -179,17 +179,17 @@
     display: block;
     width: 300px;
     padding: 12px;
-    background-color: #272727;
-    border: 1px solid #D3355B;
+    background-color: var(--wp-user-regular-text-background-color);
+    border: 1px solid var(--wp-user-regular-text-border-color);
     border-radius: 5px;
     font-family: "Segoe UI";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
-    color: #666666;
+    color: var(--wp-user-regular-text-color);
     &:focus {
-        border: 1px solid #D3355B;
+        border: 1px solid var(--wp-user-regular-text-focus-border-color);
     }
 }
 
@@ -213,7 +213,7 @@
 .input-text.wp-user-profile-avatar-image {
     display: block;
     cursor: pointer;
-    background: #D3355B;
+    background: var(--wp-user-input-text-profile-avatar-background-color);
     border: 0px;
     border-radius: 5px;
     padding: 10px;
@@ -221,7 +221,7 @@
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
-    color: #FFFFFF;
+    color: var(--wp-user-input-text-profile-avatar-text-color);
     margin-top: 5px;
     width: 300px;
 }
@@ -235,6 +235,6 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 24px;
-    color: #D0DDB8;
+    color: var(--custom-pages-messages-color);
     margin-top: 10px;
 }

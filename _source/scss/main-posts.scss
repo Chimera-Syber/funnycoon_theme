@@ -24,7 +24,7 @@
     line-height: 32px;
     text-decoration: none;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--main-posts-title-color);
     margin: 12px 0px 20px 18px;
 }
 
@@ -55,7 +55,7 @@
     width: 320px;
     height: 280px;
     &:hover .main_post_title {
-        color: #D3355B;
+        color: var(--main-posts-link-hover-text-color);
     }
 }
 
@@ -80,7 +80,7 @@
     font-size: 20px;
     line-height: 19px;
     margin-bottom: 5px;
-    color: #fff;
+    color: var(--main-post-title-color);
 }
 
 
@@ -93,7 +93,7 @@
     font-size: 15px;
     line-height: 15px;
     margin-bottom: 5px;
-    color: rgb(179, 179, 179);
+    color: var(--main-post-desc-color);
 }
 
 .main_post_date_com_wrp {
@@ -109,7 +109,7 @@
     font-weight: 500;
     font-size: 15px;
     line-height: 103.19%;
-    color: #fff;
+    color: var(--main-post-date);
 }
 
 .main_post_comments {
@@ -118,7 +118,7 @@
     font-weight: 500;
     font-size: 15px;
     line-height: 103.19%;
-    color: #fff;
+    color: var(--main-post-comments-color);
 
     &::before {
         content: ' ';
@@ -140,7 +140,7 @@
     z-index: 11;
     width: 320px;
     height: 280px;
-    background: linear-gradient(180deg, rgba(34, 34, 34, 0) 0%, #222222 100%);
+    background: linear-gradient(180deg, var(--main-post-gradient-first-color) 0%, var(--main-post-gradient-second-color) 100%);
 }
 
 .main_post_img {
@@ -178,13 +178,13 @@
     border-radius: 5px;
     padding: 5px 20px;
     border: 0px;
-    background: linear-gradient(0deg, #C2DFE3, #C2DFE3);
+    background: linear-gradient(0deg, var(--funnycoon-loadmore-gradient-first-color), var(--funnycoon-loadmore-gradient-second-color));
     text-transform: uppercase;
     color: #1B1B1B;
 
     &:hover {
-        background: linear-gradient(0deg, #D3355B, #e44a6e);
-        color: #fff;
+        background: linear-gradient(0deg, var(--funnycoon-loadmore-gradient-hover-first-color), var(--funnycoon-loadmore-gradient-hover-second-color));
+        color: var(--funnycoon-loadmore-hover-text-color);
     }
 }
 
@@ -214,7 +214,7 @@
     line-height: 32px;
     text-decoration: none;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--main-posts-sidebar-title-color);
     margin: 12px 0px 20px 18px;
 }
 
@@ -239,11 +239,11 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 19px;
-    color: #fff;
+    color: var(--mps-post-card-title-color);
     margin-bottom: 5px;
     text-decoration: none;
     &:hover {
-        color: #D3355B;
+        color: var(--mps-post-card-title-hover-color);
     }
 }
 
@@ -270,6 +270,6 @@
     font-weight: 200;
     font-size: 15px;
     line-height: 15px;
-    color: #b3b3b3;
+    color: var(--mps-post-card-desc-color);
     margin-left: 9px;
 }

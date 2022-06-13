@@ -3,7 +3,7 @@
     width: 100%;
     padding-top: 7px;
     padding-bottom: 7px;
-    background-color: #000;
+    background-color: var(--main-hot-background-color);
 }
 
 .hot_title {
@@ -13,7 +13,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 29px;
-    color: #D3355B;
+    color: var(--hot-title-color);
 }
 
 .hot_tags {
@@ -26,13 +26,13 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    color: #fff;
+    color: var(--hot-tag-text-color);
     text-decoration: none;
     text-transform: uppercase;
     margin-left: 3px;
     transition: color 0.3s ease;
 
     &:hover {
-        color: #D3355B;
+        color: var(--hot-tag-hover-text-color);
     }
 }

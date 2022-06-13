@@ -19,7 +19,7 @@
     font-weight: 600;
     font-size: 30px;
     line-height: 40px;
-    color: #FFFFFF;
+    color: var(--archive-title-color);
 }
 
 .archive_description {
@@ -32,7 +32,7 @@
     font-weight: 350;
     font-size: 22px;
     line-height: 29px;
-    color: #C7C7C7;
+    color: var(--archive-description-color);
 }
 
 .archive_posts_wrp {
@@ -50,7 +50,7 @@
     border-radius: 5px;
     width: 1000px;
     height: 260px;
-    background-color: #292424;
+    background-color: var(--archive-post-wrp-color);
 }
 
 .archive_post_img {
@@ -58,7 +58,7 @@
     height: 220px;
     object-fit: cover;
     box-sizing: border-box;
-    border: 1px solid #D3355B;
+    border: 1px solid var(--archive-post-img-border-color);
     border-radius: 5px;
 }
 
@@ -75,16 +75,17 @@
         text-decoration: none;
     }
     & a:hover > h3 {
-        color: #D3355B;
+        color: var(--archive-post-title-wrp-hover-color);
     }
 }
+
 .archive_post_title {
     font-family: 'Jost';
     font-style: normal;
     font-weight: 500;
     font-size: 25px;
     line-height: 25px;
-    color: #FFFFFF;
+    color: var(--archive-post-title-color);
 }
 
 .archive_post_author {
@@ -93,12 +94,12 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    color: #FFFFFF;
+    color: var(--archive-post-author-color);
 }
 
 .archive_author_nickname {
     text-decoration: none;
-    color: #D3355B;
+    color: var(--archive-author-nickname-color);
 }
 
 .archive_post_description {
@@ -107,7 +108,7 @@
     font-weight: 350;
     font-size: 20px;
     line-height: 21px;
-    color: #FFFFFF;
+    color: var(--archive-post-description-color);
 }
 
 .archive_post_date_comment_wrp {
@@ -122,7 +123,7 @@
     font-weight: 500;
     font-size: 15px;
     line-height: 103.19%;
-    color: #D7FBE5;
+    color: var(--archive-post-date-color);
 }
 
 .archive_post_comment_count {
@@ -131,7 +132,7 @@
     font-weight: 500;
     font-size: 15px;
     line-height: 103.19%;
-    color: #D7FBE5;
+    color: var(--archive-post-comment-count-color);
     text-decoration: none;
     position: relative;
     &:before {
@@ -155,8 +156,8 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    background-color: #272727;
-    border: 1px solid #2D2D2D;
+    background-color: var(--archive-author-info-background-color);
+    border: 1px solid var(--archive-author-info-border-color);
     border-radius: 10px;
     margin-left: 10px;
     margin-top: 41px;
@@ -193,7 +194,7 @@
     font-weight: 600;
     font-size: 30px;
     line-height: 43px;
-    color: #FFFFFF;
+    color: var(--archive-author-page-nickname-color);
 }
 
 .author_page_description {
@@ -203,7 +204,7 @@
     font-weight: 300;
     font-size: 22px;
     line-height: 86.69%;
-    color: #BAB5B5;
+    color: var(--archive-author-page-description-color);
 }
 
 .author_socials_list {
