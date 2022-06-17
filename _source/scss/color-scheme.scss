@@ -11,6 +11,7 @@
     --sidebar-adv-color: rgba(255, 0, 0, 0.2);
     --sidebar-posts-adv-color: rgba(255, 0, 0, 0.2);
     --sidebar-review-adv-color: rgba(255, 0, 0, 0.2);
+    --single-adv-background: rgba(255, 0, 0, 0.2);
 
     /** 
      * archive.scss
@@ -132,6 +133,11 @@
 
     --slider-gradient-first-color: rgba(0, 0, 0, 0);
     --slider-gradient-second-color: rgba(0, 0, 0, 0.8);
+    --slider-post-title-color: #fff;
+    --slider-post-info-color: #D7FBE5;
+    --slider-link-hover-color: #D3355B;
+    --slider-post-category-background-color: #D3355B;
+    --slider-post-category-text-color: #fff;
     
     /**
      * main.scss
@@ -144,5 +150,144 @@
     --body-webkit-scrollbar: #1d1d1d;
     --body-webkit-scrollbar-thumb-shadow: rgba(0,0,0,.3);
     --body-webkit-scrollbar-thumb: #555;
+
+    /**
+     * navigation.scss
+     */
+
+    --navigation-text-color: #fff;
+    --navigation-background-color: #222222;
+    --navigation-hover-active-background-color: #383838;
+
+    /**
+     * popups.scss
+     */
+
+    --popup-background-color: rgba(0, 0, 0, 0.8);
+    --popup-content-background-color: #fff;
+    --popup-content-text-color: #000;
+    --popup-title-color: #000;
+    --popup-subtitle-color: #000;
+    --form-message-color: #ce0000;
+    --form-message-border-color: #dfdfdf;
+    --form-message-background-color: #fbfbfb;
+    --error-color: #ce0000;
+    --popup-input-background: #fff;
+    --popup-input-border-color: #e0e0e0;
+    --popup-input-placeholder-color: #928787;
+    --buttons-background-color: #D3355B;
+    --buttons-border-color: #D3355B;
+    --buttons-text-color: #fff;
+    --buttons-hover-background-color: #b42e4d;
+    --buttons-hover-border-color: #b42e4d;
+    --forget-password-link-color: #6C6868;
+    --register-link-color: #D3355B;
+    --register-link-forget-color: #D3355B;
+    --popup-info-text-color: #6C6868;
+    --login-link-color: #D3355B;
+
+    /**
+     * primary-post-scss
+     */
+
+    --primary-posts-background-color: #C2DFE3;
+    --primary-posts-border-color: #1B1B1B;
+    --pps-title-color: #fff;
+    --pps-title-hover-color: #D3355B;
+    --pps-img-border-color: #1B1B1B;
+    --pps-gradient-first-color: rgba(0, 0, 0, 0);
+    --pps-gradient-second-color: rgba(0, 0, 0, 0.8);
+    --pps-category-background-color: #D3355B;
+    --pps-category-border-color: #1B1B1B;
+    --pps-category-text-color: #fff;
+    --primary-posts-button-border-color: #4F4F4F;
+    --primary-posts-button-text-color: #1B1B1B;
+    --primary-posts-hover-gradient-first-color: rgb(142, 234, 247);
+    --primary-posts-hover-gradient-second-color: rgba(194,223,227,1);
+
+    /** 
+     * single-page.scss
+     */
+
+    --single-preview-gradient-first-color: rgba(0, 0, 0, 0);
+    --single-preview-gradient-second-color: #111111;
+    --single-info-background-color: #111;
+    --single-breadcrumbs-color: #C4C4C4;
+    --single-breadcrumbs-a-color: #C4C4C4;
+    --single-breadcrumbs-a-last-child-color: #fff;
+    --single-post-title-color: #fff;
+    --single-author-wrp-color: #fff;
+    --single-author-a-color: #D3355B;
+    --single-author-nickname-color: #D3355B;
+    --single-post-content-color: #fff;
+    --single-post-content-a-color: #D3355B;
+    --single-post-content-ul-li-a-color: #D3355B;
+    --cat-item-a-color: #D3355B;
+    --wp-block-table-border-color: #fff;
+    --single-tag-title-color: #fff;
+    --single-tag-a-color: #fff;
+    --single-tag-a-hover-color: #D3355B;
+    --prev-post-wrp-background: #292424;
+    --prev-post-title-color: #fff;
+    --prev-post-link-a-color: #fff;
+    --prev-post-link-a-hover-color: #D3355B;
+    --prev-next-post-figure-background: #D3355B;
+    --next-post-wrp-background: #292424;
+    --next-post-title-color: #fff;
+    --next-post-link-a-color: #fff;
+    --next-post-link-a-hover-color: #D3355B;
+    --post-comments-title-color: #fff;
+    --comment-author-fn-color: #D3355B;
+    --comment-time-color: #fff;
+    --comment-edit-link-color: #fff;
+    --comment-text-p-color: #fff;
+    --comment-awaiting-moderation-color: #b8b8b8;
+    --comment-reply-a-color: #D3355B;
+    --comment-hr-border-color: rgba(255, 255, 255, 0.2);
+    --comment-reply-title-color: #fff;
+    --cancel-comment-reply-link-color: #D3355B;
+    --logged-in-as-a-color: #D3355B;
+    --logged-in-as-span-color: #fff;
+    --comment-form-comment-label-color: #fff;
+    --comment-form-comment-label-span-color: #D3355B;
+    --comment-form-comment-textarea-background-color: #232323;
+    --comment-form-comment-textarea-border-color: #121212;
+    --comment-form-comment-textarea-text-color: #656363;
+    --comment-form-comment-textarea-hover-border-color: #121212;
+    --submit-background: #D3355B;
+    --submit-color: #fff;
+
+    /** 
+     * tops-reviews.scss
+     */
+
+    --title-color: #fff;
+    --buttons-svg-border-color: #fff;
+    --buttons-svg-background-color: #1B1B1B;
+    --buttons-svg-hover-border-color: #D3355B;
+    --buttons-svg-hover-background-color: #000;
+    --buttons-svg-active-border-color: #D3355B;
+    --buttons-svg-active-background-color: #D3355B;
+    --reviews-slider-first-child-background-color: #000;
+    --reviews-slide-gradient-first-color: rgba(0, 0, 0, 0);
+    --reviews-slide-gradient-second-color: rgba(0, 0, 0, 0.8);
+    --reviews-slide-title-color: #fff;
+    --reviews-slide-time-comments-color: #D7FBE5;
+    --reviews-slide-comments-color: #D7FBE5;
+    --reviews-slide-title-color: #D3355B;
+    --reviews-slide-background-color: #000;
+    --tops-slide-background-color: #000;
+    --tops-slide-title-color: #fff;
+    --tops-slide-title-hover-color: #D3355B;
+    --tops-slide-time-comments-color: #D7FBE5;
+    --tops-slide-gradient-first-color: rgba(0, 0, 0, 0);
+    --tops-slide-gradient-secong-color: rgba(0, 0, 0, 0.8);
+    --tops-posts-card-border-color: #3F3F3F;
+    --tops-posts-card-title-color: #fff;
+    --tops-posts-card-title-hover-color: #D3355B;
+    --tops-posts-card-desc-color: #fff;
+    --tops-posts-card-time-color: #D7FBE5;
+    --tops-posts-card-comments-color: #D7FBE5;
+
 
 }

@@ -67,7 +67,7 @@
                 font-weight: 500;
                 font-size: 30px;
                 line-height: 43px;
-                color: #FFFFFF;
+                color: var(--slider-post-title-color);
                 padding-left: 32px;
             }
 
@@ -77,7 +77,7 @@
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 19px;
-                color: #D7FBE5;
+                color: var(--slider-post-info-color);
                 padding-left: 32px;
             }
         } 
@@ -101,7 +101,7 @@
         z-index: 2;
         width: 350px;
         height: 225px;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 43.23%, rgba(0, 0, 0, 0.8) 100%);
+        background: linear-gradient(180deg, var(--slider-gradient-first-color) 43.23%, var(--slider-gradient-second-color) 100%);
     }
 
     & > .slider_link {
@@ -111,7 +111,7 @@
         width: 350px;
         height: 225px;
         &:hover > .slide_info > .slider_post_info_wr > .slider_post_title {
-            color: #D3355B;
+            color: var(--slider-link-hover-color);
         }
     }
 
@@ -143,7 +143,7 @@
                 font-weight: 500;
                 font-size: 21px;
                 line-height: 84.5%;
-                color: #FFFFFF;
+                color: var(--slider-post-title-color);
                 padding-left: 32px;
             }
 
@@ -153,7 +153,7 @@
                 font-weight: 400;
                 font-size: 15px;
                 line-height: 18px;
-                color: #D7FBE5;
+                color: var(--slider-post-info-color);
                 padding-left: 32px;
                 margin-top: 5px;
             }
@@ -175,7 +175,7 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    background-color: #D3355B;
+    background-color: var(--slider-post-category-background-color);
     padding: 3px 10px;
     border-radius: 0px 0px 5px 0px;
     font-family: 'Jost', sans-serif;
@@ -184,7 +184,7 @@
     font-size: 16px;
     line-height: 23px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--slider-post-category-text-color);
 }
 
 

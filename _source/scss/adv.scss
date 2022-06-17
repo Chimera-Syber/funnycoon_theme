@@ -50,3 +50,21 @@
     height: 120px;
     background: var(--sidebar-review-adv-color);
 }
+
+
+// Advertisementin single page
+
+.single_adv_wrp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    margin-bottom: 36px;
+}
+
+.single_adv {
+    display: block;
+    width: 750px;
+    height: 300px;
+    background: var(--single-adv-background);
+}

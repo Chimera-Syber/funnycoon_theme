@@ -29,13 +29,13 @@
                         <h1 class="single_post_title"><?php the_title(); ?></h1>
                     </div>
                     <div class="single_author_wrp">
-                        <?php echo get_avatar( get_the_author_meta( 'ID' ), 50, '', get_the_author_meta( 'user_login' ), array(
+                        <?php echo get_avatar( get_the_author_meta( 'ID' ), 50, '', get_the_author_meta( 'user_nicename' ), array(
                             'class' => 'single_author_avatar',
                         ) ); 
                         
                         ?>
                         &nbsp;от&nbsp;
-                        <a href="#" class="single_author_nickname"><?php echo get_the_author_meta( 'user_login' ); ?></a>
+                        <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>" class="single_author_nickname"><?php echo get_the_author_meta( 'display_name' ); ?></a>
                         &nbsp;&mdash;&nbsp;
                         <?php echo the_date('d.m.Y'); ?>
                         &nbsp;в&nbsp;
