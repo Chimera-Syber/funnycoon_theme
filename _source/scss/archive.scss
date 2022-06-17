@@ -147,6 +147,9 @@
         width: 19px;
         height: 19px;
     }
+    &:hover {
+        color: var(--archive-post-comment-count-hover-color);
+    }
 }
 
 // Author page

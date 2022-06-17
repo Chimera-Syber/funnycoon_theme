@@ -700,6 +700,7 @@
 
 .comment-respond {
     margin-left: 18px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -739,6 +740,7 @@
         line-height: 103.19%;
         color: var(--comment-form-comment-textarea-text-color);
         padding: 18px;
+        margin-bottom: 5px;
         max-width: 980px;
         &:hover {
             border: 1px solid var(--comment-form-comment-textarea-hover-border-color);
@@ -748,6 +750,7 @@
 
 .submit {
     display: flex;
+    cursor: pointer;
     flex-direction: row;
     justify-content: center;
     align-items: center;

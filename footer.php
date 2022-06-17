@@ -5,17 +5,17 @@
             <a href="#"><img src="<?php echo get_template_directory_uri() . '/assets/img/test/mailru.png'; ?>"></a>
         </div>
         <div class="footer_1_right">
-            <a href="#"><img src="<?php echo get_template_directory_uri() . '/assets/img/icons/bottom-telegram.svg'; ?>"></a>
-            <a href="#"><img src="<?php echo get_template_directory_uri() . '/assets/img/icons/bottom-vk.svg'; ?>"></a>
-            <a href="#"><img src="<?php echo get_template_directory_uri() . '/assets/img/icons/bottom-trovo.svg'; ?>"></a>
+            <a href="https://t.me/funnycoon"><img src="<?php echo get_template_directory_uri() . '/assets/img/icons/bottom-telegram.svg'; ?>"></a>
+            <a href="https://vk.com/funny_coon"><img src="<?php echo get_template_directory_uri() . '/assets/img/icons/bottom-vk.svg'; ?>"></a>
+            <a href="https://trovo.live/Funnycoon"><img src="<?php echo get_template_directory_uri() . '/assets/img/icons/bottom-trovo.svg'; ?>"></a>
         </div>
     </div>
     <div class="container_footer_2">
         <div class="footer_2_left">
-            <a href="" class="footer_2_links">О проекте</a>
-            <a href="" class="footer_2_links">Реклама на сайте</a>
-            <a href="" class="footer_2_links">Обратная связь</a>
-            <a href="" class="footer_2_links">Пользовательское соглашение</a>
+            <a href="#" class="footer_2_links">О проекте</a>
+            <a href="#" class="footer_2_links">Реклама на сайте</a>
+            <a href="#" class="footer_2_links">Обратная связь</a>
+            <a href="#" class="footer_2_links">Пользовательское соглашение</a>
         </div>
         <div class="footer_2_right">
             <span class="rars">18+</span>

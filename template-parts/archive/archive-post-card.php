@@ -22,7 +22,7 @@ $time = human_time_diff(get_post_time('U'), current_time('timestamp')) . " " . _
         </span>
         <div class="archive_post_date_comment_wrp">
             <span class="archive_post_date"><?php echo $time; ?></span>
-            <a href="<?php echo $post_permalink; ?>" class="archive_post_comment_count"><?php echo get_comments_number(); ?></a>
+            <a href="<?php echo $post_permalink . '/#reply-title'; ?>" class="archive_post_comment_count"><?php echo get_comments_number(); ?></a>
         </div>
     </div>
 </div>

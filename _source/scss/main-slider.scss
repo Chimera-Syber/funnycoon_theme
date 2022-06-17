@@ -32,7 +32,11 @@
         z-index: 2;
         width: 700px;
         height: 450px;
-        background: linear-gradient(180deg, var(--slider-gradient-first-color) 43.23%, var(--slider-gradient-second-color) 100%);
+        background: radial-gradient(100.4% 100.4% at 50% 50%, var(--slider-gradient-first-color) 0,var(--slider-gradient-second-color) 100%);
+    }
+
+    &:hover > .slider_gradient {
+        background: radial-gradient(100.4% 100.4% at 50% 50%, var(--slider-gradient-hover-first-color) 0, var(--slider-gradient-hover-second-color) 100%);
     }
 
     & > .slider_link {
@@ -101,7 +105,11 @@
         z-index: 2;
         width: 350px;
         height: 225px;
-        background: linear-gradient(180deg, var(--slider-gradient-first-color) 43.23%, var(--slider-gradient-second-color) 100%);
+        background: radial-gradient(100.4% 100.4% at 50% 50%,var(--slider-gradient-first-color) 0,var(--slider-gradient-second-color) 100%);
+    }
+
+    &:hover > .slider_gradient {
+        background: radial-gradient(100.4% 100.4% at 50% 50%, var(--slider-gradient-hover-first-color) 0, var(--slider-gradient-hover-second-color) 100%);
     }
 
     & > .slider_link {

@@ -28,6 +28,7 @@
     --archive-post-description-color: #fff;
     --archive-post-date-color: #D7FBE5;
     --archive-post-comment-count-color: #D7FBE5;
+    --archive-post-comment-count-hover-color: #D33558;
     --archive-author-info-background-color: #272727;
     --archive-author-info-border-color: #2D2D2D;
     --archive-author-page-nickname-color: #fff;
@@ -89,6 +90,7 @@
     --sub-menu-background-color: #1B1B1B;
     --sub-menu-border-color: #fff;
     --menu-item-has-children-hover-text-color: #123;
+    --menu-item-a-hover: #D3355B;
     --profile-nichname-color: #fff;
     --profile-menu-link-text-color: #fff;
     --profile-menu-link-background-color: #262626;
@@ -131,8 +133,10 @@
      * main-slider.scss
      */
 
-    --slider-gradient-first-color: rgba(0, 0, 0, 0);
-    --slider-gradient-second-color: rgba(0, 0, 0, 0.8);
+    --slider-gradient-first-color: rgba(6,30,32,.2);
+    --slider-gradient-second-color: #061e20;
+    --slider-gradient-hover-first-color: rgba(0,0,0,.6);
+    --slider-gradient-hover-second-color: #000;
     --slider-post-title-color: #fff;
     --slider-post-info-color: #D7FBE5;
     --slider-link-hover-color: #D3355B;

@@ -132,13 +132,16 @@
     height: 62px;
     margin-left: 10px;
     margin-right: 20px;
-    & a {
+    & > a {
         font-family: 'Jost', sans-serif;
         font-weight: 400;
         font-size: 18px;
         line-height: 26px;
         text-decoration: none;
         color: var(--menu-item-a-text-color);
+    }
+    & > a:hover {
+        color: var(--menu-item-a-hover);
     }
 }
 
