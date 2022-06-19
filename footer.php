@@ -17,6 +17,7 @@
                     'container_class' => 'footer_2_left',
                     'menu_class' => 'nav_menu',
                     'walker' => new Funnycoon_Menu, 
+                    'fallback_cb' => '',
         ) ); ?>
         <div class="footer_2_right">
             <span class="rars">18+</span>

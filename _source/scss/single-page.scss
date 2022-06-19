@@ -704,6 +704,19 @@
     margin-bottom: 20px;
 }
 
+.must-log-in {
+    font-family: "Segoe UI", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 103.19%;
+    color: var(--must-log-in-color);
+    & > a {
+        text-decoration: none;
+        color: var(--must-log-in-link-color);
+    }
+}
+
 .comment-form-comment {
     display: flex;
     flex-direction: column;
