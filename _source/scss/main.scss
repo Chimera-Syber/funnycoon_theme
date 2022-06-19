@@ -1,5 +1,6 @@
 .body {
-    background-color: #180C1D;
+    background-color: var(--body-color);
+    min-height: 100vh;
 }
 
 .body.lock {
@@ -10,16 +11,18 @@
     display: block;
     position: relative;
     width: 1400px;
+    min-height: 100vh;
     margin: 0 auto;
     scroll-margin-top: 150px;
-    padding-top: 309px;
+    padding-top: 150px; // 309px for branding
     z-index: 1;
 }
 
 .funnycoon_main_wrapper {
     display: block;
-    background-color: #1B1B1B;
+    background-color: var(--main-wrapper);
     width: 100%;
+    min-height: 100vh;
     position: relative;
     border-radius: 5px 5px 0 0;
 }
@@ -29,20 +32,20 @@
 
 #body::-webkit-scrollbar-track
 {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  -webkit-box-shadow: inset 0 0 6px var(--body-webkit-shadow);
   border-radius: 10px;
-  background-color: #1d1d1d;
+  background-color: var(--body-webkit-scrollbar-track);
 }
 
 #body::-webkit-scrollbar
 {
   width: 12px;
-  background-color: #1d1d1d;
+  background-color: var(--body-webkit-scrollbar);
 }
 
 #body::-webkit-scrollbar-thumb
 {
   border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-  background-color: #555;
+  -webkit-box-shadow: inset 0 0 6px var(--body-webkit-scrollbar-thumb-shadow);
+  background-color: var(--body-webkit-scrollbar-thumb);
 }

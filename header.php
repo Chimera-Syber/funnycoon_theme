@@ -23,14 +23,14 @@
         <div class="container_header_1">
             <div class="header_1_wrapper">
                 <div class="header_1_social">
-                    <a href="#" class="funnycoon_header_icons telegram" target="_blank"></a>
-                    <a href="#" class="funnycoon_header_icons vk" target="_blank"></a>
+                    <a href="https://t.me/funnycoon" class="funnycoon_header_icons telegram" target="_blank"></a>
+                    <a href="https://vk.com/funny_coon" class="funnycoon_header_icons vk" target="_blank"></a>
                 </div>
                 <div class="logo">
                     <a class="logo_link" href="<?php echo get_home_url(); ?>"><?php echo get_bloginfo('name'); ?></a>
                 </div>
                 <div class="header_1_login_search">
-                    <a href="#" class="funnycoon_header_icons search" target="_blank"></a>
+                    <!-- For search icon -->
                     <?php if (is_user_logged_in()) { ?>
                         <div class="profile_info">
                             <a href="#" class="profile_wrp">
@@ -61,7 +61,8 @@
                     'container_class' => 'header_2_nav_menu',
                     'menu_class' => 'nav_menu',
                     'menu_id' => 'nav_menu',
-                    'walker' => new Funnycoon_Menu, 
+                    'walker' => new Funnycoon_Menu,
+                    'fallback_cb' => '',
                 ) ); ?>
             </div>
         </div>

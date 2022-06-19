@@ -19,7 +19,6 @@ $post_title = get_the_title();
     <a href="<?php echo esc_url( $post_permalink ); ?>" class="main_post_link">
         <div class="main_post_info_wrp">
             <span class="main_post_title"><?php echo esc_html( $post_title ); ?></span>
-            <span class="main_post_desc"><?php echo esc_html(the_excerpt_max_charlength(140)); ?></span>
             <div class="main_post_date_com_wrp">
                 <span class="main_post_date"><?php echo $time; ?></span>
                 <span class="main_post_comments"><?php echo get_comments_number(); ?></span>

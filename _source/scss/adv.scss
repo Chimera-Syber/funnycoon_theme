@@ -12,7 +12,7 @@
     display: block;
     width: 300px;
     height: 300px;
-    background: rgba(255, 0, 0, 0.2);
+    background: var(--sidebar-adv-color);
 }
 
 // Advertisement in main posts (after content)
@@ -30,7 +30,7 @@
     display: block;
     width: 1000px;
     height: 120px;
-    background: rgba(255, 0, 0, 0.2);
+    background: var(--sidebar-posts-adv-color);
 }
 
 // Advertisement in tops and review (after content) 
@@ -48,5 +48,23 @@
     display: block;
     width: 1000px;
     height: 120px;
-    background: rgba(255, 0, 0, 0.2);
+    background: var(--sidebar-review-adv-color);
+}
+
+
+// Advertisementin single page
+
+.single_adv_wrp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    margin-bottom: 36px;
+}
+
+.single_adv {
+    display: block;
+    width: 750px;
+    height: 300px;
+    background: var(--single-adv-background);
 }

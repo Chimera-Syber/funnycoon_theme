@@ -36,7 +36,7 @@ if ( ! class_exists( 'Funnycoon_Walker_Comment' ) ) {
                                 $comment_author = get_comment_author( $comment );
                                 $comment_author_link_profile = '#';
 
-                                $comment_time = human_time_diff( strtotime( $comment->comment_date ), current_time( 'timestamp', 1 ) ) . " " . __('назад');
+                                $comment_time = human_time_diff( strtotime( $comment->comment_date ), current_time( 'timestamp', 0 ) ) . " " . __('назад');
                                 printf(
                                     '<a href="%2$s" class="comment_author_fn">%1$s</a>',
                                     esc_html( $comment_author ),

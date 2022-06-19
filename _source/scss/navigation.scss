@@ -11,7 +11,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    color: #fff;
+    color: var(--navigation-text-color);
     text-decoration:none;
 }
  
@@ -23,7 +23,7 @@
 .navigation li a:hover,
 .navigation li.active a,
 .navigation li.disabled {
-    background-color: #222222;
+    background-color: var(--navigation-background-color);
     border-radius: 3px;
     cursor: pointer;
     padding: 12px;
@@ -32,5 +32,5 @@
  
 .navigation li a:hover,
 .navigation li.active a {
-    background-color: #383838;
+    background-color: var(--navigation-hover-active-background-color);
 }
