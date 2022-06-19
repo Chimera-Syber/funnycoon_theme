@@ -217,16 +217,6 @@
         padding-left: 70px;
     }
 
-    
-
-    & > .cat-item {
-        & > a {
-            text-decoration: none;
-            color: #D3355B;
-        }
-    }
-    
-
     & > .wp-block-embed {
         display: flex;
         flex-direction: column;
@@ -329,6 +319,10 @@
             line-height: 26px;
         }
     }
+}
+
+.wp-block-post-excerpt__excerpt {
+    
 }
 
 // Tags
