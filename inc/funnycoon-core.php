@@ -93,6 +93,7 @@ require trailingslashit( get_template_directory() ) . 'inc/funnycoon-handlers.ph
      add_theme_support( 'post-thumbnails' );
      register_nav_menus( array(
          'header_menu' => "Меню в header'e",
+         'footer_menu' => "Меню в footer'e",
      ) );
  }
  add_action('after_setup_theme', 'funnycoon_setup');

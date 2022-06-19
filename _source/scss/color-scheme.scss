@@ -72,8 +72,6 @@
 
     --footer-background-color: #1B1B1B;
     --container-footer-1-border-color: #fff;
-    --footer-2-links-text-color: #fff;
-    --footer-2-links-hover-text-color: #D3355B;
     --rars-border-color: #fff;
     --rars-text-color: #fff;
     --copyright-text-color: #fff;
@@ -162,6 +160,15 @@
     --navigation-text-color: #fff;
     --navigation-background-color: #222222;
     --navigation-hover-active-background-color: #383838;
+
+    /**
+     * page.scss 
+     */
+
+    --page-content-color: #fff;
+    --page-title-color: #fff;
+    --page-list-link-color: #D3355B;
+    --page-link-color: #D3355B;
 
     /**
      * popups.scss
@@ -278,7 +285,7 @@
     --reviews-slide-title-color: #fff;
     --reviews-slide-time-comments-color: #D7FBE5;
     --reviews-slide-comments-color: #D7FBE5;
-    --reviews-slide-title-color: #D3355B;
+    --reviews-slide-title-hover-text-color: #D3355B;
     --reviews-slide-background-color: #000;
     --tops-slide-background-color: #000;
     --tops-slide-title-color: #fff;

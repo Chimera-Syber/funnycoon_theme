@@ -45,20 +45,6 @@
     margin-left: 50px;
 }
 
-.footer_2_links {
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 26px;
-    color: var(--footer-2-links-text-color);
-    text-decoration: none;
-    margin-right: 20px;
-    &:hover {
-        color: var(--footer-2-links-hover-text-color);
-    }
-}
-
 .footer_2_right {
     display: flex;
     flex-direction: row;

@@ -11,12 +11,13 @@
         </div>
     </div>
     <div class="container_footer_2">
-        <div class="footer_2_left">
-            <a href="#" class="footer_2_links">О проекте</a>
-            <a href="#" class="footer_2_links">Реклама на сайте</a>
-            <a href="#" class="footer_2_links">Обратная связь</a>
-            <a href="#" class="footer_2_links">Пользовательское соглашение</a>
-        </div>
+        <?php wp_nav_menu( array(
+                    'theme_location' => 'footer_menu',
+                    'container' => 'div',
+                    'container_class' => 'footer_2_left',
+                    'menu_class' => 'nav_menu',
+                    'walker' => new Funnycoon_Menu, 
+        ) ); ?>
         <div class="footer_2_right">
             <span class="rars">18+</span>
             <div class="footer_2_copyright">
