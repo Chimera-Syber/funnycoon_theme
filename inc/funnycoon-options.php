@@ -32,11 +32,11 @@ function funnycoon_get_main_slider_options() {
 
       return array(
         'pinterest'  => 'Pinterest',
-        'youtube'   => 'Youtube',
-        'reddit'    => 'Reddit',
-        'vk'        => 'Вконтакте',
-        'twitch'    => 'Twitch',
-        'url'       => 'Сайт',
+        'youtube'    => 'Youtube',
+        'reddit'     => 'Reddit',
+        'vk'         => 'Вконтакте',
+        'twitch'     => 'Twitch',
+        'user_url'   => 'Сайт',
       );
 
   }
