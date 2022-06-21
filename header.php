@@ -23,8 +23,7 @@
         <div class="container_header_1">
             <div class="header_1_wrapper">
                 <div class="header_1_social">
-                    <a href="https://t.me/funnycoon" class="funnycoon_header_icons telegram" target="_blank"></a>
-                    <a href="https://vk.com/funny_coon" class="funnycoon_header_icons vk" target="_blank"></a>
+                    <?php echo funnycoon_get_social_links('header'); ?>
                 </div>
                 <div class="logo">
                     <a class="logo_link" href="<?php echo get_home_url(); ?>"><?php echo get_bloginfo('name'); ?></a>
