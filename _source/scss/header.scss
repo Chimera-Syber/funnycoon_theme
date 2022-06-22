@@ -40,7 +40,7 @@
     align-items: center;
 }
 
-.funnycoon_header_icons {
+.funnycoon_header_icons, .funnycoon_footer_icons {
     display: block;
     margin-right: 20px;
     &.telegram {
@@ -55,6 +55,62 @@
         background-repeat: no-repeat;
         background-position: center center;
         height: 17px;
+        width: 28px;
+    }
+    &.youtube {
+        background-image: url('../img/icons/youtube.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 28px;
+        width: 28px;
+    }
+    &.reddit {
+        background-image: url('../img/icons/reddit.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 28px;
+        width: 28px;
+    }
+    &.twitch {
+        background-image: url('../img/icons/twitch.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 28px;
+        width: 28px;
+    }
+    &.pinterest {
+        background-image: url('../img/icons/pinterest.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 28px;
+        width: 28px;
+    }
+    &.discord {
+        background-image: url('../img/icons/discord.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 28px;
+        width: 28px;
+    }
+    &.yandexzen {
+        background-image: url('../img/icons/yandexzen.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 28px;
+        width: 28px;
+    }
+    &.trovo {
+        background-image: url('../img/icons/trovo.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 28px;
+        width: 28px;
+    }
+    &.instagram {
+        background-image: url('../img/icons/instagram.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 28px;
         width: 28px;
     }
     &.search {

@@ -5,9 +5,7 @@
             <a href="#"><img src="<?php echo get_template_directory_uri() . '/assets/img/test/mailru.png'; ?>"></a>
         </div>
         <div class="footer_1_right">
-            <a href="https://t.me/funnycoon"><img src="<?php echo get_template_directory_uri() . '/assets/img/icons/bottom-telegram.svg'; ?>"></a>
-            <a href="https://vk.com/funny_coon"><img src="<?php echo get_template_directory_uri() . '/assets/img/icons/bottom-vk.svg'; ?>"></a>
-            <a href="https://trovo.live/Funnycoon"><img src="<?php echo get_template_directory_uri() . '/assets/img/icons/bottom-trovo.svg'; ?>"></a>
+            <?php echo funnycoon_get_social_links('footer'); ?>
         </div>
     </div>
     <div class="container_footer_2">

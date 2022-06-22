@@ -154,3 +154,70 @@ function funnycoon_reviews_tops_section($wp_customizer) {
 };
 
 add_action('customize_register', 'funnycoon_reviews_tops_section');
+
+/**
+ * Social icons menu for header and footer
+ */
+
+function funnycoon_social_icons_header_footer($wp_customizer) {
+
+    $wp_customizer->add_panel('funnycoon_social_icons', array(
+        'title' => 'Social icons',
+    ) );
+
+    $wp_customizer->add_section('funnycoon_social_icons_header', array( 
+        'title' => 'Header social icons',
+        'panel' => 'funnycoon_social_icons',
+
+    ) );
+
+    // Section for header
+
+    foreach( social_icons() as $key => $name) {
+
+        $setting_name = 'funnycoon_social_icons_header_' . $key;
+
+        $wp_customizer->add_setting( $setting_name, array(
+            'default'   => '',
+            'transport' => 'refresh',
+        ) );
+
+        $wp_customizer->add_control( $setting_name, array(
+            'type' => 'string',
+            'label' => $name,
+            'description' => 'Добавить ' . $name,
+            'section' => 'funnycoon_social_icons_header',
+        ) );
+
+    }
+
+    // Section for footer
+
+    $wp_customizer->add_section('funnycoon_social_icons_footer', array( 
+        'title' => 'Footer social icons',
+        'panel' => 'funnycoon_social_icons',
+    ) );
+
+    foreach( social_icons() as $key => $name ) {
+
+        $setting_name = 'funnycoon_social_icons_footer_' . $key;
+
+        $wp_customizer->add_setting( $setting_name, array( 
+            'default' => '',
+            'transport' => 'refresh',
+        ) );
+    
+        $wp_customizer->add_control( $setting_name, array(
+            'type' => 'string',
+            'label' => $name,
+            'description' => 'Добавить ' . $name,
+            'section' => 'funnycoon_social_icons_footer',
+        ) );
+
+    }
+
+    
+
+}
+
+add_action('customize_register', 'funnycoon_social_icons_header_footer' );

@@ -242,7 +242,12 @@ function funnycoon_numeric_posts_nav() {
  
 }
 
-// Socials on author page
+/**
+ * 
+ *  Socials on author page
+ * 
+ * @return $output string
+ */
 
 function get_socials_author_page() {
 
@@ -281,5 +286,50 @@ function get_socials_author_page() {
     }
 
     return $output;
+
+}
+
+/**
+ * 
+ * Social links in header and footer
+ * You get string with link to all social links, which is add in setting menu
+ * 
+ * @return string
+ * 
+ */
+
+function funnycoon_get_social_links( $place ) {
+
+    if( $place === 'header' ) {
+        $setting_name = 'funnycoon_social_icons_header_';
+    } elseif ( $place === 'footer' ) {
+        $setting_name = 'funnycoon_social_icons_footer_';
+    }
+
+    foreach( social_icons() as $key => $name ) {
+
+        $setting_full_name = $setting_name . $key;
+        $setting_value = get_theme_mod( $setting_full_name );
+
+        
+        if( $place === 'header' and $setting_value ) {
+
+            printf(
+                '<a href="%s" class="funnycoon_header_icons %s" target="_blank"></a>',
+                $setting_value,
+                $key
+            );      
+
+        } elseif ( $place === 'footer' and $setting_value ) {
+
+            printf(
+                '<a href="%s" class="funnycoon_footer_icons %s" target="_blank"></a>',
+                $setting_value,
+                $key
+            );
+
+        }      
+
+    }
 
 }

@@ -19,7 +19,7 @@ get_header(); ?>
                 <div class="profile_page_avatar_wrp">
                     <?php echo $avatar_img_profile_page; ?>
                     <span class="profile_page_nickname"><?php echo $current_user_profile_page->user_login; ?></span>
-                    <a href="<?php echo home_url() . '/change-email'; ?>" class="profile_change_email_link">Редактировать пароль</a>
+                    <a href="<?php echo home_url() . '/change-email'; ?>" class="profile_change_email_link">Редактировать почту</a>
                     <a href="<?php echo home_url() . '/change-password'; ?>" class="profile_change_password_link">Редактировать пароль</a>
                 </div>
             </div>
