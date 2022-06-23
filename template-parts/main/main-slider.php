@@ -23,28 +23,27 @@
         $time = human_time_diff(get_post_time('U'), current_time('timestamp')) . " " . __('назад');
                
     ?>
-        <div class="slide">   
-            <div class="slider_gradient"></div>
-            <a href="<?php echo get_permalink($post) ?>" class="slider_link">
-                <div class="slide_info">
-                    <div class="slide_post_category_wr">
-                        <span class="slide_post_category"><?php echo $category; ?></span>
-                    </div>
-                    <div class="slider_post_info_wr">
-                        <span class="slider_post_title"><?php echo get_the_title($post); ?></span>
-                        <span class="slider_post_info">
-                            <?php 
-                            echo $time; 
-                            if ($key == 0) {
-                                echo " | ";
-                                comments_number('0 комментариев', '1 комментарий', '% коментариев');
-                            } ?>
-                        </span>
-                    </div>
+        
+        <div class="slide">
+            <div class="slider_post_info_wr">
+                <div class="slide_post_category_wr">
+                    <a href="<?php echo $category_link; ?>" class="slide_post_category"><?php echo $category; ?></a>
                 </div>
-            </a>
+                <a href="<?php echo get_permalink($post) ?>" class="slider_link"></a>
+                <span class="slider_post_title"><?php echo get_the_title($post); ?></span>
+                <span class="slider_post_info">
+                    <?php 
+                    echo $time; 
+                    if ($key == 0) {
+                        echo " | ";
+                        comments_number('0 комментариев', '1 комментарий', '% коментариев');
+                    } ?>
+                </span>
+            </div>
+            <div class="slider_gradient"></div>
             <img class="slide-image" src="<?php echo get_the_post_thumbnail_url($post, 'full'); ?>" alt="<?php echo get_the_title($post); ?>">
         </div>
+
    <?php } ?>
     
 </section>

@@ -22,8 +22,8 @@
                 </div>
                 <div class="single_info">
                     <div class="single_breadcrumbs">
-                        <a href="#">Главная</a>&nbsp;/&nbsp; 
-                        <?php echo get_the_category_list( '&nbsp;/&nbsp;'); ?>
+                        <?php echo funnycoon_custom_breacrumds(); ?>
+                        
                     </div>
                     <div class="single_title">
                         <h1 class="single_post_title"><?php the_title(); ?></h1>

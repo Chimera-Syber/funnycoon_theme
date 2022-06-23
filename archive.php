@@ -13,8 +13,7 @@ add_filter( 'get_the_archive_title', function( $title ){
             <div class="archive_posts">
                 <div class="archive_header">
                     <div class="single_breadcrumbs">
-                        <a href="#">Главная</a>&nbsp;/&nbsp; 
-                        <?php echo get_the_category_list( '&nbsp;/&nbsp;'); ?>
+                        <?php echo funnycoon_custom_breacrumds(); ?>
                     </div>
                     <?php the_archive_title( '<h1 class="archive_title">', '</h1>' ); ?>
                     <?php the_archive_description( '<div class="archive_description">', '</div>' ); ?>
