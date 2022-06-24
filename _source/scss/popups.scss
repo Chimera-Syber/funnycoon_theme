@@ -245,27 +245,11 @@
     }
 }
 
-.popup_info {
-    display: inline-flex;
-    justify-content: flex-start;
-    width: 300px;
-    margin-top: 23px;
-}
-
-.popup_info_text {
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 20px;
-    color: var(--popup-info-text-color);
-}
-
 .popup_login {
     display: inline-flex;
     justify-content: flex-end;
     width: 300px;
-    margin-top: 9px;
+    margin-top: 26px;
     position: relative;
 }
 

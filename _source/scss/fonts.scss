@@ -1,3 +1,30 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+$JostFontPath: '../fonts/Jost';
+$JostFontFamily: 'Jost';
+$JostFontVersion: 3.7;
+
+// Mixin
+@mixin font-face-jost($fontFamily, $fileName, $fontWeight, $fontStyle, $fontPath: $JostFontPath) {
+    @font-face {
+        font-family: $fontFamily;
+        src: url('#{$fontPath}/#{$fileName}.eot');
+        src: local('^'),
+        url('#{$fontPath}/#{$fileName}.eot?#iefix') format('embedded-opentype'),
+        url('#{$fontPath}/#{$fileName}.woff2?v=#{$JostFontVersion}') format('woff2'),
+        url('#{$fontPath}/#{$fileName}.woff?v=#{$JostFontVersion}') format('woff'),
+        url('#{$fontPath}/#{$fileName}.ttf?v=#{$JostFontVersion}') format('truetype');
+        font-weight: $fontWeight;
+        font-style: $fontStyle;
+    }
+}
+
+// Add Jost fonts
+@include font-face-jost($JostFontFamily, 'jost-extralight', 200, normal);
+@include font-face-jost($JostFontFamily, 'jost-light', 300, normal);
+@include font-face-jost($JostFontFamily, 'jost-regular', 400, normal);
+@include font-face-jost($JostFontFamily, 'jost-medium', 500, normal);
+@include font-face-jost($JostFontFamily, 'jost-semibold', 600, normal);
+@include font-face-jost($JostFontFamily, 'jost-bold', 700, normal);

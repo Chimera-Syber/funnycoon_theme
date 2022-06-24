@@ -64,6 +64,7 @@ function user_social_info() {
    *     'instagram'     => 'Instagram',
    *     'tenchat'       => 'Tenchat',
    *     'discord'       => 'Discord',
+   *     'rss'           => 'RSS',
    */
 
 function social_icons() {
@@ -79,6 +80,7 @@ function social_icons() {
         'yandexzen'     => 'YandexZen',
         'instagram'     => 'Instagram',
         'discord'       => 'Discord',
+        'rss'           => 'RSS',
     );
 
 }
