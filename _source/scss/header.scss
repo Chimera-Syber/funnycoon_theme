@@ -26,6 +26,11 @@
     margin: 0 auto;
 }
 
+.header_after_logo_wrp {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .header_2_wrapper {
     display: block;
     height: 100%;

@@ -14,9 +14,9 @@
 .archive_title {
     display: block;
     margin-left: 22px;
-    font-family: 'Segoe UI';
+    font-family: 'Jost';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 30px;
     line-height: 40px;
     color: var(--archive-title-color);
@@ -27,9 +27,9 @@
     margin-top: 5px;
     margin-left: 22px;
     margin-bottom: 20px;
-    font-family: 'Segoe UI';
+    font-family: 'Jost';
     font-style: normal;
-    font-weight: 350;
+    font-weight: 300;
     font-size: 22px;
     line-height: 29px;
     color: var(--archive-description-color);
@@ -103,9 +103,9 @@
 }
 
 .archive_post_description {
-    font-family: 'Segoe UI';
+    font-family: 'Jost';
     font-style: normal;
-    font-weight: 350;
+    font-weight: 300;
     font-size: 20px;
     line-height: 21px;
     color: var(--archive-post-description-color);

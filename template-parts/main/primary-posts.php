@@ -13,6 +13,6 @@
         <?php primary_post_query($tag_id); ?>
     </div>
     <a href="<?php echo $tag_link; ?>" class="primary_posts_button">
-        Посмотреть еще
+        Все материалы по теме
     </a>
 </section>

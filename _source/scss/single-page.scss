@@ -49,7 +49,7 @@
 
 .single_breadcrumbs {
     display: inline-flex;
-    font-family: 'Segoe UI';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -84,7 +84,7 @@
 .single_author_wrp {
     display: inline-flex;
     align-items: center;
-    font-family: 'Segoe UI';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -117,7 +117,7 @@
     display: block;
     color: var(--single-post-content-color);
     & > p {
-        font-family: 'Segoe UI';
+        font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
@@ -134,7 +134,7 @@
     }
 
     & > h1 {
-        font-family: 'Segoe UI';
+        font-family: 'Roboto';
         font-style: normal;
         font-size: 35px;
         line-height: 26px;
@@ -144,7 +144,7 @@
     }
 
     & > h2 {
-        font-family: 'Segoe UI';
+        font-family: 'Roboto';
         font-style: normal;
         font-size: 33px;
         line-height: 26px;
@@ -154,7 +154,7 @@
     }
 
     & > h3 {
-        font-family: 'Segoe UI';
+        font-family: 'Roboto';
         font-style: normal;
         font-size: 30px;
         line-height: 26px;
@@ -164,7 +164,7 @@
     }
     
     & > h4 {
-        font-family: 'Segoe UI';
+        font-family: 'Roboto';
         font-style: normal;
         font-size: 27px;
         line-height: 26px;
@@ -174,7 +174,7 @@
     }
 
     & > h5 {
-        font-family: 'Segoe UI';
+        font-family: 'Roboto';
         font-style: normal;
         font-size: 25px;
         line-height: 26px;
@@ -184,7 +184,7 @@
     }
 
     & > h6 {
-        font-family: 'Segoe UI';
+        font-family: 'Roboto';
         font-style: normal;
         font-size: 24px;
         line-height: 26px;
@@ -193,8 +193,13 @@
         padding-bottom: 10px;
     }
 
+    & > iframe {
+        display: block;
+        margin: 0 auto;
+    }
+
     & > ul {
-        font-family: 'Segoe UI';
+        font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
@@ -209,7 +214,7 @@
     }
 
     & > ol {
-        font-family: 'Segoe UI';
+        font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
@@ -238,7 +243,7 @@
             justify-content: center;
             width: 100%;
             margin-top: 10px;
-            font-family: 'Segoe UI';
+            font-family: 'Roboto';
             font-style: italic;
             font-weight: 300;
             font-size: 20px;
@@ -255,7 +260,7 @@
 
     & > blockquote {
         & > p {
-            font-family: 'Segoe UI';
+            font-family: 'Roboto';
             font-style: italic;
             font-weight: 400;
             font-size: 20px;
@@ -265,7 +270,7 @@
         & > cite {
             display: flex;
             justify-content: flex-end;
-            font-family: 'Segoe UI';
+            font-family: 'Roboto';
             font-style: italic;
             font-weight: 300;
             line-height: 26px;
@@ -276,7 +281,7 @@
     & > .wp-block-pullquote {
         & > blockquote {
             & > p {
-                font-family: 'Segoe UI';
+                font-family: 'Roboto';
                 font-style: italic;
                 font-weight: 400;
                 font-size: 20px;
@@ -286,7 +291,7 @@
             & > cite {
                 display: flex;
                 justify-content: center;
-                font-family: 'Segoe UI';
+                font-family: 'Roboto';
                 font-style: italic;
                 font-weight: 300;
                 line-height: 26px;
@@ -305,7 +310,7 @@
         }
 
         & > figcaption {
-            font-family: 'Segoe UI';
+            font-family: 'Roboto';
             font-style: italic;
             font-weight: 300;
             font-size: 20px;
@@ -322,7 +327,7 @@
             justify-content: center;
             width: 100%;
             margin-top: 10px;
-            font-family: 'Segoe UI';
+            font-family: 'Roboto';
             font-style: italic;
             font-weight: 300;
             font-size: 20px;
@@ -500,7 +505,7 @@
 }
 
 .post_comments_title {
-    font-family: 'Segoe UI';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -595,7 +600,7 @@
     display: block;
     margin-top: 19px;
     & p {
-        font-family: 'Segoe UI';
+        font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
@@ -605,7 +610,7 @@
 }
 
 .comment-awaiting-moderation {
-    font-family: 'Segoe UI';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -658,7 +663,7 @@
 }
 
 .comment-reply-title {
-    font-family: 'Segoe UI';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -668,7 +673,7 @@
 }
 
 #cancel-comment-reply-link {
-    font-family: 'Segoe UI';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -681,7 +686,7 @@
 .logged-in-as {
     margin-top: 13px;
     & a {
-        font-family: 'Segoe UI';
+        font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -690,7 +695,7 @@
         text-decoration: none;
     }
     & span {
-        font-family: 'Segoe UI';
+        font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -706,7 +711,7 @@
 }
 
 .must-log-in {
-    font-family: "Segoe UI", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -723,17 +728,17 @@
     flex-direction: column;
     margin-top: 28px;
     & label {
-        font-family: 'Segoe UI';
+        font-family: 'Roboto';
         font-style: normal;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 18px;
         line-height: 103.19%;
         color: var(--comment-form-comment-label-color);
         margin-bottom: 21px;
         & span {
-            font-family: 'Segoe UI';
+            font-family: 'Roboto';
             font-style: normal;
-            font-weight: 600;
+            font-weight: 700;
             font-size: 18px;
             line-height: 103.19%;
             color: var(--comment-form-comment-label-span-color);
@@ -747,9 +752,9 @@
         background-color: var(--comment-form-comment-textarea-background-color);
         border: 1px solid var(--comment-form-comment-textarea-border-color);
         border-radius: 5px;
-        font-family: 'Segoe UI';
+        font-family: 'Roboto';
         font-style: normal;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 18px;
         line-height: 103.19%;
         color: var(--comment-form-comment-textarea-text-color);
@@ -771,6 +776,7 @@
     padding: 10px 15px;
     background: var(--submit-background);
     border-radius: 5px;
+    border: 0px;
     font-family: 'Jost';
     font-style: normal;
     font-weight: 400;

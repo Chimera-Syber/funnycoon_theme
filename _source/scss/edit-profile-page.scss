@@ -31,7 +31,7 @@
 .profile_section_title {
     display: block;
     width: 100%;
-    font-family: 'Segoe UI';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
@@ -52,9 +52,9 @@
 
 .profile_label {
     display: block;
-    font-family: 'Segoe UI';
+    font-family: 'Roboto';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 18px;
     line-height: 24px;
     color: var(--profile-label-color);
@@ -68,7 +68,7 @@
     background-color: var(--profile-input-background-color);
     border: 1px solid var(--profile-input-border-color);
     border-radius: 5px;
-    font-family: 'Segoe UI';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -182,7 +182,7 @@
     background-color: var(--wp-user-regular-text-background-color);
     border: 1px solid var(--wp-user-regular-text-border-color);
     border-radius: 5px;
-    font-family: "Segoe UI";
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -194,7 +194,7 @@
 }
 
 .form-table p {
-    font-family: "Segoe UI";
+    font-family: "Roboto";
     margin: 5px 0px 5px 0px;
 }
 
@@ -230,9 +230,9 @@
 
 .custom_pages_messages {
     display: block;
-    font-family: "Segoe UI";
+    font-family: "Roboto";
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 18px;
     line-height: 24px;
     color: var(--custom-pages-messages-color);
