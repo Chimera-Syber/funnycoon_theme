@@ -64,7 +64,7 @@ function popular_posts_query() {
 		],
 		'orderby' => 'meta_value_num',
 		'order' => 'DESC',
-		'posts_per_page' => 5,
+		'posts_per_page' => 6,
 	];
 
 	$query = new WP_Query( $args );

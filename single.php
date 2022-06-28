@@ -93,12 +93,12 @@
 
                         </div>
                     </div>
-                    <div class="tops_sidebar_title">
-                        <span class="title">Самое обсуждаемое</span>
-                    </div>
-                    <div class="tops_posts_wrp">
-                        <?php top_comments_posts_query(); ?>
-                    </div>
+                </div>
+                <div class="tops_sidebar_title">
+                    <span class="title">Самое обсуждаемое</span>
+                </div>
+                <div class="tops_posts_wrp">
+                    <?php top_comments_posts_query(); ?>
                 </div>
             </div>
         </div>

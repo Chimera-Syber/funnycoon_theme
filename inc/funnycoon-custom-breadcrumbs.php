@@ -207,7 +207,7 @@ function funnycoon_custom_breacrumds() {
     if( is_paged() ) {
 
         $current_page = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : get_query_var( 'page' );
-        $page_addon = $before . sprintf( __( ' ( Page %s ) ' ), number_format_i18n( $current_page ) ) . $after;
+        $page_addon = '&nbsp;' . sprintf( __( ' ( Страница %s ) ' ), number_format_i18n( $current_page ) );
 
     }
 

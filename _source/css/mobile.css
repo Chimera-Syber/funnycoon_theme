@@ -1,0 +1,13 @@
+/**
+ * Mobile styling
+ */
+@media (max-width: 1024px) {
+  .container_header_1 {
+    width: 1024px;
+  }
+
+  .header_1_wrapper {
+    width: 1024px;
+    margin: 0;
+  }
+}
