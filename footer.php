@@ -14,7 +14,7 @@
                     'container' => 'div',
                     'container_class' => 'footer_2_left',
                     'menu_class' => 'nav_menu',
-                    'walker' => new Funnycoon_Menu, 
+                    'walker' => new Funnycoon_Main_Menu, 
                     'fallback_cb' => '',
         ) ); ?>
         <div class="footer_2_right">
@@ -27,6 +27,7 @@
     </div>
 </footer>
 <?php get_template_part('/template-parts/account/login-popups'); ?>
+<?php get_template_part('/template-parts/mobile/mobile-menu'); ?>
 
 <?php wp_footer(); ?>
 

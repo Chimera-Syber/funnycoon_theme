@@ -99,6 +99,7 @@ function add_favicon() {
      register_nav_menus( array(
          'header_menu' => "Меню в header'e",
          'footer_menu' => "Меню в footer'e",
+         'mobile_menu' => "Мобильное меню",
      ) );
  }
  add_action('after_setup_theme', 'funnycoon_setup');

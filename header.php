@@ -62,7 +62,7 @@
                     'container_class' => 'header_2_nav_menu',
                     'menu_class' => 'nav_menu',
                     'menu_id' => 'nav_menu',
-                    'walker' => new Funnycoon_Menu,
+                    'walker' => new Funnycoon_Main_Menu,
                     'fallback_cb' => '',
                 ) ); ?>
             </div>
