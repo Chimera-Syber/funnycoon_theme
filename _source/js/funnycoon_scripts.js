@@ -1,3 +1,5 @@
+// Popups script
+
 const body = document.querySelector('body');
 const lockPadding = document.querySelectorAll(".lock_padding");
 
@@ -94,3 +96,64 @@ document.addEventListener('keydown', function (e) {
         popupClose(popupActive);
     }
 });
+
+// Mobile menu script (burger)
+
+const burgerBtn = document.querySelector('#mobileMenuBurger');
+const mobileMenu = document.querySelector("#mobileMenu");
+
+function mobileMenuToggle() {
+    const mobileMenuActive = document.querySelector('.mobile_menu_open');
+    if (mobileMenuActive) {
+        mobileMenu.classList.remove('mobile_menu_open');
+    } else {
+        mobileMenu.classList.add('mobile_menu_open');
+    }
+}
+
+burgerBtn.addEventListener("click", function (e) {
+    mobileMenuToggle();
+});
+
+const mobileSidebar = document.querySelector('.mobile_sidebar');
+
+mobileSidebar.addEventListener("click", function (e) {
+    mobileMenuToggle();
+});
+
+
+// Mobile menu animation 
+
+const mobileMenuHasChilder = document.querySelectorAll('.mobile-menu-item-has-children');
+
+if (mobileMenuHasChilder.length > 0) {
+
+    for (let index = 0; index < mobileMenuHasChilder.length; index++) {
+        const el = mobileMenuHasChilder[index];
+        el.addEventListener("click", function (e) {
+                      
+
+            const child = el.querySelector('.mobile-sub-menu');
+            if (child.classList.contains('mobile-sub-menu-open')) {
+
+                const AllOpenElement = document.querySelectorAll('.mobile-sub-menu-open');
+                for(let index = 0; index < AllOpenElement.length; index++) {
+                    AllOpenElement[index].classList.remove('mobile-sub-menu-open');
+                }
+
+
+            } else {
+
+                const AllOpenElement = document.querySelectorAll('.mobile-sub-menu-open');
+                for(let index = 0; index < AllOpenElement.length; index++) {
+                    AllOpenElement[index].classList.remove('mobile-sub-menu-open');
+                }
+
+                child.classList.add('mobile-sub-menu-open');
+            }
+            
+            
+        });
+    
+    }
+}

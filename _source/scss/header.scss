@@ -142,6 +142,15 @@
     }
 }
 
+.mobile_burger {
+    display: none;    
+    & > img {
+        padding: 5px;
+        border-radius: 5px;
+        background-color: #4E4E4E;
+    }
+}
+
 .logo {
     display: flex;
     justify-content: center;

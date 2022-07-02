@@ -1,49 +1,103 @@
 // z-index: 9991
 
+.mobile_nav_menu_container {
+    padding: 10px;
+}
+
+.mobileMenu {
+    display: none;
+    position: fixed;
+    z-index: 9991;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.mobile_memu_wrp {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 100vw;
+    height: 100vh;
+}
+
+.menu_wrp {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.mobile-menu-item {
+    display: block;
+    & > a {
+        font-family: 'Jost';
+        font-size: 29px;
+        font-weight: 400;
+        color: #000;
+        text-decoration: none;
+    }
+
+}
+
+.mobile_menu_open {
+    display: flex;
+}
+
+
+.mobile-sub-menu {
+    display: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.mobile-sub-menu-open {
+    display: block;
+    animation: sub_menu_anim ease 0.5s;
+    
+    & > .mobile-menu-item {
+
+        border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+
+        & > a {
+            padding-left: 5px;
+            font-family: 'Jost';
+            font-size: 20px;
+            font-weight: 300;
+            color: #A0A0A0;
+            text-decoration: none;
+        }
+    }
+}
+
+
+.mobile_sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.menu_close {
+    display: block;
+    margin-top: 5px;
+    font-family: 'Jost';
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
 @media (max-width: 1100px) {
 
-    #mobileMenu {
+    .mobile_burger {
         display: flex;
-        position: fixed;
-        z-index: 9991;
-        width: 100%;
-        height: 100%;
-        top: 0;
-    }
-
-    .mobile_memu_wrp {
-        display: grid;
-        grid-template-columns: 90% 10%;
-        width: 100vw;
-        height: 100vh;
-    }
-
-    .menu_wrp {
-        display: flex;
-        flex-direction: column;
-        background-color: #fff;
-    }
-
-    .mobile-menu-item {
-        color: #000;
-
-    }
-
-    .mobile_sidebar {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
-        background-color: rgba(0,0,0,0.8);
     }
 
-    .menu_close {
-        display: block;
-        margin-top: 5px;
-        font-family: 'Jost';
-        font-size: 30px;
-        font-weight: 400;
-        color: #fff;
+    .header_1_social {
+        display: none;
     }
 
 }

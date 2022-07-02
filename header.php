@@ -22,6 +22,9 @@
     <header class="header lock_padding">
         <div class="container_header_1">
             <div class="header_1_wrapper">
+                <div id="mobileMenuBurger" class="mobile_burger">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/img/icons/burger.svg'; ?>">
+                </div>
                 <div class="logo">
                     <a class="logo_link" href="<?php echo get_home_url(); ?>"><?php echo get_bloginfo('name'); ?></a>
                 </div>

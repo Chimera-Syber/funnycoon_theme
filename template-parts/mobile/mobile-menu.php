@@ -1,6 +1,6 @@
 <?php ?>
 
-<div id="mobileMenu"> <!-- class="popup" -->
+<div id="mobileMenu" class="mobileMenu"> <!-- class="popup" -->
     <div class="mobile_memu_wrp">
         <div class="menu_wrp">
             <?php wp_nav_menu( array(

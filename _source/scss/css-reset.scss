@@ -6,8 +6,8 @@
     box-sizing: border-box;
 }
 
-ul[class],
-ol[class] {
+ul,
+ol {
     padding: 0;
     list-style: none;
 }
@@ -20,8 +20,8 @@ h4,
 h5,
 h6,
 p,
-ul[class],
-ol[class],
+ul,
+ol,
 li,
 figure,
 figcaption,
