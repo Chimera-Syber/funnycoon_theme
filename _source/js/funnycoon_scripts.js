@@ -122,21 +122,22 @@ mobileSidebar.addEventListener("click", function (e) {
 });
 
 
-// Mobile menu animation 
+// Mobile menu animation    
 
-const mobileMenuHasChilder = document.querySelectorAll('.mobile-menu-item-has-children');
+/* 
+let mobileMenuHasChilder = document.querySelectorAll('.mobile-menu-item-has-children');
 
 if (mobileMenuHasChilder.length > 0) {
 
     for (let index = 0; index < mobileMenuHasChilder.length; index++) {
-        const el = mobileMenuHasChilder[index];
+        let el = mobileMenuHasChilder[index];
         el.addEventListener("click", function (e) {
                       
 
-            const child = el.querySelector('.mobile-sub-menu');
+            let child = el.querySelector('.mobile-sub-menu');
             if (child.classList.contains('mobile-sub-menu-open')) {
 
-                const AllOpenElement = document.querySelectorAll('.mobile-sub-menu-open');
+                let AllOpenElement = document.querySelectorAll('.mobile-sub-menu-open');
                 for(let index = 0; index < AllOpenElement.length; index++) {
                     AllOpenElement[index].classList.remove('mobile-sub-menu-open');
                 }
@@ -144,7 +145,7 @@ if (mobileMenuHasChilder.length > 0) {
 
             } else {
 
-                const AllOpenElement = document.querySelectorAll('.mobile-sub-menu-open');
+                let AllOpenElement = document.querySelectorAll('.mobile-sub-menu-open');
                 for(let index = 0; index < AllOpenElement.length; index++) {
                     AllOpenElement[index].classList.remove('mobile-sub-menu-open');
                 }
@@ -152,6 +153,84 @@ if (mobileMenuHasChilder.length > 0) {
                 child.classList.add('mobile-sub-menu-open');
             }
             
+            
+        });
+    
+    }
+}
+
+*/ /*
+
+let mobileMenuHasChilder = document.querySelectorAll('.mobile-menu-item-has-children');
+console.log(mobileMenuHasChilder);
+
+if (mobileMenuHasChilder.length > 0) {
+
+    for (let index = 0; index < mobileMenuHasChilder.length; index++) {
+        let el = mobileMenuHasChilder[index];
+        el.addEventListener("click", function (e) {
+
+          const parent = this.closest('.mobile-menu-item-has-children');
+          const child = parent.querySelector('.mobile-menu-item-has-children');
+          console.log(parent);
+          console.log(child);
+          if (child) {
+            if (child.classList.contains('open')) {
+                child.classList.remove('open');
+                parent.classList.remove('open');
+            } else {
+                if(parent.classList.contains('open')) {
+                    child.classList.add('open');
+                    parent.classList.add('open');
+                } else {
+                    parent.classList.add('open');
+                }
+            }
+
+          } else {
+            console.log('Main else');
+
+            if (parent.classList.contains('open')) {
+                parent.classList.remove('open');
+            } else {
+                parent.classList.add('open');
+            }
+
+          }
+            
+        });
+    
+    }
+}
+
+*/
+
+let mobileMenuHasChilder = document.querySelectorAll('.mobile-menu-item-has-children');
+console.log(mobileMenuHasChilder);
+
+if (mobileMenuHasChilder.length > 0) {
+
+    for (let index = 0; index < mobileMenuHasChilder.length; index++) {
+        let el = mobileMenuHasChilder[index];
+        el.addEventListener("click", function (e) {
+
+            let menu = this.closest('.mobile-menu-item-has-children');
+
+            if(menu.parentNode.classList.contains('mobile-sub-menu')) {
+                if(menu.classList.contains('open')) {
+                    menu.classList.remove('open');
+                    menu.parentNode.classList.remove('mobile-sub-menu-open');
+                } else {
+                    menu.classList.add('open');
+                    menu.parentNode.classList.add('mobile-sub-menu-open');
+                }
+            } else {
+                if (menu.classList.contains('open')) {
+                    menu.classList.remove('open');
+                } else {
+                    menu.classList.add('open');
+                }
+            }
             
         });
     

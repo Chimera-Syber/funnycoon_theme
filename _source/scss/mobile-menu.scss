@@ -24,6 +24,7 @@
     display: flex;
     flex-direction: column;
     background-color: #fff;
+    overflow-x: auto;
 }
 
 .mobile-menu-item {
@@ -40,6 +41,42 @@
 
 .mobile_menu_open {
     display: flex;
+}
+
+.mobile-menu-item-has-children {
+    & > a::after {
+        content: ' ';
+        display: inline-block;
+        background-image: url('../img/icons/arrow-bottom.svg');
+        background-repeat: no-repeat;
+        background-position: center center; 
+        margin-left: 3px;
+        height: 7px;
+        width: 11px;
+        transition: transform 0.5s ease;
+    }
+}
+
+.mobile-menu-item-has-children.open {
+    & > .mobile-sub-menu {
+        display: block;
+        animation: sub_menu_anim ease 0.5s;
+
+        & > .mobile-menu-item {
+
+            border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+    
+            & > a {
+                padding-left: 5px;
+                font-family: 'Jost';
+                font-size: 20px;
+                font-weight: 300;
+                color: #A0A0A0;
+                text-decoration: none;
+            }
+        }
+
+    }
 }
 
 
