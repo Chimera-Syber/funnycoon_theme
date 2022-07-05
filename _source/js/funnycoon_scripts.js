@@ -34,6 +34,10 @@ if (popupCloseIcon.length > 0) {
 function popupOpen(currentPopup) {
     if (currentPopup && unlock) {
         const popupActive = document.querySelector('.popup.open');
+        const mobileMenuActive = document.querySelector('.mobile_menu_open');
+        if (mobileMenuActive) {
+            mobileMenuToggle(); 
+        }
         if (popupActive) {
             popupClose(popupActive, false);
         } else {
@@ -104,10 +108,13 @@ const mobileMenu = document.querySelector("#mobileMenu");
 
 function mobileMenuToggle() {
     const mobileMenuActive = document.querySelector('.mobile_menu_open');
+    const body = document.querySelector('#body');
     if (mobileMenuActive) {
         mobileMenu.classList.remove('mobile_menu_open');
+        body.classList.remove('mobile_body');
     } else {
         mobileMenu.classList.add('mobile_menu_open');
+        body.classList.add('mobile_body');
     }
 }
 
@@ -124,89 +131,27 @@ mobileSidebar.addEventListener("click", function (e) {
 
 // Mobile menu animation    
 
-/* 
+
 let mobileMenuHasChilder = document.querySelectorAll('.mobile-menu-item-has-children');
 
-if (mobileMenuHasChilder.length > 0) {
-
-    for (let index = 0; index < mobileMenuHasChilder.length; index++) {
-        let el = mobileMenuHasChilder[index];
-        el.addEventListener("click", function (e) {
-                      
-
-            let child = el.querySelector('.mobile-sub-menu');
-            if (child.classList.contains('mobile-sub-menu-open')) {
-
-                let AllOpenElement = document.querySelectorAll('.mobile-sub-menu-open');
-                for(let index = 0; index < AllOpenElement.length; index++) {
-                    AllOpenElement[index].classList.remove('mobile-sub-menu-open');
-                }
+/**
+ * Function for delete classes
+ * 
+ * @param {*} elementClass - element by class or id (with . or #);
+ * @param {*} classToDelete - element for delete
+ * 
+ * @return delete class in elements
+ */
 
 
-            } else {
+function openElementsClose(elementClass, classToDelete) {
 
-                let AllOpenElement = document.querySelectorAll('.mobile-sub-menu-open');
-                for(let index = 0; index < AllOpenElement.length; index++) {
-                    AllOpenElement[index].classList.remove('mobile-sub-menu-open');
-                }
-
-                child.classList.add('mobile-sub-menu-open');
-            }
-            
-            
-        });
-    
+    let allOpenElement = document.querySelectorAll(elementClass);
+    for(let index = 0; index < allOpenElement.length; index++) {
+        allOpenElement[index].classList.remove(classToDelete);
     }
+
 }
-
-*/ /*
-
-let mobileMenuHasChilder = document.querySelectorAll('.mobile-menu-item-has-children');
-console.log(mobileMenuHasChilder);
-
-if (mobileMenuHasChilder.length > 0) {
-
-    for (let index = 0; index < mobileMenuHasChilder.length; index++) {
-        let el = mobileMenuHasChilder[index];
-        el.addEventListener("click", function (e) {
-
-          const parent = this.closest('.mobile-menu-item-has-children');
-          const child = parent.querySelector('.mobile-menu-item-has-children');
-          console.log(parent);
-          console.log(child);
-          if (child) {
-            if (child.classList.contains('open')) {
-                child.classList.remove('open');
-                parent.classList.remove('open');
-            } else {
-                if(parent.classList.contains('open')) {
-                    child.classList.add('open');
-                    parent.classList.add('open');
-                } else {
-                    parent.classList.add('open');
-                }
-            }
-
-          } else {
-            console.log('Main else');
-
-            if (parent.classList.contains('open')) {
-                parent.classList.remove('open');
-            } else {
-                parent.classList.add('open');
-            }
-
-          }
-            
-        });
-    
-    }
-}
-
-*/
-
-let mobileMenuHasChilder = document.querySelectorAll('.mobile-menu-item-has-children');
-console.log(mobileMenuHasChilder);
 
 if (mobileMenuHasChilder.length > 0) {
 
@@ -218,21 +163,30 @@ if (mobileMenuHasChilder.length > 0) {
 
             if(menu.parentNode.classList.contains('mobile-sub-menu')) {
                 if(menu.classList.contains('open')) {
+
                     menu.classList.remove('open');
                     menu.parentNode.classList.remove('mobile-sub-menu-open');
+
                 } else {
+                   
                     menu.classList.add('open');
                     menu.parentNode.classList.add('mobile-sub-menu-open');
+
                 }
             } else {
                 if (menu.classList.contains('open')) {
+
                     menu.classList.remove('open');
+                    
+
                 } else {
+                    
+                    openElementsClose('.open', 'open');
+                    openElementsClose('.mobile-sub-menu-open', 'mobile-sub-menu-open');
                     menu.classList.add('open');
+
                 }
             }
-            
         });
-    
     }
 }
