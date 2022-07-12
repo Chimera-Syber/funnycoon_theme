@@ -151,6 +151,10 @@
 
 @media (max-width: 1100px) {
 
+    .header_2_nav_menu {
+        display: none;
+    }
+
     .mobile_burger {
         display: flex;
         justify-content: center;

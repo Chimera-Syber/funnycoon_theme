@@ -12,10 +12,12 @@
                 'walker' => new Funnycoon_Mobile_Menu,
                 'fallback_cb' => '',
             ) ); ?>
+            <?php if (!is_user_logged_in()) { ?>
             <div class="popup_forget_ps_reg">
                 <a href="#register" id="registerBtn" class="register_link_forget popup-link">Зарегистрироваться</a>
                 <a href="#login" id="loginBtn2" class="login_link popup-link">Авторизоваться</a>
             </div>
+            <?php } ?>
         </div>
         <div class="mobile_sidebar">
             <span class="menu_close">X</span>

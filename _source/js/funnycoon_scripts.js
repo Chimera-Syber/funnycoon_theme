@@ -108,13 +108,13 @@ const mobileMenu = document.querySelector("#mobileMenu");
 
 function mobileMenuToggle() {
     const mobileMenuActive = document.querySelector('.mobile_menu_open');
-    const body = document.querySelector('#body');
+    
     if (mobileMenuActive) {
         mobileMenu.classList.remove('mobile_menu_open');
-        body.classList.remove('mobile_body');
+        bodyUnLock();
     } else {
+        bodyLock()
         mobileMenu.classList.add('mobile_menu_open');
-        body.classList.add('mobile_body');
     }
 }
 
