@@ -32,6 +32,12 @@
         'ajax_nonce' => wp_create_nonce('tops_loadmore_post_nonce'),
     ) );
 
+    // Magnific image popup
+
+    wp_enqueue_script('magnific-js', get_stylesheet_directory_uri() . '/assets/js/magnific_popup/jquery.magnific-popup.js', array("jquery"), false );
+    wp_enqueue_script('magnific-js-2', get_stylesheet_directory_uri() . '/assets/js/magnific_popup/jquery.magnific-popup.min.js', array("jquery"), false );
+ 
+
 };
 
 add_action('wp_enqueue_scripts', 'funnycoon_scripts');

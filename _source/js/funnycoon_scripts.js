@@ -190,3 +190,21 @@ if (mobileMenuHasChilder.length > 0) {
         });
     }
 }
+
+// Magnific image popup
+
+jQuery(document).ready(function($) {
+ 
+    $(".funnycoon_image_in_post").magnificPopup({
+        delegate: 'a',
+        type: 'image',        
+        closeOnContentClick: true,
+        closeBtnInside: false,
+        mainClass: 'mfp-no-margins mfp-with-zoom',
+        zoom: {
+            enabled: true,
+            duration: 200
+        }
+    });
+ 
+});

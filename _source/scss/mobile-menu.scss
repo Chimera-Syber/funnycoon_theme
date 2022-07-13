@@ -3,7 +3,7 @@
 .menu_wrp {
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: var(--mobile-menu-wrp-background-color);
     align-items: center;
     overflow-x: auto;
 }
@@ -47,7 +47,7 @@
         font-family: 'Jost';
         font-size: 27px;
         font-weight: 400;
-        color: #000;
+        color: var(--mobile-menu-item-a-color);
         text-decoration: none;
     }
 

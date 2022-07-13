@@ -6,17 +6,26 @@ It's custom theme for site Funnycoon.ru.
 
 **Requirements**
 
-- Wordpress 5.9.3+
+- Wordpress 6.0.1+
 
 **Dependencies**
 
 - Post View Count - [https://ru.wordpress.org/plugins/wp-simple-post-view/](https://ru.wordpress.org/plugins/wp-simple-post-view/)
 
+
+**Used libraries**
+
+- Magnific-Popup - [https://github.com/dimsemenov/Magnific-Popup](https://github.com/dimsemenov/Magnific-Popup)
+
+**Guides** 
+
+For Magnific Popup use css style ```funnycoon_image_in_post``` for image
+
 ## Development map
 
 - [x] Main page
-- [ ] Single page
-- [ ] Tag and categories pages
-- [ ] Popups
-- [ ] Author page
-- [ ] Author settings page
+- [x] Single page
+- [x] Tag and categories pages
+- [x] Popups
+- [x] Author page
+- [x] Author settings page
