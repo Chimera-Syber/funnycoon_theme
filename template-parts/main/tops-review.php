@@ -13,7 +13,12 @@
             </div>
         </div>
         <div class="tops_reviews_adv_wrp">
-            <div class="tops_reviews_adv"></div>
+            <div class="tops_reviews_adv">
+            <?php 
+                $thirdBannerCode = get_theme_mod('funnycoon_third_banner');
+                printf($thirdBannerCode);
+            ?>
+            </div>
         </div>
         <div class="tops">
             <div class="title_and_buttons">

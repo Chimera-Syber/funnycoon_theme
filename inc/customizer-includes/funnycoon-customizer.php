@@ -21,6 +21,24 @@ function funnycoon_main_slider($wp_customizer) {
         'title'      => 'Слайдер на главной странице',
     ) );
 
+    global $post;
+
+    $listOfPosts = array();
+    
+    $args = array( 
+        'posts_per_page'   => 100,
+        'post_type'        => 'post',
+        'post_status'      => 'publish',
+        'suppress_filters' => false,
+    );
+
+    $posts = get_posts($args);
+
+    foreach( $posts as $post ) {
+         setup_postdata($post); 
+         $listOfPosts[$post->ID] = $post->ID . ' - ' .get_the_title( $post );
+    }
+
     for ($i = 1; $i <= 5; $i++) {
 
         $settingId = 'funnycoon_slide_' . $i;
@@ -32,9 +50,10 @@ function funnycoon_main_slider($wp_customizer) {
         ) );
     
         $wp_customizer->add_control($settingId, array(
-            'type'        => 'number',
+            'type'        => 'select',
             'label'       => $label,
             'description' => 'Вставьте в поле ID поста',
+            'choices'     => $listOfPosts,
             'section'     => 'funnycoon_main_slider',
         ) );
     };
@@ -51,6 +70,20 @@ function funnycoon_main_slider($wp_customizer) {
 
 function funnycoon_primary_posts($wp_customizer) {
 
+    $args = array(
+        'taxonomy'   => 'post_tag',
+        'orderby'    => 'name',
+        'hide_empty' => false,
+    );
+
+    $terms = get_terms( $args );
+
+    $listOfTags = array();
+
+    foreach($terms as $term) {
+        $listOfTags[$term->term_id] = $term->term_id . ' - ' . $term->name;  
+    }
+
     $wp_customizer->add_section('funnycoon_primary_posts', array(
         'title' => 'Primary posts',
     ) );
@@ -61,7 +94,8 @@ function funnycoon_primary_posts($wp_customizer) {
     ) );
 
     $wp_customizer->add_control('funnycoon_primary_tag', array(
-        'type'        => 'number',
+        'type'        => 'select',
+        'choices'     => $listOfTags,
         'label'       => 'Tag ID',
         'description' => 'Вставьте в поле ID тега',
         'section'     => 'funnycoon_primary_posts',
@@ -92,6 +126,20 @@ add_action('customize_register', 'funnycoon_primary_posts');
 
 function funnycoon_reviews_tops_section($wp_customizer) {
 
+    $args = array(
+        'taxonomy'   => 'post_tag',
+        'orderby'    => 'name',
+        'hide_empty' => false,
+    );
+
+    $terms = get_terms( $args );
+
+    $listOfTags = array();
+
+    foreach($terms as $term) {
+        $listOfTags[$term->term_id] = $term->term_id . ' - ' . $term->name;  
+    }
+
     $wp_customizer->add_section('funnycoon_reviews_tops', array(
         'title' => 'Reviews and Tops',
     ) );
@@ -118,7 +166,8 @@ function funnycoon_reviews_tops_section($wp_customizer) {
     ) );
 
     $wp_customizer->add_control('funnycoon_reviews_tops_reviews', array(
-        'type'        => 'number',
+        'type'        => 'select',
+        'choices'     => $listOfTags,
         'label'       => 'Tag ID for reviews',
         'description' => 'Вставьте в поле ID тега',
         'section'     => 'funnycoon_reviews_tops',
@@ -146,7 +195,8 @@ function funnycoon_reviews_tops_section($wp_customizer) {
     ) );
 
     $wp_customizer->add_control('funnycoon_reviews_tops_tops', array(
-        'type'        => 'number',
+        'type'        => 'select',
+        'choices'     => $listOfTags,
         'label'       => 'Tag ID for tops',
         'description' => 'Вставьте в поле ID тега',
         'section'     => 'funnycoon_reviews_tops',
@@ -221,3 +271,80 @@ function funnycoon_social_icons_header_footer($wp_customizer) {
 }
 
 add_action('customize_register', 'funnycoon_social_icons_header_footer' );
+
+/**
+ * Advertisement setting
+ */
+
+ function funnycoon_adv_settings($wp_customizer) {
+
+    $wp_customizer->add_panel('funnycoon_adv_panel', array(
+        'title' => 'Advertisement',
+    ) );
+
+    $wp_customizer->add_section('funnycoon_adv_section', array(
+        'title' => 'Banners',
+        'panel' => 'funnycoon_adv_panel',
+    ) );
+
+    // First banner
+
+    $wp_customizer->add_setting('funnycoon_first_banner', array(
+        'default'   => '',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customizer->add_control('funnycoon_first_banner', array(
+        'type'        => 'textarea',
+        'label'       => 'First banner',
+        'description' => 'Баннер 1000х120 на главной странице под основными поставки после кнопки "Загрузить еще"',
+        'section'     => 'funnycoon_adv_section',
+    ) );
+
+    // Second banner
+
+    $wp_customizer->add_setting('funnycoon_second_banner', array(
+        'default'   => '',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customizer->add_control('funnycoon_second_banner', array(
+        'type'        => 'textarea',
+        'label'       => 'Second banner',
+        'description' => 'Баннер 300x300 в сайдбаре',
+        'section'     => 'funnycoon_adv_section',
+    ) );
+
+    // Third banner
+
+    $wp_customizer->add_setting('funnycoon_third_banner', array(
+        'default'   => '',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customizer->add_control('funnycoon_third_banner', array(
+        'type'        => 'textarea',
+        'label'       => 'Third banner',
+        'description' => 'Баннер 1000x120 на главной странице под "Наши обзоры"',
+        'section'     => 'funnycoon_adv_section',
+    ) );
+
+    // Fourth banner
+    
+    $wp_customizer->add_setting('funnycoon_fourth_banner', array(
+        'default'   => '',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customizer->add_control('funnycoon_fourth_banner', array(
+        'type'        => 'textarea',
+        'label'       => 'Fourth banner',
+        'description' => 'Баннер 750x300 на странице поста',
+        'section'     => 'funnycoon_adv_section',
+    ) );
+
+
+ }
+
+ add_action('customize_register', 'funnycoon_adv_settings');
+

@@ -13,7 +13,9 @@
         </div>
         <div class="main_posts_adv_wrp">
             <div class="main_posts_adv">
-
+            <?php 
+                printf(get_theme_mod('funnycoon_first_banner'));
+            ?>
             </div>
         </div>
     </div>
@@ -26,7 +28,9 @@
                 <?php popular_posts_query(); ?>
                 <div class="main_posts_sidebar_adv_wrp">
                     <div class="main_posts_sidebar_adv">
-
+                    <?php 
+                        printf(get_theme_mod('funnycoon_second_banner'));
+                    ?>
                     </div>
                 </div>
             </div>
