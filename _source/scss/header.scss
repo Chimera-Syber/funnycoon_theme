@@ -45,6 +45,8 @@
     align-items: center;
 }
 
+// Header icons (desktop menu)
+
 .funnycoon_header_icons, .funnycoon_footer_icons {
     display: block;
     margin-right: 20px;
@@ -139,6 +141,90 @@
         background-position: center center;
         height: 24px;
         width: 18px;
+    }
+}
+
+// Header icons (mobile menu)
+
+.funnycoon_mobile_menu_icons {
+    display: block;
+    margin-right: 20px;
+    &.telegram-bl {
+        background-image: url('../img/icons/telegram-black.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 22px;
+        width: 25px;
+    }
+    &.vk-bl {
+        background-image: url('../img/icons/vk-black.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 17px;
+        width: 28px;
+    }
+    &.youtube-bl {
+        background-image: url('../img/icons/youtube.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 28px;
+        width: 28px;
+    }
+    &.reddit-bl {
+        background-image: url('../img/icons/reddit-black.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 28px;
+        width: 28px;
+    }
+    &.twitch-bl {
+        background-image: url('../img/icons/twitch-black.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 28px;
+        width: 28px;
+    }
+    &.pinterest-bl {
+        background-image: url('../img/icons/pinterest-black.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 28px;
+        width: 28px;
+    }
+    &.discord-bl {
+        background-image: url('../img/icons/discord-black.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 28px;
+        width: 28px;
+    }
+    &.yandexzen-bl {
+        background-image: url('../img/icons/yandexzen-black.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 28px;
+        width: 28px;
+    }
+    &.trovo-bl {
+        background-image: url('../img/icons/trovo-black.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 28px;
+        width: 28px;
+    }
+    &.instagram-bl {
+        background-image: url('../img/icons/instagram-black.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 28px;
+        width: 28px;
+    }
+    &.rss-bl {
+        background-image: url('../img/icons/rss-black.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 28px;
+        width: 28px;
     }
 }
 

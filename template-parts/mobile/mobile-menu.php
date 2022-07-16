@@ -1,7 +1,7 @@
 <?php ?>
 
 <div id="mobileMenu" class="mobileMenu"> <!-- class="popup" -->
-    <div class="mobile_memu_wrp">
+    <div class="mobile_menu_wrp">
         <div class="menu_wrp">
             <?php wp_nav_menu( array(
                 'theme_location' => 'mobile_menu',
@@ -18,6 +18,9 @@
                 <a href="#login" id="loginBtn2" class="login_link popup-link">Авторизоваться</a>
             </div>
             <?php } ?>
+            <div class="mobile_menu_social">
+                <?php echo funnycoon_get_social_links('mobile'); ?>
+            </div>
         </div>
         <div class="mobile_sidebar">
             <span class="menu_close">X</span>

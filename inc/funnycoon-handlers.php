@@ -304,6 +304,8 @@ function funnycoon_get_social_links( $place ) {
         $setting_name = 'funnycoon_social_icons_header_';
     } elseif ( $place === 'footer' ) {
         $setting_name = 'funnycoon_social_icons_footer_';
+    } elseif ( $place === 'mobile' ) {
+        $setting_name = 'funnycoon_social_icons_mobile_';
     }
 
     foreach( social_icons() as $key => $name ) {
@@ -328,7 +330,15 @@ function funnycoon_get_social_links( $place ) {
                 $key
             );
 
-        }      
+        }  elseif ( $place === 'mobile' and $setting_value ) {
+
+            printf(
+                '<a href="%s" class="funnycoon_mobile_menu_icons %s-bl" target="_blank"></a>',
+                $setting_value,
+                $key
+            );
+
+        }  
 
     }
 
