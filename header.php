@@ -13,6 +13,36 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Yandex.RTB -->
+	<script>window.yaContextCb=window.yaContextCb||[]</script>
+	<script src="https://yandex.ru/ads/system/context.js" async></script>
+
+     <!-- Yandex.Metrika counter -->
+     <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(88137850, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+        });
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/88137850" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9NCZB6507L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-9NCZB6507L');
+    </script>
+
     <?php wp_head(); 
     if ( is_singular() && get_option( 'thread_comments' ) )
 	    wp_enqueue_script( 'comment-reply' ); 
@@ -36,11 +66,11 @@
                         <!-- For search icon -->
                         <?php if (is_user_logged_in()) { ?>
                             <div class="profile_info">
-                                <a href="#" class="profile_wrp">
+                                <div class="profile_wrp">
                                     <?php echo $avatar_img; ?>
                                     <span class="profile_nickname"><?php echo $current_user->user_login; ?></span>
                                     <svg width="12" height="8" class="profile_arrow" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.9997 1.17C10.8123 0.983753 10.5589 0.879211 10.2947 0.879211C10.0305 0.879211 9.77707 0.983753 9.5897 1.17L5.9997 4.71L2.4597 1.17C2.27234 0.983753 2.01889 0.879211 1.7547 0.879211C1.49052 0.879211 1.23707 0.983753 1.0497 1.17C0.955976 1.26297 0.881582 1.37357 0.830813 1.49543C0.780044 1.61729 0.753906 1.74799 0.753906 1.88C0.753906 2.01202 0.780044 2.14272 0.830813 2.26458C0.881582 2.38644 0.955976 2.49704 1.0497 2.59L5.2897 6.83C5.38267 6.92373 5.49327 6.99813 5.61513 7.04889C5.73699 7.09966 5.86769 7.1258 5.9997 7.1258C6.13172 7.1258 6.26242 7.09966 6.38428 7.04889C6.50614 6.99813 6.61674 6.92373 6.7097 6.83L10.9997 2.59C11.0934 2.49704 11.1678 2.38644 11.2186 2.26458C11.2694 2.14272 11.2955 2.01202 11.2955 1.88C11.2955 1.74799 11.2694 1.61729 11.2186 1.49543C11.1678 1.37357 11.0934 1.26297 10.9997 1.17Z" fill="#717171"/></svg>
-                                </a>
+                                </div>
                                 <div class="profile_menu">
                                     <a href="<?php echo home_url() . '/edit-profile'; ?>" class="profile_menu_link">Мои настройки</a>
                                     <a href="<?php echo wp_logout_url( home_url() ); ?>" class="profile_menu_link">Выйти</a>

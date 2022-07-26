@@ -10,7 +10,7 @@
     wp_deregister_script( 'jquery' );
     wp_register_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js');
     wp_enqueue_script( 'jquery' );
-    wp_enqueue_style('funnycoon-styles', get_template_directory_uri() . '/assets/css/styles.css');
+    wp_enqueue_style('funnycoon-styles', get_template_directory_uri() . '/assets/css/styles.css', false, time());
     wp_enqueue_style('funnycoon-fontawesome', get_template_directory_uri() . '/assets/fontawesome/css/all.min.css');
     wp_enqueue_script('funnycoon-scripts', get_template_directory_uri() . '/assets/js/funnycoon_scripts.js', [], false, true);
     wp_enqueue_script('funnycoon-loadmore-script', get_template_directory_uri() . '/assets/js/funnycoon_loadmore.js', [], false, true);

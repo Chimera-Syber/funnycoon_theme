@@ -358,10 +358,8 @@
     align-items: center;
     height: 61px;
     text-decoration: none;
-    min-width: 180px;
     &:hover + .profile_menu {
-        visibility: visible;
-        opacity: 1;
+       display: flex;
     }
 }
 
@@ -391,14 +389,13 @@
 }
 
 .profile_menu {
-    display: flex;
+    display: none;
+    position: absolute;
     flex-direction: column;
     justify-content: center;
-    visibility: hidden;
-    opacity: 0;
+    min-width: 180px;
     &:hover {
-        visibility: visible;
-        opacity: 1;
+        display: flex;
     }
 }
 

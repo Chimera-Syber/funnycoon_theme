@@ -42,6 +42,18 @@
 
 }
 
+.archive_author_title {
+    font-family: "Roboto",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-posts-title-color);
+    margin: 12px 0px 20px 18px;
+}
+
 .archive_post_wrp {
     display: inline-flex;
     padding: 20px;
@@ -205,8 +217,8 @@
     font-family: 'Jost';
     font-style: normal;
     font-weight: 300;
-    font-size: 22px;
-    line-height: 86.69%;
+    font-size: 21px;
+    line-height: 113.69%;
     color: var(--archive-author-page-description-color);
 }
 

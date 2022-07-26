@@ -35,7 +35,7 @@
 
 .mobile_menu_wrp {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 70% 30%;
     width: 100vw;
     height: 100vh;
 }
@@ -172,5 +172,7 @@
     .header_1_social {
         display: none;
     }
+
+   
 
 }

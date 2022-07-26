@@ -28,10 +28,12 @@ function funnycoon_loadmore_ajax_handler( $initial_request = false ) {
 
     // Default Argument.
     $args = [
-        'post_type'      => 'post',
-        'post_status'    => 'publish',
-        'posts_per_page' => 9, // Number of posts per page - default
-        'paged'          => $page_no,
+        'post_type'           => 'post',
+        'post_status'         => 'publish',
+        'ignore_sticky_posts' => true,
+        'posts_per_page'      => 12, // Number of posts per page - default
+        'paged'               => $page_no,
+
     ];
 
     $query = new WP_Query( $args );
@@ -95,13 +97,14 @@ function funnycoon_review_loadmore_ajax_handler( $initial_request = false ) {
 
     // Default Argument.
     $args = [
-        'post_type'      => 'post',
-        'post_status'    => 'publish',
-        'tag_id' => $tag_id,
-        'orderby' => 'date',
-		'order' => 'DESC',
-        'posts_per_page' => 6, // Number of posts per page - default
-        'paged'          => $page_no,
+        'post_type'             => 'post',
+        'post_status'           => 'publish',
+        'ignore_sticky_posts'   => true,
+        'tag_id'                => $tag_id,
+        'orderby'               => 'date',
+		'order'                 => 'DESC',
+        'posts_per_page'        => 6, // Number of posts per page - default
+        'paged'                 => $page_no,
     ];
 
     $query = new WP_Query( $args );
@@ -172,13 +175,14 @@ function funnycoon_tops_loadmore_ajax_handler( $initial_request = false ) {
 
     // Default Argument.
     $args = [
-        'post_type'      => 'post',
-        'post_status'    => 'publish',
-        'tag_id' => $tag_id,
-        'orderby' => 'date',
-		'order' => 'DESC',
-        'posts_per_page' => 4, // Number of posts per page - default
-        'paged'          => $page_no,
+        'post_type'             => 'post',
+        'post_status'           => 'publish',
+        'ignore_sticky_posts'   => true,
+        'tag_id'                => $tag_id,
+        'orderby'               => 'date',
+		'order'                 => 'DESC',
+        'posts_per_page'        => 4, // Number of posts per page - default
+        'paged'                 => $page_no,
     ];
 
     $query = new WP_Query( $args );
