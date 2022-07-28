@@ -6,7 +6,7 @@
   * 1280px
   */
 
- @media (max-width: 1280px) {
+ @media screen and (max-width: 1280px) {
 
     .header_1_wrapper {
         width: 100%;
@@ -290,7 +290,7 @@
  * 1080px
  */
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
 
     .funnycoon_main {
         width: 100%;
@@ -386,6 +386,16 @@
 
     .archive_post_wrp {
         width: 100%;
+    }
+
+    .prev_post_wrp {
+        width: 100%;
+        margin: 5px;
+    }
+
+    .next_post_wrp {
+        width: 100%;
+        margin: 5px;
     }
 
     .menu-item {
@@ -487,7 +497,7 @@
  * 700px
  */
 
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
 
     .profile_nickname {
         display: none;
@@ -499,6 +509,15 @@
 
     .hot_tag {
         font-size: 11px;
+    }
+
+    .main_posts_posts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main_post {
+        justify-self: center;
     }
 
     .main_posts_sidebar_popular_posts {
@@ -535,7 +554,7 @@
 
 }
 
-@media (max-width: 690px) {
+@media screen and (max-width: 690px) {
 
     .reviews_slider {
         grid-template-columns: 250px 250px;
@@ -593,12 +612,45 @@
     }
 }
 
-@media (max-width: 670px) {
+@media screen and (max-width: 670px) {
 
     .menu-item {
         & > a {
             font-size: 13px;
         }
+    }
+
+    .archive_post_wrp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+    .archive_post_author {
+        margin: 10px 0px 10px 0px;
+    }
+
+    .archive_post_description {
+        margin: 10px 0px 10px 0px;
+    }
+
+    .prev_post_link a {
+        font-size: 17px;
+    }
+
+    .prev_post_wrp {
+        width: 100%;
+        margin: 5px;
+    }
+
+    .next_post_wrp {
+        width: 100%;
+        margin: 5px;
+    }
+
+    .next_post_wrp a {
+        font-size: 17px;
     }
 
     .copyright {
@@ -611,7 +663,21 @@
 
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 630px) {
+    .main_posts_posts {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    // Fix for wp admin panel
+
+    #wpadminbar {
+        position: fixed;
+    }    
 
     .single_post_title {
         font-size: 29px;
@@ -628,7 +694,7 @@
 
 }
 
-@media (max-width: 570px) {
+@media screen and (max-width: 570px) {
 
     .popup_forget_ps_reg {
         display: flex;
@@ -711,7 +777,7 @@
 
 }
 
-@media (max-width: 520px) {
+@media screen and (max-width: 520px) {
 
     .footer_1_right {
         display: none;
@@ -732,7 +798,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
 
     .primary_posts_slide:first-child {
         width: 380px;

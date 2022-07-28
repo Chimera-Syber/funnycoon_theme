@@ -49,3 +49,9 @@
   -webkit-box-shadow: inset 0 0 6px var(--body-webkit-scrollbar-thumb-shadow);
   background-color: var(--body-webkit-scrollbar-thumb);
 }
+
+// WP admin top bar fix
+
+#wpadminbar {
+  z-index: 9990;
+}
