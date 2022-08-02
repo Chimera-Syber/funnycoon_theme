@@ -34,12 +34,9 @@
                         ) ); 
                         
                         ?>
-                        &nbsp;от&nbsp;
                         <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>" class="single_author_nickname"><?php echo get_the_author_meta( 'display_name' ); ?></a>
                         &nbsp;&mdash;&nbsp;
                         <?php echo the_date('d.m.Y'); ?>
-                        &nbsp;в&nbsp;
-                        <?php echo get_the_category_list( ',&nbsp;'); ?>
                     </div>
                 </div>
                 <div class="single_post_content">

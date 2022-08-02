@@ -117,7 +117,7 @@
     display: block;
     color: var(--single-post-content-color);
     & > p {
-        font-family: 'Roboto';
+        font-family: 'Jost';
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
@@ -134,7 +134,7 @@
     }
 
     & > h1 {
-        font-family: 'Roboto';
+        font-family: 'Jost';
         font-style: normal;
         font-size: 35px;
         line-height: 26px;
@@ -144,7 +144,7 @@
     }
 
     & > h2 {
-        font-family: 'Roboto';
+        font-family: 'Jost';
         font-style: normal;
         font-size: 33px;
         line-height: 26px;
@@ -154,7 +154,7 @@
     }
 
     & > h3 {
-        font-family: 'Roboto';
+        font-family: 'Jost';
         font-style: normal;
         font-size: 30px;
         line-height: 26px;
@@ -164,7 +164,7 @@
     }
     
     & > h4 {
-        font-family: 'Roboto';
+        font-family: 'Jost';
         font-style: normal;
         font-size: 27px;
         line-height: 26px;
@@ -174,7 +174,7 @@
     }
 
     & > h5 {
-        font-family: 'Roboto';
+        font-family: 'Jost';
         font-style: normal;
         font-size: 25px;
         line-height: 26px;
@@ -184,7 +184,7 @@
     }
 
     & > h6 {
-        font-family: 'Roboto';
+        font-family: 'Jost';
         font-style: normal;
         font-size: 24px;
         line-height: 26px;
@@ -199,7 +199,7 @@
     }
 
     & > ul {
-        font-family: 'Roboto';
+        font-family: 'Jost';
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
@@ -215,7 +215,7 @@
     }
 
     & > ol {
-        font-family: 'Roboto';
+        font-family: 'Jost';
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
@@ -229,7 +229,7 @@
             justify-content: center;
             width: 100%;
             margin-top: 10px;
-            font-family: 'Roboto';
+            font-family: 'Jost';
             font-style: italic;
             font-weight: 300;
             font-size: 20px;
@@ -256,7 +256,7 @@
             justify-content: center;
             width: 100%;
             margin-top: 10px;
-            font-family: 'Roboto';
+            font-family: 'Jost';
             font-style: italic;
             font-weight: 300;
             font-size: 20px;
@@ -267,11 +267,109 @@
             justify-content: center;
             width: 75%;
             & > .twitter-tweet {
-                font-family: "Roboto";
+                font-family: 'Jost';
                 font-style: normal;
                 font-weight: 400;
                 font-size: 20px;
                 line-height: 26px;
+            }
+        }
+    }
+
+    & > .wp-block-columns {
+        margin-left: 10px;
+        margin-right: 10px;
+        & > .wp-block-column {
+            & > p {
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 28px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 21px;
+                padding-right: 11px;
+            }
+            & > h1 {
+                font-family: 'Jost';
+                font-style: normal;
+                font-size: 35px;
+                line-height: 28px;
+                padding-left: 21px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                & > a {
+                    color: var(--single-post-content-wp-colum-a-color);
+                    text-decoration: none;
+                } 
+            }
+            & > h2 {
+                font-family: 'Jost';
+                font-style: normal;
+                font-size: 33px;
+                line-height: 28px;
+                padding-left: 21px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                & > a {
+                    color: var(--single-post-content-wp-colum-a-color);
+                    text-decoration: none;
+                } 
+            }
+            & > h3 {
+                font-family: 'Jost';
+                font-style: normal;
+                font-size: 30px;
+                line-height: 28px;
+                padding-left: 21px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                & > a {
+                    color: var(--single-post-content-wp-colum-a-color);
+                    text-decoration: none;
+                } 
+            }
+            & > h4 {
+                font-family: 'Jost';
+                font-style: normal;
+                font-size: 27px;
+                line-height: 26px;
+                padding-left: 21px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                & > a {
+                    color: var(--single-post-content-wp-colum-a-color);
+                    text-decoration: none;
+                } 
+            }
+        
+            & > h5 {
+                font-family: 'Jost';
+                font-style: normal;
+                font-size: 25px;
+                line-height: 26px;
+                padding-left: 21px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                & > a {
+                    color: var(--single-post-content-wp-colum-a-color);
+                    text-decoration: none;
+                } 
+            }
+        
+            & > h6 {
+                font-family: 'Jost';
+                font-style: normal;
+                font-size: 24px;
+                line-height: 26px;
+                padding-left: 21px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                & > a {
+                    color: var(--single-post-content-wp-colum-a-color);
+                    text-decoration: none;
+                } 
             }
         }
     }
@@ -285,7 +383,7 @@
 
     & > blockquote {
         & > p {
-            font-family: 'Roboto';
+            font-family: 'Jost';
             font-style: italic;
             font-weight: 400;
             font-size: 20px;
@@ -295,7 +393,7 @@
         & > cite {
             display: flex;
             justify-content: flex-end;
-            font-family: 'Roboto';
+            font-family: 'Jost';
             font-style: italic;
             font-weight: 300;
             line-height: 26px;
@@ -306,7 +404,7 @@
     & > .wp-block-pullquote {
         & > blockquote {
             & > p {
-                font-family: 'Roboto';
+                font-family: 'Jost';
                 font-style: italic;
                 font-weight: 400;
                 font-size: 20px;
@@ -316,7 +414,7 @@
             & > cite {
                 display: flex;
                 justify-content: center;
-                font-family: 'Roboto';
+                font-family: 'Jost';
                 font-style: italic;
                 font-weight: 300;
                 line-height: 26px;
@@ -335,7 +433,7 @@
         }
 
         & > figcaption {
-            font-family: 'Roboto';
+            font-family: 'Jost';
             font-style: italic;
             font-weight: 300;
             font-size: 20px;
@@ -346,7 +444,7 @@
     & > .wp-block-table {
         & > table > tbody > tr > td {
             border: 1px solid var(--wp-block-table-border-color);
-            font-family: 'Roboto';
+            font-family: 'Jost';
             font-style: normal;
             font-weight: 400;
             font-size: 20px;
@@ -358,7 +456,7 @@
             justify-content: center;
             width: 100%;
             margin-top: 10px;
-            font-family: 'Roboto';
+            font-family: 'Jost';
             font-style: italic;
             font-weight: 300;
             font-size: 20px;
