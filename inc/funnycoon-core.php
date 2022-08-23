@@ -89,7 +89,7 @@ add_action( 'admin_head', 'add_favicon' );
 
 function add_favicon() {
     printf(
-    '<link rel="icon" type="image/svg+xml" href="' . get_template_directory_uri() . '/assets/favicon/favicon.svg">'
+    '<link rel="icon" type="image/x-icon" href="' . get_template_directory_uri() . '/assets/favicon/favicon.ico">'
     );
 }
  
@@ -130,8 +130,8 @@ function add_favicon() {
  add_filter('intermediate_image_sizes_advanced', 'devise_remove_default_image_sizes');
 
  /**
-  *  Add post state to the project page (Edit profile page, Email edit page, Change password page)
-  */
+ *  Add post state to the project page (Edit profile page, Email edit page, Change password page)
+ */
 
 function ecs_add_post_state( $post_states, $post ) {
 

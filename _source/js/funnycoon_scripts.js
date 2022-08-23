@@ -194,6 +194,10 @@ if (mobileMenuHasChilder.length > 0) {
 // Magnific image popup
 
 jQuery(document).ready(function($) {
+
+    $('.wp-block-image').each(function() {
+        $(this).addClass('funnycoon_image_in_post');
+    });
  
     $(".funnycoon_image_in_post").magnificPopup({
         delegate: 'a',

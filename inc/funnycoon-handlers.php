@@ -65,6 +65,7 @@ function popular_posts_query() {
 		'orderby' => 'meta_value_num',
 		'order' => 'DESC',
 		'posts_per_page' => 6,
+        'ignore_sticky_posts' => true, // ignore sticky posts
 	];
 
 	$query = new WP_Query( $args );
@@ -100,6 +101,7 @@ function primary_post_query( $tag_id ) {
 		'orderby' => 'date',
 		'order' => 'DESC',
 		'posts_per_page' => 5,
+        'ignore_sticky_posts' => true, // ignore sticky posts
 	];
 
 	$query = new WP_Query( $args );
@@ -149,9 +151,10 @@ function top_comments_posts_query() {
 				'after' => date( 'Y-m-d', strtotime('-30 days') ),
 			],
 		],
-		'orderby' => 'comment_count ',
-		'order' => 'DESC',
+        'order' => 'DESC',
+		'orderby' => 'comment_count',
 		'posts_per_page' => 10,
+        'ignore_sticky_posts' => true, // ignore sticky posts
 	];
 
 	$query = new WP_Query( $args );
