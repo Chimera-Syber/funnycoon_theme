@@ -1,0 +1,29 @@
+{
+  "name": "funnycoon",
+  "version": "0.0.5",
+  "description": "Main Theme of Site",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chimera-Syber/funnycoon_theme.git"
+  },
+  "author": "Martti Syber",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chimera-Syber/funnycoon_theme/issues"
+  },
+  "homepage": "https://funnycoon.ru",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-sass": "^5.1.0",
+    "gulp-scss": "^1.4.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.54.5"
+  }
+}
