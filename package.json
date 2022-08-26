@@ -24,6 +24,10 @@
     "gulp-sass": "^5.1.0",
     "gulp-scss": "^1.4.0",
     "gulp-sourcemaps": "^3.0.0",
+    "gulp-zip": "^5.1.0",
     "sass": "^1.54.5"
+  },
+  "dependencies": {
+    "gulp-utf8-convert": "^0.0.7"
   }
 }

@@ -12,6 +12,8 @@
     wp_enqueue_script( 'jquery' );
     wp_enqueue_style('funnycoon-styles', get_template_directory_uri() . '/assets/css/styles.css', false, time());
     wp_enqueue_style('funnycoon-fontawesome', get_template_directory_uri() . '/assets/fontawesome/css/all.min.css');
+    wp_enqueue_script('magnific-js', get_stylesheet_directory_uri() . '/assets/js/magnific_popup/jquery.magnific-popup.js', array("jquery"), false );
+    wp_enqueue_script('magnific-js-2', get_stylesheet_directory_uri() . '/assets/js/magnific_popup/jquery.magnific-popup.min.js', array("jquery"), false );
     wp_enqueue_script('funnycoon-scripts', get_template_directory_uri() . '/assets/js/funnycoon_scripts.js', [], false, time());
     wp_enqueue_script('funnycoon-loadmore-script', get_template_directory_uri() . '/assets/js/funnycoon_loadmore.js', [], false, time());
     wp_enqueue_script('funnycoon-review-loadmore-script', get_template_directory_uri() . '/assets/js/funnycoon_review_loadmore.js', [], false, time());
@@ -32,10 +34,6 @@
         'ajax_nonce' => wp_create_nonce('tops_loadmore_post_nonce'),
     ) );
 
-    // Magnific image popup
-
-    wp_enqueue_script('magnific-js', get_stylesheet_directory_uri() . '/assets/js/magnific_popup/jquery.magnific-popup.js', array("jquery"), false );
-    wp_enqueue_script('magnific-js-2', get_stylesheet_directory_uri() . '/assets/js/magnific_popup/jquery.magnific-popup.min.js', array("jquery"), false );
  
 
 };

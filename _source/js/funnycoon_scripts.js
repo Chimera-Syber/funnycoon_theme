@@ -198,17 +198,39 @@ jQuery(document).ready(function($) {
     $('.wp-block-image').each(function() {
         $(this).addClass('funnycoon_image_in_post');
     });
- 
+
+    // Translation for Magnific Popup
+
+    $.extend(true, $.magnificPopup.defaults, {
+        tClose: 'Закрыть (Esc)', 
+        tLoading: 'Загрузка...', 
+        gallery: {
+          tPrev: 'Предыдущее (Стрелка влево)', 
+          tNext: 'Следующее (Стрелка вправо)',
+          tCounter: '%curr% из %total%' 
+        },
+        image: {
+          tError: '<a href="%url%">Изображение</a> не было загружено.'
+        },
+        ajax: {
+          tError: '<a href="%url%">Контент</a> не был загружен.' 
+        }
+      });
+
     $(".funnycoon_image_in_post").magnificPopup({
         delegate: 'a',
         type: 'image',        
         closeOnContentClick: true,
-        closeBtnInside: false,
+        closeBtnInside: true,
         mainClass: 'mfp-no-margins mfp-with-zoom',
         zoom: {
             enabled: true,
-            duration: 200
-        }
+            duration: 200,
+            easing: 'ease-in-out'
+        },
+        gallery: {
+            enabled: true,
+        },
     });
  
 });
