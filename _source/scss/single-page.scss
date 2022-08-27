@@ -141,6 +141,10 @@
         line-height: 26px;
         padding: 20px;
         margin-bottom: 10px;
+        & > a {
+            color: var(--single-post-content-a-color);
+            text-decoration: none;
+        }
     }
 
     & > h2 {
@@ -150,6 +154,10 @@
         line-height: 26px;
         padding: 20px;
         margin-bottom: 10px;
+        & > a {
+            color: var(--single-post-content-a-color);
+            text-decoration: none;
+        }
     }
 
     & > h3 {
@@ -159,6 +167,10 @@
         line-height: 26px;
         padding: 10px 20px 10px 20px;
         margin-bottom: 10px;
+        & > a {
+            color: var(--single-post-content-a-color);
+            text-decoration: none;
+        }
     }
     
     & > h4 {
@@ -168,6 +180,10 @@
         line-height: 26px;
         padding: 10px 20px 10px 20px;
         margin-bottom: 10px;
+        & > a {
+            color: var(--single-post-content-a-color);
+            text-decoration: none;
+        }
     }
 
     & > h5 {
@@ -177,6 +193,10 @@
         line-height: 26px;
         padding: 10px 20px 10px 20px;
         margin-bottom: 10px;
+        & > a {
+            color: var(--single-post-content-a-color);
+            text-decoration: none;
+        }
     }
 
     & > h6 {
@@ -186,6 +206,10 @@
         line-height: 26px;
         padding: 10px 20px 10px 20px;
         margin-bottom: 10px;
+        & > a {
+            color: var(--single-post-content-a-color);
+            text-decoration: none;
+        }
     }
 
     & > iframe {
@@ -730,22 +754,22 @@
     display: block;
     margin-top: 19px;
     & p {
-        font-family: 'Roboto';
+        font-family: 'Jost';
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
-        line-height: 103.19%;
+        line-height: 27px;
         color: var(--comment-text-p-color);
     }
 }
 
 .comment-awaiting-moderation {
-    font-family: 'Roboto';
+    font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 103.19%;
-    color: var(--comment-awaiting-moderation-color);
+    line-height: 1;
+    color: var(--comment-awaiting-moderation-color) !important;
 }
 
 .depth-2 {
@@ -882,11 +906,11 @@
         background-color: var(--comment-form-comment-textarea-background-color);
         border: 1px solid var(--comment-form-comment-textarea-border-color);
         border-radius: 5px;
-        font-family: 'Roboto';
+        font-family: 'Jost';
         font-style: normal;
-        font-weight: 700;
+        font-weight: 400;
         font-size: 18px;
-        line-height: 103.19%;
+        line-height: 27px;
         color: var(--comment-form-comment-textarea-text-color);
         padding: 18px;
         margin-bottom: 5px;
@@ -915,3 +939,29 @@
     text-transform: uppercase;
     color: var(--submit-color);
 } 
+
+// Scroll bar fix
+
+#comment::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px var(--body-webkit-shadow);
+  border-radius: 10px;
+  background-color: var(--body-webkit-scrollbar-track);
+}
+
+#comment::-webkit-scrollbar
+{
+  width: 12px;
+  background-color: var(--body-webkit-scrollbar);
+}
+
+#comment::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px var(--body-webkit-scrollbar-thumb-shadow);
+  background-color: var(--body-webkit-scrollbar-thumb);
+}
+
+#comment::-webkit-resizer {
+    background-color: var(--comment-form-comment-textarea-background-color);
+}

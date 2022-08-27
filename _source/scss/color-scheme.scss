@@ -210,7 +210,7 @@
     --login-link-color: #D3355B;
 
     /**
-     * primary-post-scss
+     * primary-post.scss
      */
 
     --primary-posts-background-color: #C2DFE3;
@@ -227,6 +227,13 @@
     --primary-posts-button-text-color: #1B1B1B;
     --primary-posts-hover-gradient-first-color: rgb(142, 234, 247);
     --primary-posts-hover-gradient-second-color: rgba(194,223,227,1);
+
+    /** 
+     * simple-comment-editing.scss 
+     */
+    --sce-editing-link-color: #858585;
+    --sce-separator-color: #464646;
+    --sce-timer-color: #464646;
 
     /** 
      * single-page.scss
@@ -265,14 +272,14 @@
     --comment-time-color: #fff;
     --comment-edit-link-color: #fff;
     --comment-text-p-color: #fff;
-    --comment-awaiting-moderation-color: #b8b8b8;
+    --comment-awaiting-moderation-color: #FF0000;
     --comment-reply-a-color: #D3355B;
     --comment-hr-border-color: rgba(255, 255, 255, 0.2);
     --comment-reply-title-color: #fff;
     --cancel-comment-reply-link-color: #D3355B;
     --logged-in-as-a-color: #D3355B;
     --logged-in-as-span-color: #fff;
-    --must-log-in-color: #fff;
+    --must-log-in-color: #818181;
     --must-log-in-link-color: #D3355B;
     --comment-form-comment-label-color: #fff;
     --comment-form-comment-label-span-color: #D3355B;

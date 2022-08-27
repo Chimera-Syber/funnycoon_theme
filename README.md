@@ -11,15 +11,12 @@ It's custom theme for site Funnycoon.ru.
 **Dependencies**
 
 - Post View Count - [https://ru.wordpress.org/plugins/wp-simple-post-view/](https://ru.wordpress.org/plugins/wp-simple-post-view/)
+- Simple Comment Editing - [https://wordpress.org/plugins/simple-comment-editing/](https://wordpress.org/plugins/simple-comment-editing/)
 
 
 **Used libraries**
 
 - Magnific-Popup - [https://github.com/dimsemenov/Magnific-Popup](https://github.com/dimsemenov/Magnific-Popup)
-
-**Guides** 
-
-For Magnific Popup use css style ```funnycoon_image_in_post``` for image
 
 ## Development map
 
