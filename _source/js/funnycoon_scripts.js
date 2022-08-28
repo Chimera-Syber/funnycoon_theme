@@ -118,15 +118,19 @@ function mobileMenuToggle() {
     }
 }
 
-burgerBtn.addEventListener("click", function (e) {
-    mobileMenuToggle();
-});
+if (burgerBtn) {
+    burgerBtn.addEventListener("click", function (e) {
+        mobileMenuToggle();
+    });
+}
 
 const mobileSidebar = document.querySelector('.mobile_sidebar');
 
-mobileSidebar.addEventListener("click", function (e) {
-    mobileMenuToggle();
-});
+if (mobileSidebar) {
+    mobileSidebar.addEventListener("click", function (e) {
+        mobileMenuToggle();
+    });
+}
 
 
 // Mobile menu animation    
@@ -233,4 +237,20 @@ jQuery(document).ready(function($) {
         },
     });
  
+});
+
+// Measures for 404 page
+
+jQuery(document).ready(function($) {
+    let maxWidth404 = parseInt($(":root").css("--404-max-width")),
+        maxHeight404 = parseInt($(":root").css("--404-max-height")),
+        widthImage404 = parseInt($(":root").css("--start-image-w")),
+        heightImage404 = parseInt($(":root").css("--start-image-h")),
+        windowWidthSize = $(window).width(),
+        windowHeightSize = $(window).height(),
+        newWidthImage404 = widthImage404 * (windowWidthSize / maxWidth404),
+        newHeightImage404 = heightImage404 * (windowHeightSize / maxHeight404);
+
+    $(":root").css("--image-w", newWidthImage404 + 'px');
+    $(":root").css("--image-h", newHeightImage404 + 'px');
 });

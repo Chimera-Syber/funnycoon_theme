@@ -50,6 +50,10 @@
   background-color: var(--body-webkit-scrollbar-thumb);
 }
 
+#body::-webkit-resizer {
+  background-color: var(--body-webkit-scrollbar-track);
+}
+
 // WP admin top bar fix
 
 #wpadminbar {

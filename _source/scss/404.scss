@@ -1,0 +1,135 @@
+:root {
+    
+    /* Measures */
+    
+    --404-max-width: 2560px;
+    --404-max-height: 1440px;
+    --start-image-w: 1024px;
+    --start-image-h: 1024px;
+    --image-w: 1024px;
+    --image-h: 1024px;
+
+    /* Colors */
+
+    --h1-color: #D3355B;
+    --desc-color: #fff;
+
+}
+
+.html-404 {
+    padding: 0;
+    margin: 0 !important;
+}
+
+.container-404 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100vh;
+}
+
+.h1-404 {
+    display: block;
+    font-family: 'Jost';
+    font-size: 140px;
+    line-height: 1;
+    margin-bottom: 10px;
+    color: var(--h1-color);
+}
+
+.desc-404 {
+    display: block;
+    font-family: 'Jost';
+    font-size: 48px;
+    line-height: 1;
+    text-align: center;
+    color: var(--desc-color);
+}
+
+.image-404 {
+    display: block;
+    background-image: url('../img/404.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: var(--image-w);
+    height: var(--image-h);
+    margin: 0;
+    padding: 0;
+}
+
+#wpadminbar {
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .container-404 {
+        max-width: 728px;
+    }
+
+    .h1-404 {
+        font-size: 110px;
+    }
+
+    .desc-404 {
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 728px) {
+
+    .container-404 {
+        max-width: 544px;
+    }
+
+    .h1-404 {
+        font-size: 75px;
+    }
+
+    .desc-404 {
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .container-404 {
+        max-width: 400px;
+    }
+
+    .h1-404 {
+        font-size: 60px;
+    }
+
+    .desc-404 {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    
+    .container-404 {
+        max-width: 300px;
+    }
+
+    .h1-404 {
+        font-size: 45px;
+    }
+
+    .desc-404 {
+        font-size: 15px;
+    }
+
+}
