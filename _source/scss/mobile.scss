@@ -484,6 +484,22 @@
 
     }
 
+    // Comments
+
+    .depth-2 {
+        padding-left: 45px;
+    }
+    
+    .depth-3 {
+        padding-left: 50px;
+    }
+    
+    .depth-4 {
+        padding-left: 50px;
+    }
+
+    // Copyright
+
     .copyright {
         font-size: 16px;
     }
@@ -773,6 +789,73 @@
             width: 450px;
             height: 266px;
         }
+    }
+
+    // Commets
+
+    .comment-body {
+        margin-bottom: 23px;
+    }
+
+    .comment_author_avatar_wrp {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .comment-text {
+        margin-top: 10px;
+        & p {
+            font-size: 17px;
+            line-height: 19px;
+        }
+    }
+
+    .commet-reply {
+        & a {
+            line-height: 1;
+            font-size: 14px;
+            margin-top: 12px;
+        }
+    }
+
+    .depth-2 {
+        padding-left: 42px;
+    }
+    
+    .depth-3 {
+        padding-left: 47px;
+    }
+    
+    .depth-4 {
+        padding-left: 25px;
+    }
+
+    .comment-respond {
+        margin-right: 30px;
+    }
+
+    .comment-reply-title {
+        font-size: 17px;
+    }
+
+    .logged-in-as {
+        margin-top: 9px;
+    }
+
+    .comment-form-comment {
+        margin-top: 15px;
+        & label {
+            font-size: 16px;
+        }
+        & textarea {
+            font-size: 15px;
+            line-height: 20px;
+        }
+    }
+
+    .submit {
+        font-size: 15px;
+        line-height: 1;
     }
 
 }
