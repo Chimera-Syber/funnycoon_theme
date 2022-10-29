@@ -14,6 +14,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Yandex Webmaster -->
+    <meta name="yandex-verification" content="dd30a179366e79f3" />.
+
     <!-- Yandex.RTB -->
 	<script>window.yaContextCb=window.yaContextCb||[]</script>
 	<script src="https://yandex.ru/ads/system/context.js" async></script>
