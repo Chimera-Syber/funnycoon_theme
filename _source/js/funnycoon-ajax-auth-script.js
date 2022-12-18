@@ -11,6 +11,11 @@ jQuery(document).ready(function($){
             password = $(' #password').val();
             email = '';
             security = $('#security').val();
+            if ($('#remember_me').is(':checked')) {
+                remember = 'true';
+            } else {
+                remember = 'false';
+            }
             if ($(this).attr('id') == 'register') {
                 action = 'ajaxregister',
                 username = $('#signonname').val();
@@ -29,6 +34,7 @@ jQuery(document).ready(function($){
                     'password': password,
                     'email': email,
                     'security': security,
+                    'remember': remember,
                 },
                 success: function (data) {
                     $('.form-message', ctrl).text(data.message);

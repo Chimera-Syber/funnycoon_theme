@@ -15,7 +15,7 @@
                                 <input class="popup_input" type="password" id="password" name="password" placeholder="Пароль" autocomplete="on">
                             </div>
                             <div class="input_field remember_me">
-                                <input type="checkbox" id="remember_me" name="remember_me" value="true">
+                                <input type="checkbox" id="remember_me" name="remember_me" value="remember_me">
                                 <label for="remember_me" class="remember_me_label">Запомнить</label>
                             </div>
                             <div class="input_field submit_input">

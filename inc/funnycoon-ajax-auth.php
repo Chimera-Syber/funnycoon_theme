@@ -30,17 +30,27 @@ function ajax_login() {
 
     // Nonce is checked, get the POST data and sign user on
   	// Call auth_user_login
-    auth_user_login($_POST['username'], $_POST['password'], 'Авторизация');
+    auth_user_login($_POST['username'], $_POST['password'], $_POST['remember'], 'Авторизация');
 
     die();
 }
 
-function auth_user_login($user_login, $password, $login) {
+/**
+ * @param POST $user_login username
+ * @param POST $password password
+ * @param POST $remember remember me state
+ * @param OPTION $login option for Wordpress
+ * 
+ * @return void
+ * Function for login user
+ * 
+ */
+function auth_user_login($user_login, $password, $remember, $login) {
 
     $info = array();
     $info['user_login'] = $user_login;
     $info['user_password'] = $password;
-    $info['remember'] = true;
+    $info['remember'] = $remember;
 
     $user_signon = wp_signon($info); 
     if ( is_wp_error($user_signon) ){
@@ -76,7 +86,7 @@ function ajax_register(){
         elseif( in_array('existing_user_email', $error))
             echo json_encode(array('loggedin'=>false, 'message'=>__('This email address is already registered. ')));
     } else {
-        auth_user_login($info['nickname'], $info['user_pass'], 'Registration');
+        auth_user_login($info['nickname'], $info['user_pass'], false, 'Registration');
     }
 
     die();
