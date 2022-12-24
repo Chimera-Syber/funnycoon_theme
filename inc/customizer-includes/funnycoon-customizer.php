@@ -19,6 +19,7 @@ function funnycoon_main_slider($wp_customizer) {
         
     $wp_customizer->add_section('funnycoon_main_slider', array(
         'title'      => 'Слайдер на главной странице',
+        'priority' => 161,
     ) );
 
     global $post;
@@ -86,6 +87,7 @@ function funnycoon_primary_posts($wp_customizer) {
 
     $wp_customizer->add_section('funnycoon_primary_posts', array(
         'title' => 'Primary posts',
+        'priority' => 162,
     ) );
 
     $wp_customizer->add_setting('funnycoon_primary_tag', array(
@@ -142,6 +144,7 @@ function funnycoon_reviews_tops_section($wp_customizer) {
 
     $wp_customizer->add_section('funnycoon_reviews_tops', array(
         'title' => 'Reviews and Tops',
+        'priority' => 163,
     ) );
 
     // Title for reviews 
@@ -213,6 +216,7 @@ function funnycoon_social_icons_header_footer_mobile($wp_customizer) {
 
     $wp_customizer->add_panel('funnycoon_social_icons', array(
         'title' => 'Social icons',
+        'priority' => 164,
     ) );
 
     $wp_customizer->add_section('funnycoon_social_icons_header', array( 
@@ -305,6 +309,7 @@ add_action('customize_register', 'funnycoon_social_icons_header_footer_mobile' )
 
     $wp_customizer->add_panel('funnycoon_adv_panel', array(
         'title' => 'Advertisement',
+        'priority' => 165,
     ) );
 
     $wp_customizer->add_section('funnycoon_adv_section', array(
@@ -371,5 +376,137 @@ add_action('customize_register', 'funnycoon_social_icons_header_footer_mobile' )
 
  }
 
- add_action('customize_register', 'funnycoon_adv_settings');
+add_action('customize_register', 'funnycoon_adv_settings');
+
+/**
+ * 
+ * SEO Settings
+ * 
+ */
+
+function funnycoon_seo_settings($wp_customizer) {
+
+   $wp_customizer->add_panel('funnycoon_seo_panel', array(
+       'title' => 'SEO settings',
+       'priority' => 166,
+   ) );
+
+   // Metrica section
+
+   $wp_customizer->add_section('funnycoon_seo_metrica_section', array(
+       'title' => 'Metrica',
+       'panel' => 'funnycoon_seo_panel',
+   ) );
+
+   // Metrica fields
+   // Yandex metrica
+
+   $wp_customizer->add_setting('funnycoon_yandex_metrica_field', array(
+       'default'   => '',
+       'transport' => 'refresh',
+   ) );
+
+   $wp_customizer->add_control('funnycoon_yandex_metrica_field', array(
+       'type'        => 'textarea',
+       'label'       => 'Yandex metrica',
+       'description' => 'Поле для кода Yandex метрики',
+       'section'     => 'funnycoon_seo_metrica_section',
+   ) );
+
+   // Yandex RTB
+
+   $wp_customizer->add_setting('funnycoon_yandex_rtb_field', array(
+        'default'   => '',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customizer->add_control('funnycoon_yandex_rtb_field', array(
+        'type'        => 'textarea',
+        'label'       => 'Yandex RTB',
+        'description' => 'Поле для кода Yandex.RTB',
+        'section'     => 'funnycoon_seo_metrica_section',
+    ) );
+
+    // Yandex Webmaster
+
+    $wp_customizer->add_setting('funnycoon_yandex_webmaster_field', array(
+        'default'   => '',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customizer->add_control('funnycoon_yandex_webmaster_field', array(
+        'type'        => 'textarea',
+        'label'       => 'Yandex Webmaster',
+        'description' => 'Поле для кода Yandex Webmaster',
+        'section'     => 'funnycoon_seo_metrica_section',
+    ) );
+
+    // Google Analytics
+
+    $wp_customizer->add_setting('funnycoon_google_analytics_field', array(
+        'default'   => '',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customizer->add_control('funnycoon_google_analytics_field', array(
+        'type'        => 'textarea',
+        'label'       => 'Google Analytics',
+        'description' => 'Поле для кода Google Analytics',
+        'section'     => 'funnycoon_seo_metrica_section',
+    ) );
+
+    // Counters section
+
+    $wp_customizer->add_section('funnycoon_seo_counters_section', array(
+        'title' => 'SEO Counters',
+        'description' => 'Настройки счетчиков',
+        'panel' => 'funnycoon_seo_panel',
+    ) );
+
+    // First counter 
+
+    $wp_customizer->add_setting('funnycoon_first_counter_field', array(
+        'default'   => '',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customizer->add_control('funnycoon_first_counter_field', array(
+        'type'        => 'textarea',
+        'label'       => 'First counter',
+        'description' => 'Первый счетчик',
+        'section'     => 'funnycoon_seo_counters_section',
+    ) );
+    
+    // Second counter 
+
+    $wp_customizer->add_setting('funnycoon_second_counter_field', array(
+        'default'   => '',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customizer->add_control('funnycoon_second_counter_field', array(
+        'type'        => 'textarea',
+        'label'       => 'Second counter',
+        'description' => 'Второй счетчик',
+        'section'     => 'funnycoon_seo_counters_section',
+    ) );
+
+    // Third counter 
+
+    $wp_customizer->add_setting('funnycoon_third_counter_field', array(
+        'default'   => '',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customizer->add_control('funnycoon_third_counter_field', array(
+        'type'        => 'textarea',
+        'label'       => 'Third counter',
+        'description' => 'Третий счетчик',
+        'section'     => 'funnycoon_seo_counters_section',
+    ) );
+    
+
+}
+
+add_action('customize_register', 'funnycoon_seo_settings');
 

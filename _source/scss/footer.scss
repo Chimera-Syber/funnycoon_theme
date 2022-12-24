@@ -102,3 +102,9 @@
     line-height: 95%;
     color: var(--copyright-text-color);
 }
+
+.footer_hidden_counters {
+    visibility: 0; 
+    height: 0px; 
+    overflow: hidden;
+}
