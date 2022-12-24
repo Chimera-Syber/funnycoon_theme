@@ -48,24 +48,24 @@ function user_social_info() {
 
   }
 
-  /**
-   * Social icons for header and footer
-   * Name and style name
-   * 
-   * @return array 
-   *     'pinterest'     => 'Pinterest',
-   *     'youtube'       => 'Youtube',
-   *     'reddit'        => 'Reddit',
-   *     'vk'            => 'VK',
-   *     'twitch'        => 'Twitch',
-   *     'trovo'         => 'Trovo',
-   *     'telegram'      => 'Telegram',
-   *     'yandexzen'     => 'YandexZen',
-   *     'instagram'     => 'Instagram',
-   *     'tenchat'       => 'Tenchat',
-   *     'discord'       => 'Discord',
-   *     'rss'           => 'RSS',
-   */
+/**
+ * Social icons for header and footer
+ * Name and style name
+ * 
+ * @return array 
+ *     'pinterest'     => 'Pinterest',
+ *     'youtube'       => 'Youtube',
+ *     'reddit'        => 'Reddit',
+ *     'vk'            => 'VK',
+ *     'twitch'        => 'Twitch',
+ *     'trovo'         => 'Trovo',
+ *     'telegram'      => 'Telegram',
+ *     'yandexzen'     => 'YandexZen',
+ *     'instagram'     => 'Instagram',
+ *     'tenchat'       => 'Tenchat',
+ *     'discord'       => 'Discord',
+ *     'rss'           => 'RSS',
+ */
 
 function social_icons() {
 
@@ -81,6 +81,48 @@ function social_icons() {
         'instagram'     => 'Instagram',
         'discord'       => 'Discord',
         'rss'           => 'RSS',
+    );
+
+}
+
+/**
+ * 
+ * Metricas fields names
+ * 
+ * @return array
+ *      'funnycoon_yandex_metrica_field',
+ *      'funnycoon_yandex_rtb_field',
+ *      'funnycoon_yandex_webmaster_field',
+ *      'funnycoon_google_analytics_field',  
+*/
+
+function metrica_fields() {
+
+   return array(
+       'funnycoon_yandex_metrica_field',
+       'funnycoon_yandex_rtb_field',
+       'funnycoon_yandex_webmaster_field',
+       'funnycoon_google_analytics_field',
+   );
+
+}
+
+/**
+ * 
+ * Site rating counters 
+ *
+ * @return array
+ *      'funnycoon_first_counter_field',
+ *      'funnycoon_second_counter_field',
+ *      'funnycoon_third_counter_field',
+ */
+
+function site_rating_counters() {
+
+    return array(
+        'funnycoon_first_counter_field',
+        'funnycoon_second_counter_field',
+        'funnycoon_third_counter_field',
     );
 
 }

@@ -346,3 +346,41 @@ function funnycoon_get_social_links( $place ) {
     }
 
 }
+
+/**
+ * 
+ * Metrica code for site (in header)
+ * 
+ * @return string
+ */
+
+function funnycoon_get_metrica_code() {
+
+    foreach( metrica_fields() as $metrica_field) {
+
+        $field = get_theme_mod($metrica_field);
+        
+        printf($field);
+
+    }
+
+}
+
+/**
+ * 
+ * Site Rating code for site (in header)
+ * 
+ * @return array
+ */
+
+function funnycoon_get_rating_code() {
+
+    foreach( site_rating_counters() as $rating_field) {
+
+        $field = get_theme_mod($rating_field);
+
+        printf($field);
+
+    }
+
+}
