@@ -69,7 +69,11 @@ if ( ! class_exists( 'Funnycoon_Walker_Comment' ) ) {
                             ?>
                         </div>
                         <div class="comment-reply">
-                            <?php 
+                            <?php
+                                // Fix for max depth for comments (last comment will always be previous level then $args['max_depth'])
+                                if ($depth === intval($args['max_depth'])) {
+                                    $depth = $args['max_depth'] - 1;
+                                }
                                 $comment_reply_link = get_comment_reply_link(
                                     array_merge(
                                         $args,
