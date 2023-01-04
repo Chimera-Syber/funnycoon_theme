@@ -851,22 +851,17 @@
 }
 
 .logged-in-as {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
     margin-top: 13px;
     & a {
-        font-family: 'Jost';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 26px;
         color: var(--logged-in-as-a-color);
         text-decoration: none;
     }
     & span {
-        font-family: 'Jost';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 26px;
         color: var(--logged-in-as-span-color);
     }
 }
