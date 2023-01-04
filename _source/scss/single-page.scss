@@ -497,9 +497,8 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
-    padding-left: 21px;
-    padding-top: 23px;
+    align-items: flex-start;
+    padding: 21px;
 }
 
 .single_tag_title {
@@ -512,8 +511,10 @@
 }
 
 .single_tags_wrp {
-    display: inline-flex;
-    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
     margin-left: 13px;
 }
 
