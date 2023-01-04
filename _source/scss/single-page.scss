@@ -598,6 +598,7 @@
         line-height: 104.51%;
         color: var(--prev-post-link-a-color);
         padding-left: 13px;
+        padding-right: 13px;
         text-decoration: none;
     }
     & a:hover {
@@ -607,7 +608,8 @@
 
 .prev_next_post_figure {
     display: block;
-    width: 15px;
+    width: 100%;
+    max-width: 11px;
     height: 100%;
     background: var(--prev-next-post-figure-background);
     border-radius: 5px;
@@ -652,6 +654,7 @@
         line-height: 104.51%;
         color: var(--next-post-link-a-color);
         padding-left: 13px;
+        padding-right: 13px;
         text-decoration: none;
     }
     & a:hover {
