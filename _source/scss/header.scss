@@ -32,10 +32,15 @@
 }
 
 .header_2_wrapper {
-    display: block;
+    display: flex;
+    justify-content: space-between;
     height: 100%;
     width: 1400px;
     margin: 0 auto;
+}
+
+.header_2_search_form {
+    display: inline-flex;
 }
 
 .header_1_social {

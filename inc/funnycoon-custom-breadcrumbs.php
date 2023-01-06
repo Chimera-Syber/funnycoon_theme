@@ -191,8 +191,7 @@ function funnycoon_custom_breacrumds() {
     // Handle the search page
     if( is_search() ) {
 
-        $breadcrumb_trail = __( 'Поиск по ' ) . $before . get_search_query() . $after;
-
+        $breadcrumb_trail = __( 'Поиск по ' ) . get_search_query();
     }
 
     // Handle 404's
@@ -224,7 +223,6 @@ function funnycoon_custom_breacrumds() {
         $breadcrumb_output_link .= $breadcrumb_trail;
         $breadcrumb_output_link .= $page_addon;
     }
-
 
     return $breadcrumb_output_link;
 
