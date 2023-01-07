@@ -71,7 +71,9 @@
                     'walker' => new Funnycoon_Main_Menu,
                     'fallback_cb' => '',
                 ) ); ?>
-                <?php get_search_form(['aria_label' => 'header_search_form']); ?>
+                <div class="header_2_search">
+                    <?php get_search_form(['aria_label' => 'header_search_form']); ?>
+                </div>
             </div>
         </div>
     </header>

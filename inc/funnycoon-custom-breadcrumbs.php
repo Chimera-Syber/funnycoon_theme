@@ -191,7 +191,7 @@ function funnycoon_custom_breacrumds() {
     // Handle the search page
     if( is_search() ) {
 
-        $breadcrumb_trail = __( 'Поиск по ' ) . get_search_query();
+        $breadcrumb_trail = __( 'Результаты поиска' );
     }
 
     // Handle 404's

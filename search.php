@@ -15,9 +15,10 @@ add_filter( 'get_the_archive_title', function( $title ){
                     <div class="single_breadcrumbs">
                         <?php echo funnycoon_custom_breacrumds(); ?>
                     </div>
-                    <h1 class="archive_title">Результаты поиска</h1>
-                    <div class="archive_description">Результаты поиска по вашему запросу: <?php echo get_search_query(); ?></div>
-                    <?php get_search_form(['aria_label' => 'search_page_search_form']); ?>
+                    <h1 class="archive_title">Результаты поиска &laquo;<?php echo get_search_query(); ?>&raquo;</h1>
+                    <div class="archive_search">
+                        <?php get_search_form(['aria_label' => 'search_page_search_form']); ?>
+                    </div>
                 </div>
                 <div class="archive_posts_wrp">
                 <?php 
@@ -27,6 +28,8 @@ add_filter( 'get_the_archive_title', function( $title ){
                         the_post();
                         get_template_part( 'template-parts/archive/archive-post-card');
                     endwhile;
+                else :
+                    echo '<div class="archive_no_posts_title">' . __( 'По данному запросу ничего нет' ) . '</div>';
                 endif;
                 ?>
                 </div>

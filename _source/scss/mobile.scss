@@ -288,6 +288,40 @@
 }
 
 /*
+ * 1100px
+ */
+
+@media screen and (max-width: 1100px) {
+
+    .header_2_wrapper {
+        justify-content: flex-end;
+    }
+
+    .header_2_search {
+        margin-right: 5px;
+        margin-left: 5px;
+        width: 100%
+    }
+
+    .header_2_search_form {
+        width: 100%;
+    }
+
+    .header_search_input {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .header_2_search_form:hover > .header_search_input {
+        width: 100%;
+    }
+
+    .header_search_input:focus {
+        width: 100%;
+    }
+} 
+
+/*
  * 1080px
  */
 
