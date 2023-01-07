@@ -52,6 +52,8 @@ function funnycoonZip() {
             'page-edit-profile.php',
             'page.php',
             'screenshot.png',
+            'search.php',
+            'searchform.php',
             'single.php',
             'style.css'
         ],
