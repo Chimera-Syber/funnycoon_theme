@@ -161,7 +161,7 @@
     }
 
     .primary_posts_title_wrp {
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
 
     .primary_posts_slide:first-child {
@@ -344,7 +344,7 @@
         height: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        padding: 20px 0px 20px 0px;
+        padding: 20px 0 20px 0;
     }
 
     .primary_posts_slide {
@@ -359,7 +359,7 @@
                 & > .pps_title {
                     margin-left: 22px;
                     margin-bottom: 12px;
-                    font-family: "Jost";
+                    font-family: "Jost", sans-serif;
                     font-style: normal;
                     font-weight: 500;
                     font-size: 30px;
@@ -595,11 +595,11 @@
     }
 
     .footer_1_left {
-        margin-left: 0px;
+        margin-left: 0;
     }
 
     .footer_1_right {
-        margin-right: 0px;
+        margin-right: 0;
         margin-bottom: 10px;
     }
 
@@ -679,11 +679,11 @@
     }
 
     .archive_post_author {
-        margin: 10px 0px 10px 0px;
+        margin: 10px 0 10px 0;
     }
 
     .archive_post_description {
-        margin: 10px 0px 10px 0px;
+        margin: 10px 0 10px 0;
     }
 
     .prev_post_link a {

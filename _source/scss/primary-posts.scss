@@ -10,8 +10,7 @@
     background: var(--primary-posts-background-color);
     border-radius: 5px;
     border: 1px solid var(--primary-posts-border-color);
-    margin: 0 auto;
-    margin-top: 41px;
+    margin: 41px auto;
 }
 
 .primary_posts_title_wrp {
@@ -24,7 +23,7 @@
 }
 
 .primary_posts_title {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -78,7 +77,7 @@
             & > .pps_title {
                 margin-left: 22px;
                 margin-bottom: 12px;
-                font-family: 'Jost';
+                font-family: 'Jost', sans-serif;
                 font-style: normal;
                 font-weight: 500;
                 font-size: 30px;
@@ -138,7 +137,7 @@
             & > .pps_title {
                 margin-left: 7px;
                 margin-bottom: 14px;
-                font-family: 'Jost';
+                font-family: 'Jost', sans-serif;
                 font-style: normal;
                 font-weight: 500;
                 font-size: 18px;
@@ -179,7 +178,7 @@
     align-items: center;
     background-color: var(--pps-category-background-color);
     padding: 3px 10px;
-    border-radius: 0px 0px 5px 0px;
+    border-radius: 0 0 5px 0;
     font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -198,7 +197,7 @@
     align-items: center;
     width: 100%;
     border-top: 1px solid var(--primary-posts-button-border-color);
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -209,7 +208,7 @@
     padding-bottom: 27px;
     color: var(--primary-posts-button-text-color);
     &:hover {
-        border-radius: 0px 0px 5px 5px;
+        border-radius: 0 0 5px 5px;
         background: linear-gradient(0deg, var(--primary-posts-hover-gradient-first-color) 0%, var(--primary-posts-hover-gradient-second-color) 100%);
     }
 }

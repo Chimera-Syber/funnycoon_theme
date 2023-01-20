@@ -1,7 +1,7 @@
 .sce-comment {
     display: block;
     margin-top: 19px;
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -10,7 +10,7 @@
 }
 
 .sce-edit-button-main {
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-size: 17px;
     line-height: 1;
     text-decoration: none;
@@ -18,7 +18,7 @@
 }
 
 .sce-seperator {
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-size: 17px;
     line-height: 1;
     text-decoration: none;
@@ -26,7 +26,7 @@
 }
 
 .sce-timer {
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-size: 17px;
     line-height: 1;
     text-decoration: none;
@@ -37,11 +37,10 @@
     outline: none;
     -moz-appearance: none;
     overflow: auto;
-    line-height: 1;
     background-color: var(--comment-form-comment-textarea-background-color);
     border: 1px solid var(--comment-form-comment-textarea-border-color);
     border-radius: 5px;
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -63,7 +62,7 @@
     margin: 10px 0;
     & > .sce-timer {
         display: block !important;
-        font-family: 'Jost' !important;
+        font-family: 'Jost', sans-serif !important;
         font-weight: 400;
         font-style: italic;
         font-size: 20px !important;
@@ -81,8 +80,8 @@
     padding: 10px 15px;
     background: var(--submit-background);
     border-radius: 5px;
-    border: 0px;
-    font-family: 'Jost';
+    border: 0;
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -100,8 +99,8 @@
     padding: 10px 15px;
     background: var(--submit-background);
     border-radius: 5px;
-    border: 0px;
-    font-family: 'Jost';
+    border: 0;
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -119,8 +118,8 @@
     padding: 10px 15px;
     background: var(--submit-background);
     border-radius: 5px;
-    border: 0px;
-    font-family: 'Jost';
+    border: 0;
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;

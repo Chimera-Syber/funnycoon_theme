@@ -31,7 +31,7 @@
 .profile_section_title {
     display: block;
     width: 100%;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
@@ -52,7 +52,7 @@
 
 .profile_label {
     display: block;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -68,7 +68,7 @@
     background-color: var(--profile-input-background-color);
     border: 1px solid var(--profile-input-border-color);
     border-radius: 5px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -79,10 +79,10 @@
 .profile_submit_button {
     cursor: pointer;
     background: var(--profile-submit-button-background-color);
-    border: 0px;
+    border: 0;
     border-radius: 5px;
     padding: 10px;
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -111,7 +111,7 @@
 
 .profile_page_nickname {
     display: block;
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -130,7 +130,7 @@
 
 .profile_change_email_link, .profile_change_password_link {
     display: block;
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
@@ -144,11 +144,10 @@
 }
 
 .profile_change_password_link {
-    margin-top: 0px;
+    margin-top: 0;
 }
 
-// Plugin fix 
-
+// Plugin fix
 
 #wp_user_profile_avatar_remove, 
 #wp_user_profile_avatar_update_profile,
@@ -156,10 +155,10 @@
     display: block;
     cursor: pointer;
     background: var(--wp-user-profile-background-color);
-    border: 0px;
+    border: 0;
     border-radius: 5px;
     padding: 10px;
-    font-family: "Jost";
+    font-family: "Jost", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -182,7 +181,7 @@
     background-color: var(--wp-user-regular-text-background-color);
     border: 1px solid var(--wp-user-regular-text-border-color);
     border-radius: 5px;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -194,8 +193,8 @@
 }
 
 .form-table p {
-    font-family: "Roboto";
-    margin: 5px 0px 5px 0px;
+    font-family: "Roboto", sans-serif;
+    margin: 5px 0 5px 0;
 }
 
 #wp_user_profile_avatar_preview {
@@ -214,10 +213,10 @@
     display: block;
     cursor: pointer;
     background: var(--wp-user-input-text-profile-avatar-background-color);
-    border: 0px;
+    border: 0;
     border-radius: 5px;
     padding: 10px;
-    font-family: "Jost";
+    font-family: "Jost", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
@@ -230,7 +229,7 @@
 
 .custom_pages_messages {
     display: block;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;

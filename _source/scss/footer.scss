@@ -68,7 +68,7 @@
     height: 45px;
     border: 1px solid var(--rars-border-color);
     border-radius: 5px;
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -85,7 +85,7 @@
 }
 
 .copyright {
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -95,7 +95,7 @@
 }
 
 .copyright_text {
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -104,7 +104,7 @@
 }
 
 .footer_hidden_counters {
-    visibility: 0; 
-    height: 0px; 
+    visibility: hidden;
+    height: 0;
     overflow: hidden;
 }

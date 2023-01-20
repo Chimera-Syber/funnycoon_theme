@@ -10,7 +10,7 @@
 .navigation li a:hover,
 .navigation li.active a,
 .navigation li.disabled {
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -31,7 +31,6 @@
     background-color: var(--navigation-background-color);
     border-radius: 3px;
     cursor: pointer;
-    padding: 12px;
     padding: 0.75rem;
 }
  

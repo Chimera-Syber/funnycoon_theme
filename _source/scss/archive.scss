@@ -14,7 +14,7 @@
 .archive_title {
     display: block;
     margin-left: 22px;
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -27,7 +27,7 @@
     margin-top: 5px;
     margin-left: 22px;
     margin-bottom: 20px;
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 22px;
@@ -59,7 +59,7 @@
     background: none;
     border: none;
     color: var(--archive-search-input-color);
-    font-family: 'Segoe UI';
+    font-family: 'Segoe UI', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -89,7 +89,7 @@
     justify-content: center;
     align-items: center;
     padding: 22px;
-    font-family: "Jost";
+    font-family: "Jost", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
@@ -106,7 +106,7 @@
     text-decoration: none;
     text-transform: uppercase;
     color: var(--main-posts-title-color);
-    margin: 12px 0px 20px 18px;
+    margin: 12px 0 20px 18px;
 }
 
 .archive_post_wrp {
@@ -147,7 +147,7 @@
 }
 
 .archive_post_title {
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 25px;
@@ -156,7 +156,7 @@
 }
 
 .archive_post_author {
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -170,7 +170,7 @@
 }
 
 .archive_post_description {
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
@@ -185,7 +185,7 @@
 }
 
 .archive_post_date {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -194,7 +194,7 @@
 }
 
 .archive_post_comment_count {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -229,10 +229,7 @@
     background-color: var(--archive-author-info-background-color);
     border: 1px solid var(--archive-author-info-border-color);
     border-radius: 10px;
-    margin-left: 10px;
-    margin-top: 41px;
-    margin-right: 24px;
-    margin-bottom: 22px;
+    margin: 41px 10px 22px 24px;
     padding: 45px 34px 45px 59px;
 }
 
@@ -259,7 +256,7 @@
 
 .author_page_nickname {
     display: block;
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
@@ -269,7 +266,7 @@
 
 .author_page_description {
     display: block;
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 21px;

@@ -44,10 +44,10 @@
     display: block;
     position: relative;
     & > a {
-        font-family: 'Jost';
+        font-family: 'Jost', sans-serif;
         font-size: 27px;
         font-weight: 400;
-        color: var(--mobile-menu-item-a-color);
+        color: var(--mobile-menu-item-a-color-black);
         text-decoration: none;
     }
 
@@ -84,7 +84,7 @@
     
             & > a {
                 padding-left: 5px;
-                font-family: 'Jost';
+                font-family: 'Jost', sans-serif;
                 font-size: 20px;
                 font-weight: 300;
                 color: var(--mobile-menu-item-a-color);
@@ -101,7 +101,7 @@
     margin-top: 5px;
     margin-bottom: 5px;
     & > .mobile-menu-item:last-child {
-        border: 0px;
+        border: 0;
     }
 }
 
@@ -115,7 +115,7 @@
 
         & > a {
             padding-left: 5px;
-            font-family: 'Jost';
+            font-family: 'Jost', sans-serif;
             font-size: 20px;
             font-weight: 300;
             color: var(--mobile-menu-item-a-color);
@@ -124,7 +124,7 @@
     }
 
     & > .mobile-menu-item:last-child {
-        border-bottom: 0px !important;
+        border-bottom: 0 !important;
     }
 
 }
@@ -148,8 +148,7 @@
 
 .menu_close {
     display: block;
-    margin-top: 5px;
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-size: 30px;
     font-weight: 400;
     color: var(--mobile-menu-close-color);
