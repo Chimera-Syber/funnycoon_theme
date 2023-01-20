@@ -28,7 +28,7 @@
 }
 
 .title {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -113,7 +113,7 @@
             width: 100%;
            
             & > .reviews_slide_title {
-                font-family: 'Jost';
+                font-family: 'Jost', sans-serif;
                 font-style: normal;
                 font-weight: 500;
                 font-size: 30px;
@@ -122,7 +122,7 @@
             }
 
             & > .reviews_slide_time_comments {
-                font-family: 'Roboto';
+                font-family: 'Roboto', sans-serif;
                 font-style: normal;
                 font-weight: 400;
                 font-size: 16px;
@@ -180,7 +180,7 @@
             width: 100%;
 
             & > .reviews_slide_title {
-                font-family: 'Jost';
+                font-family: 'Jost', sans-serif;
                 font-style: normal;
                 font-weight: 500;
                 font-size: 18px;
@@ -194,7 +194,7 @@
                 display: inline-flex;
                 justify-content: space-between;
                 align-items: center;
-                font-family: 'Roboto';
+                font-family: 'Roboto', sans-serif;
                 font-style: normal;
                 font-weight: 400;
                 font-size: 15px;
@@ -203,7 +203,7 @@
                 padding-left: 7px;
 
                 & > .reviews_slide_comments {
-                    font-family: 'Roboto';
+                    font-family: 'Roboto', sans-serif;
                     font-style: normal;
                     font-weight: 400;
                     font-size: 15px;
@@ -218,7 +218,7 @@
                         background-position: center center; 
                         position: absolute;
                         right: 30px;
-                        bottom: 0px;
+                        bottom: 0;
                         width: 19px;
                         height: 19px;
                     }
@@ -289,7 +289,7 @@
 }
 
 .tops_slide_title {
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 25px;
@@ -366,8 +366,8 @@
 
 .tops_posts_card_title {
     display: block;
-    margin: 12px 13px 0px 10px;  
-    font-family: 'Jost';
+    margin: 12px 13px 0 10px;
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -381,8 +381,8 @@
 
 .tops_posts_card_desc {
     display: none;
-    margin: 5px 13px 0px 10px;
-    font-family: 'Roboto';
+    margin: 5px 13px 0 10px;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
@@ -398,7 +398,7 @@
 }
 
 .tops_posts_card_time {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -407,7 +407,7 @@
 }
 
 .tops_posts_card_comments {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;

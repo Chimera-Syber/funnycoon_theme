@@ -46,15 +46,14 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 0 auto;
-    margin-bottom: 5px;
+    margin: 0 auto 5px;
 }
 
 .popup_title {
     display: inline-flex;
     justify-content: center;
     width: 100%;
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -67,7 +66,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -81,8 +80,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -99,7 +97,7 @@
 }
 
 .error {
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -117,13 +115,13 @@
 }
 
 .remember_me {
-    margin-top: 0px;
+    margin-top: 0;
     flex-direction: row;
     justify-content: flex-start;
 }
 
 .remember_me_label {
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -140,9 +138,8 @@
     border: 1px solid var(--popup-input-border-color);
     border-radius: 5px;
     padding: 7px 14px;
-    height: 45px;
     outline: none;
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -171,7 +168,7 @@
     background-color: var(--buttons-background-color);
     border: 1px solid var(--buttons-border-color);
     border-radius: 5px;
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -193,7 +190,7 @@
 }
 
 .forget_password_link {
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -203,7 +200,7 @@
 }
 
 .register_link {
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -224,7 +221,7 @@
 }
 
 .register_link_forget {
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -238,7 +235,7 @@
         width: 24px;
         height: 24px;
         top: -2px;
-        left: 0px;
+        left: 0;
         background-image: url("../img/icons/login-icon-popup.svg");
         background-repeat: no-repeat;
         background-position: center center;
@@ -254,7 +251,7 @@
 }
 
 .login_link {
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;

@@ -73,12 +73,12 @@
     border: none;
     background: none;
     outline: none;
-    width: 0px;
+    width: 0;
     float: left;
     transition: 0.4s;
     padding: 0;
     color: #fff;
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -431,7 +431,7 @@
 }
 
 .profile_nickname {
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -459,7 +459,7 @@
 .profile_menu_link {
     display: inline-flex;
     align-items: center;
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
