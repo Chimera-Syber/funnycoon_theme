@@ -253,4 +253,22 @@ jQuery(document).ready(function($) {
 
     $(":root").css("--image-w", newWidthImage404 + 'px');
     $(":root").css("--image-h", newHeightImage404 + 'px');
+
 });
+
+jQuery(document).ready(function($) {
+    // Change adv desktop to adv mobile
+
+    const wrapperWidth = $('.funnycoon_main_wrapper').width();
+
+    if(wrapperWidth < 1400) {
+        $("div[id='adv-desktop']").each(function (i, el) {
+           el.style.display = 'none';
+        });
+        $("div[id='adv-mobile']").each(function (i, el) {
+           el.style.display = 'flex';
+        });
+    }
+
+});
+

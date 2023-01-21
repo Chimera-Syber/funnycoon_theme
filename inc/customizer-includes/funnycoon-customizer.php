@@ -373,6 +373,20 @@ add_action('customize_register', 'funnycoon_social_icons_header_footer_mobile' )
         'section'     => 'funnycoon_adv_section',
     ) );
 
+    // Mobile banner
+
+     $wp_customizer->add_setting('funnycoon_mobile_banner', array(
+         'default'   => '',
+         'transport' => 'refresh',
+     ) );
+
+     $wp_customizer->add_control('funnycoon_mobile_banner', array(
+         'type'        => 'textarea',
+         'label'       => 'Mobile banner',
+         'description' => 'Баннер для мобильной темы',
+         'section'     => 'funnycoon_adv_section',
+     ) );
+
 
  }
 
