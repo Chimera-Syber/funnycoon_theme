@@ -13,11 +13,15 @@
             </div>
         </div>
         <div class="tops_reviews_adv_wrp">
-            <div class="tops_reviews_adv">
-            <?php 
-                $thirdBannerCode = get_theme_mod('funnycoon_third_banner');
-                printf($thirdBannerCode);
-            ?>
+            <div id="adv-desktop" class="tops_reviews_adv_desktop">
+                <?php
+                    printf(get_theme_mod('funnycoon_third_banner'));
+                ?>
+            </div>
+            <div id="adv-mobile" class="tops_review_adv_mobile">
+                <?php
+                    printf(get_theme_mod('funnycoon_mobile_banner'))
+                ?>
             </div>
         </div>
         <div class="tops">

@@ -26,11 +26,15 @@
     margin-bottom: 27px;
 }
 
-.main_posts_adv {
-    display: block;
-    width: 1000px;
-    height: 120px;
+.main_posts_adv_desktop, .tops_reviews_adv_desktop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     //background: var(--sidebar-posts-adv-color);
+}
+
+.main_posts_adv_mobile, .tops_reviews_adv_mobile {
+    display: none;
 }
 
 // Advertisement in tops and review (after content) 
@@ -43,14 +47,6 @@
     margin-top: 27px;
     margin-bottom: 27px;
 }
-
-.tops_reviews_adv {
-    display: block;
-    width: 1000px;
-    height: 120px;
-    //background: var(--sidebar-review-adv-color);
-}
-
 
 // Advertisementin single page
 
