@@ -38,10 +38,15 @@ add_filter( 'get_the_archive_title', function( $title ){
                 ?>
 
                 <div class="main_posts_adv_wrp">
-                    <div class="main_posts_adv">
-                    <?php 
+                    <div id="adv-desktop" class="main_posts_adv_desktop">
+                        <?php
                         printf(get_theme_mod('funnycoon_first_banner'));
-                    ?>
+                        ?>
+                    </div>
+                    <div id="adv-mobile" class="main_posts_adv_mobile">
+                        <?php
+                            printf(get_theme_mod('funnycoon_mobile_banner'));
+                        ?>
                     </div>
                 </div>
 
@@ -54,9 +59,9 @@ add_filter( 'get_the_archive_title', function( $title ){
                     <?php popular_posts_query(); ?>
                     <div class="main_posts_sidebar_adv_wrp">
                         <div class="main_posts_sidebar_adv">
-                        <?php 
-                            printf(get_theme_mod('funnycoon_second_banner'));
-                        ?>
+                            <?php
+                                printf(get_theme_mod('funnycoon_second_banner'));
+                            ?>
                         </div>
                     </div>
                 </div>

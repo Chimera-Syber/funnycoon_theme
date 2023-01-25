@@ -28,8 +28,9 @@
 .main_posts_adv_desktop, .tops_reviews_adv_desktop,
 .main_posts_adv_mobile, .tops_reviews_adv_mobile {
     display: flex;
+    width: 100%;
     flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: center;
 }
 
 // Advertisement in tops and review (after content) 
@@ -53,9 +54,15 @@
     margin-bottom: 36px;
 }
 
-.single_adv {
+.single_adv_desktop {
     display: block;
     width: 750px;
     height: 300px;
-    //background: var(--single-adv-background);
+}
+
+.single_adv_mobile {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
 }
