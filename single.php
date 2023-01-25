@@ -50,10 +50,15 @@
                         </div>        
                     </div>
                     <div class="single_adv_wrp">
-                        <div class="single_adv">
-                        <?php 
-                            printf(get_theme_mod('funnycoon_fourth_banner'));
-                        ?>
+                        <div id="adv-desktop" class="single_adv_desktop">
+                            <?php
+                                printf(get_theme_mod('funnycoon_fourth_banner'));
+                            ?>
+                        </div>
+                        <div id="adv-mobile" class="single_adv_mobile">
+                            <?php
+                                printf(get_theme_mod('funnycoon_mobile_banner'));
+                            ?>
                         </div>
                     </div>
                     <div class="single_prev_next_post_wrp">
@@ -97,10 +102,10 @@
                 <div class="main_posts_sidebar_popular_posts">
                     <?php popular_posts_query(); ?>
                     <div class="main_posts_sidebar_adv_wrp">
-                        <div class="main_posts_sidebar_adv">
-                        <?php 
-                            printf(get_theme_mod('funnycoon_second_banner'));
-                        ?>
+                        <div id="adv-desktop" class="main_posts_adv_desktop">
+                            <?php
+                                printf(get_theme_mod('funnycoon_second_banner'));
+                            ?>
                         </div>
                     </div>
                 </div>
