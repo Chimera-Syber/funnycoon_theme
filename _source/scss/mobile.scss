@@ -2,11 +2,11 @@
  * Mobile styling
  */
 
- /**
-  * 1280px
-  */
+/**
+ * 1280px
+ */
 
- @media screen and (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
 
     .header_1_wrapper {
         width: 100%;
@@ -35,7 +35,7 @@
         grid-template-columns: 580px 222px 222px;
         grid-template-rows: 150px 150px;
         height: 300px;
-    
+
     }
 
     .slide:first-child {
@@ -137,7 +137,7 @@
         width: 305px;
         height: 250px;
     }
-    
+
     .main_post_info_wrp {
         width: 305px;
         height: 250px;
@@ -203,14 +203,14 @@
             height: 158px;
         }
     }
-    
+
 
     .tops_reviews_adv_wrp {
         justify-content: flex-start;
         margin-left: 5px;
     }
 
-   .tops_reviews {
+    .tops_reviews {
         grid-template-columns: 660px 364px;
     }
 
@@ -228,7 +228,7 @@
         padding-right: 5px;
     }
 
-   .footer {
+    .footer {
         width: 1024px;
     }
 
@@ -319,7 +319,7 @@
     .header_search_input:focus {
         width: 100%;
     }
-} 
+}
 
 /*
  * 1080px
@@ -332,7 +332,7 @@
     }
 
     .main_slider {
-       display: none;
+        display: none;
     }
 
     .primary_posts {
@@ -354,7 +354,7 @@
         & > .pps_info {
             width: 560px;
             height: 340px;
-        
+
             & > .pps_title_wrp {
                 & > .pps_title {
                     margin-left: 22px;
@@ -367,7 +367,7 @@
                     color: var(--pps-title-color);
                 }
             }
-            
+
         }
         & > .pps_gradient {
             width: 560px;
@@ -416,7 +416,7 @@
     }
 
     .archive_posts_wrp {
-       padding: 20px;
+        padding: 20px;
     }
 
     .archive_post_wrp {
@@ -524,11 +524,11 @@
     .depth-2 {
         padding-left: 45px;
     }
-    
+
     .depth-3 {
         padding-left: 50px;
     }
-    
+
     .depth-4 {
         padding-left: 50px;
     }
@@ -603,6 +603,13 @@
         margin-bottom: 10px;
     }
 
+    .footer_2_left {
+        margin-left: 17px;
+    }
+
+    .footer_2_right {
+        margin-right: 17px;
+    }
 }
 
 @media screen and (max-width: 690px) {
@@ -686,6 +693,10 @@
         margin: 10px 0 10px 0;
     }
 
+    .page_content {
+        overflow: hidden;
+    }
+
     .prev_post_link a {
         font-size: 17px;
     }
@@ -728,7 +739,7 @@
 
     #wpadminbar {
         position: fixed;
-    }    
+    }
 
     .single_post_title {
         font-size: 29px;
@@ -856,11 +867,11 @@
     .depth-2 {
         padding-left: 42px;
     }
-    
+
     .depth-3 {
         padding-left: 47px;
     }
-    
+
     .depth-4 {
         padding-left: 25px;
     }
@@ -1014,7 +1025,7 @@
         height: 214px;
         & > .tops_slide_link {
             width: 380px;
-        height: 214px;
+            height: 214px;
             & > .tops_slide_gradient {
                 width: 380px;
                 height: 214px;
