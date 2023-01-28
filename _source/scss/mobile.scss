@@ -975,6 +975,22 @@
         }
     }
 
+    .single_post_content {
+        & .wp-block-table {
+            & table {
+                & tbody {
+                    & tr {
+                        & td {
+                            font-size: 16px;
+                            line-height: 19px;
+                            padding: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .reviews_slider {
         display: flex;
         flex-direction: column;
