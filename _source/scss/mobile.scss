@@ -251,9 +251,6 @@
 
     .mps_post_card_info {
         max-width: 500px;
-    }
-
-    .mps_post_card_info {
         margin-top: 10px;
     }
 
@@ -433,13 +430,6 @@
         margin: 5px;
     }
 
-    .menu-item {
-        & > a {
-            font-size: 16px;
-            line-height: 20px;
-        }
-    }
-
     .copyright {
         font-size: 18px;
     }
@@ -449,10 +439,6 @@
     }
 
     .footer {
-        width: 100%;
-    }
-
-    .footer_2_copyright {
         width: 100%;
     }
 }
@@ -490,16 +476,6 @@
 
     .archive_post_comment_count {
         font-size: 13px;
-        &::before {
-
-        }
-    }
-
-    .menu-item {
-        & > a {
-            font-size: 14px;
-            line-height: 15px;
-        }
     }
 
     .single_tags_wrp {
@@ -589,26 +565,24 @@
         grid-template-columns: 1fr;
     }
 
-    .container_footer_1 {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .footer_1_left {
         margin-left: 0;
     }
 
     .footer_1_right {
         margin-right: 0;
-        margin-bottom: 10px;
+    }
+
+    .nav_menu_footer {
+        gap: 15px;
     }
 
     .footer_2_left {
-        margin-left: 17px;
+        margin-left: 10px;
     }
 
     .footer_2_right {
-        margin-right: 17px;
+        margin-right: 10px;
     }
 }
 
@@ -674,7 +648,7 @@
 
     .menu-item {
         & > a {
-            font-size: 13px;
+            font-size: 16px;
         }
     }
 
@@ -716,11 +690,11 @@
     }
 
     .copyright {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .copyright_text {
-        font-size: 10px;
+        font-size: 12px;
     }
 
 }
@@ -904,13 +878,17 @@
         line-height: 1;
     }
 
+    // Footer
+
+    .menu-item {
+        & > a {
+            font-size: 14px;
+        }
+    }
+
 }
 
 @media screen and (max-width: 520px) {
-
-    .footer_1_right {
-        display: none;
-    }
 
     .rars {
         display: none;
@@ -918,12 +896,19 @@
 
     .menu-item {
         & > a {
-            font-size: 9px;
+            font-size: 15px;
+            text-align: center;
+            line-height: 13px;
         }
+        margin: 0;
+    }
+
+    .footer_2_right {
+        margin-left: 0;
     }
 
     .copyright {
-        font-size: 10px;
+        font-size: 16px;
     }
 }
 
@@ -1053,8 +1038,281 @@
         }
     }
 
-    .footer_2_left {
-        margin-left: 35px;
+    // Footer
+
+    .container_footer_2 {
+        display: flex;
+        justify-content: center;
     }
 
+    .footer_2_left {
+        display: none;
+    }
+
+    .copyright {
+        font-size: 18px;
+        line-height: 15px;
+    }
+}
+
+@media screen and (max-width: 375px)  {
+
+    .primary_posts_slide:first-child {
+        width: 350px;
+        height: 214px;
+        & > .pps_info {
+            width: 350px;
+            height: 214px;
+            & > .pps_title_wrp {
+                & > .pps_title {
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+            }
+        }
+        & > .pps_gradient {
+            width: 350px;
+            height: 214px;
+        }
+        & > .pps_img {
+            width: 350px;
+            height: 214px;
+        }
+    }
+
+    .primary_posts_slide {
+        width: 350px;
+        height: 214px;
+        & > .pps_info {
+            width: 350px;
+            height: 214px;
+            & > .pps_title_wrp {
+                & > .pps_title {
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+            }
+        }
+        & > .pps_gradient {
+            width: 350px;
+            height: 214px;
+        }
+        & > .pps_img {
+            width: 350px;
+            height: 214px;
+        }
+    }
+
+    .reviews_slide:first-child {
+        width: 350px;
+        height: 214px;
+        & > .reviews_slide_link {
+            width: 350px;
+            height: 214px;
+            & > .reviews_slide_gradient {
+                width: 350px;
+                height: 214px;
+            }
+            & > .reviews_slide_info {
+                & >.reviews_slide_title {
+                    font-size: 25px;
+                    line-height: 30px;
+                }
+            }
+        }
+        & > .reviews_slide_img {
+            width: 350px;
+            height: 214px;
+        }
+    }
+
+    .reviews_slide {
+        width: 350px;
+        height: 214px;
+        & > .reviews_slide_link {
+            width: 350px;
+            height: 214px;
+            & > .reviews_slide_gradient {
+                width: 350px;
+                height: 214px;
+            }
+        }
+        & > .reviews_slide_img {
+            width: 350px;
+            height: 214px;
+        }
+    }
+
+    .tops_slide {
+        width: 350px;
+        height: 214px;
+        & > .tops_slide_link {
+            width: 350px;
+            height: 214px;
+            & > .tops_slide_gradient {
+                width: 350px;
+                height: 214px;
+            }
+        }
+        & > .tops_slide_img {
+            width: 350px;
+            height: 214px;
+        }
+    }
+
+    // Footer
+
+    .container_footer_2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer_2_left {
+        display: none;
+    }
+
+    .copyright {
+        font-size: 18px;
+        line-height: 15px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .main_posts_posts {
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .main_post {
+        width: 300px;
+        margin: 0;
+    }
+
+    .main_post_gradient {
+        width: 300px
+    }
+
+    .main_post_link {
+        display: flex;
+        justify-content: center;
+        width: 300px;
+    }
+
+    .main_post_info_wrp {
+        width: 300px;
+    }
+
+    .main_post_img {
+        width: 300px;
+    }
+
+    .primary_posts_slide:first-child {
+        width: 310px;
+        height: 214px;
+        & > .pps_info {
+            width: 310px;
+            height: 214px;
+            & > .pps_title_wrp {
+                & > .pps_title {
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+            }
+        }
+        & > .pps_gradient {
+            width: 310px;
+            height: 214px;
+        }
+        & > .pps_img {
+            width: 310px;
+            height: 214px;
+        }
+    }
+
+    .primary_posts_slide {
+        width: 310px;
+        height: 214px;
+        & > .pps_info {
+            width: 310px;
+            height: 214px;
+            & > .pps_title_wrp {
+                & > .pps_title {
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+            }
+        }
+        & > .pps_gradient {
+            width: 310px;
+            height: 214px;
+        }
+        & > .pps_img {
+            width: 310px;
+            height: 214px;
+        }
+    }
+
+    .reviews_slide:first-child {
+        width: 310px;
+        height: 214px;
+        & > .reviews_slide_link {
+            width: 310px;
+            height: 214px;
+            & > .reviews_slide_gradient {
+                width: 310px;
+                height: 214px;
+            }
+            & > .reviews_slide_info {
+                & >.reviews_slide_title {
+                    font-size: 25px;
+                    line-height: 30px;
+                }
+            }
+        }
+        & > .reviews_slide_img {
+            width: 310px;
+            height: 214px;
+        }
+    }
+
+    .reviews_slide {
+        width: 310px;
+        height: 214px;
+        & > .reviews_slide_link {
+            width: 310px;
+            height: 214px;
+            & > .reviews_slide_gradient {
+                width: 310px;
+                height: 214px;
+            }
+        }
+        & > .reviews_slide_img {
+            width: 310px;
+            height: 214px;
+        }
+    }
+
+    .tops_slide {
+        width: 310px;
+        height: 214px;
+        & > .tops_slide_link {
+            width: 310px;
+            height: 214px;
+            & > .tops_slide_gradient {
+                width: 310px;
+                height: 214px;
+            }
+        }
+        & > .tops_slide_img {
+            width: 310px;
+            height: 214px;
+        }
+    }
+
+    .tops_posts_card {
+        width: 310px;
+    }
 }
