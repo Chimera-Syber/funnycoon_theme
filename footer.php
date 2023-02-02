@@ -13,7 +13,7 @@
                     'theme_location' => 'footer_menu',
                     'container' => 'div',
                     'container_class' => 'footer_2_left',
-                    'menu_class' => 'nav_menu',
+                    'menu_class' => 'nav_menu_footer',
                     'walker' => new Funnycoon_Main_Menu, 
                     'fallback_cb' => '',
         ) ); ?>

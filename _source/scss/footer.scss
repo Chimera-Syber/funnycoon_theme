@@ -44,7 +44,7 @@
     grid-column-start: 1;
     display: inline-flex;
     align-items: center;
-    margin-left: 50px;
+    justify-content: center;
 }
 
 .footer_2_right {
@@ -52,8 +52,23 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
-    margin-right: 50px;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+}
+
+.nav_menu_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    gap: 20px;
+
+    & .menu-item {
+        margin: 0;
+    }
 }
 
 .rars {
@@ -62,7 +77,6 @@
     justify-content: center;
     align-items: center;
     padding: 5px;
-    margin-top: 15px;
     gap: 10px;
     width: 49px;
     height: 45px;
@@ -79,9 +93,7 @@
 .footer_2_copyright {
     display: flex;
     flex-direction: column;
-    width: 382px;
-    margin-top: 15px;
-    margin-left: 30px;
+    max-width: 382px;
 }
 
 .copyright {
