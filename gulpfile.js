@@ -5,9 +5,11 @@ const { series } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
-const jsmin = require('gulp-jsmin');
 const utf8convert = require('gulp-utf8-convert');
 const zip = require('gulp-zip');
+const cssmin = require('gulp-cssmin');
+const rename = require('gulp-rename');
+const uglify = require('gulp-uglify');
 
 function buildStyles() {
     return gulp.src('./_source/scss/styles.scss')
@@ -20,14 +22,15 @@ function buildStyles() {
             }
         }))
         .pipe(sourcemaps.write())
+        .pipe(cssmin())
+        .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('./assets/css'));
 }
 
 function buildJS() {
     return gulp.src('./_source/js/*.js')
-        .pipe(sourcemaps.init())
-        .pipe(jsmin())
-        .pipe(sourcemaps.write())
+        .pipe(uglify())
+        .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('./assets/js'));
 }
 
