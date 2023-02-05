@@ -24,5 +24,7 @@ $category_link = get_category_link( $categories[0]->term_id );
         </div>
     </a>
     <div class="pps_gradient"></div>
-    <img class="pps_img" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>" alt="<?php echo $post_title; ?>">
+    <?php
+        echo funnycoon_get_thumbnail(get_post_thumbnail_id(), $post, 'funnycoon_primary_post_card', 'pps_img');
+    ?>
 </div>

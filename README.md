@@ -12,7 +12,7 @@ It's custom theme for site Funnycoon.ru.
 
 - Post View Count - [https://ru.wordpress.org/plugins/wp-simple-post-view/](https://ru.wordpress.org/plugins/wp-simple-post-view/)
 - Simple Comment Editing - [https://wordpress.org/plugins/simple-comment-editing/](https://wordpress.org/plugins/simple-comment-editing/)
-
+- Fly Dynamic Image Resizer - [https://wordpress.org/plugins/fly-dynamic-image-resizer](https://wordpress.org/plugins/fly-dynamic-image-resizer)
 
 **Used libraries**
 

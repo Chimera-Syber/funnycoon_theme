@@ -20,6 +20,8 @@ $time = human_time_diff(get_post_time('U'), current_time('timestamp')) . " " . _
         </div>
         <div class="reviews_slide_gradient"></div>
     </a>
-    <img class="reviews_slide_img" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>" alt="<?php echo $post_title; ?>">
+    <?php
+        echo funnycoon_get_thumbnail(get_post_thumbnail_id(), $post, 'funnycoon_review_slider_card_1', 'reviews_slide_img');
+    ?>
 </div>
 

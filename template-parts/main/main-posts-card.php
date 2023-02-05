@@ -25,5 +25,7 @@ $post_title = get_the_title();
             </div>
         </div>
     </a>
-    <img class="main_post_img" src="<?php echo get_the_post_thumbnail_url($post, 'full'); ?>">
+    <?php
+        echo funnycoon_get_thumbnail(get_post_thumbnail_id(), $post, 'funnycoon_main_post_card', 'main_post_img');
+    ?>
 </div>

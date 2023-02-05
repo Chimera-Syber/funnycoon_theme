@@ -10,7 +10,11 @@ $time = human_time_diff(get_post_time('U'), current_time('timestamp')) . " " . _
 
 <div class="archive_post_wrp cards_animation">
     <div class="archive_post_preview_wrp">
-        <a href="<?php echo $post_permalink; ?>"><img class="archive_post_img" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>"></a>
+        <a href="<?php echo $post_permalink; ?>">
+            <?php
+                echo funnycoon_get_thumbnail(get_post_thumbnail_id(), $post, 'funnycoon_archive_post_card', 'archive_post_img');
+            ?>
+        </a>
     </div>
     <div class="archive_post_info">
         <div class="archive_post_title_wrp">
