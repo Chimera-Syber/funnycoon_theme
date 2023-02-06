@@ -42,7 +42,7 @@
             </div>
             <div class="slider_gradient"></div>
             <?php
-                echo funnycoon_get_thumbnail(get_post_thumbnail_id(), $post, 'funnycoon_main_slider', 'slide-image');
+                echo funnycoon_get_thumbnail(get_post_thumbnail_id(), get_post($post), 'funnycoon_main_slider', 'slide-image');
             ?>
         </div>
 

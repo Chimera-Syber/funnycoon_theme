@@ -1,17 +1,15 @@
 <?php
 
-/*
- * Implement custom thumbnail function with fly dynamic image resizer plugin
- */
-
 /**
+ * Implement custom thumbnail function with fly dynamic image resizer plugin
+ *
  * @param int $post_thumbnail_id thumbnail id
  * @param WP_POST $post
  * @param string $size
  * @param string $class_name
  * @return string
  */
-function funnycoon_get_thumbnail($post_thumbnail_id, $post, $size, $class_name)
+function funnycoon_get_thumbnail(int $post_thumbnail_id, WP_Post $post, string $size, string $class_name): string
 {
     /**
      * Check plugin active
@@ -27,7 +25,7 @@ function funnycoon_get_thumbnail($post_thumbnail_id, $post, $size, $class_name)
         if ( function_exists( 'fly_add_image_size' ) ) {
             fly_add_image_size('funnycoon_main_slider', 700, 450, true);
             fly_add_image_size('funnycoon_main_post_card', 320, 280, true);
-            fly_add_image_size('funnycoon_popular_post_card', 133, 100, true);
+            fly_add_image_size('funnycoon_popular_post_card', 133, 100, array('center', 'top'));
             fly_add_image_size('funnycoon_primary_post_card', 718, 378, true);
             fly_add_image_size('funnycoon_review_slider_card_1', 673, 445, true);
             fly_add_image_size('funnycoon_review_slider_card_2', 332, 214, true);
@@ -42,9 +40,9 @@ function funnycoon_get_thumbnail($post_thumbnail_id, $post, $size, $class_name)
 
         $image = '<img src="' . $imageFly['src'] . '" class="' . $class_name . '" alt="' . $alt . '" loading="lazy">';
 
-        return $image;
-
     } else {
-        return  '<img class="' . $class_name . '" src="' . get_the_post_thumbnail_url($post, 'full') . '">';
+        $image = '<img class="' . $class_name . '" src="' . get_the_post_thumbnail_url($post, 'full') . '">';
     }
+
+    return $image;
 }
