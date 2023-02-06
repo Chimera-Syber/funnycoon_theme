@@ -41,7 +41,9 @@
                 </span>
             </div>
             <div class="slider_gradient"></div>
-            <img class="slide-image" src="<?php echo get_the_post_thumbnail_url($post, 'full'); ?>" alt="<?php echo get_the_title($post); ?>">
+            <?php
+                echo funnycoon_get_thumbnail(get_post_thumbnail_id(), get_post($post), 'funnycoon_main_slider', 'slide-image');
+            ?>
         </div>
 
    <?php } ?>

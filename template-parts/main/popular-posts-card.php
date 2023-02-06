@@ -12,7 +12,9 @@ $post_title = get_the_title();
 <div class="mps_post_card cards_animation">
     <a href="<?php echo esc_url( $post_permalink ); ?>" class="mps_post_card_title"><?php echo esc_html( $post_title ); ?></a>
     <a href="<?php echo esc_url( $post_permalink ); ?>" class="mps_post_card_info">
-        <img class="mps_post_card_img" src="<?php echo get_the_post_thumbnail_url($post, 'full'); ?>" alt="">
+        <?php
+            echo funnycoon_get_thumbnail(get_post_thumbnail_id(), $post, 'funnycoon_popular_post_card', 'mps_post_card_img');
+        ?>
         <span class="mps_post_card_desc"><?php echo esc_html(the_excerpt_max_charlength(140)); ?></span>
     </a>
 

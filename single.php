@@ -18,7 +18,9 @@
 
                 <div class="single_preview_wrp">
                     <div class="single_preview_gradient"></div>
-                    <img class="single_preview_img" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>" alt="">
+                    <?php
+                        echo funnycoon_get_thumbnail(get_post_thumbnail_id(), $post, 'funnycoon_single_image_preview', 'single_preview_img');
+                    ?>
                 </div>
                 <div class="single_info">
                     <div class="single_breadcrumbs">
