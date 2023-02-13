@@ -8,16 +8,15 @@
  
   function funnycoon_scripts() {
     wp_deregister_script( 'jquery' );
-    wp_register_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js');
+    wp_register_script( 'jquery', get_template_directory_uri() . '/assets/js/jquery/jquery.min.js', filemtime( get_theme_file_path('/assets/js/jquery/jquery.min.js') ), false);
     wp_enqueue_script( 'jquery' );
-    wp_enqueue_style('funnycoon-styles', get_template_directory_uri() . '/assets/css/styles.min.css', false, time());
+    wp_enqueue_style('funnycoon-styles', get_template_directory_uri() . '/assets/css/styles.min.css', filemtime( get_theme_file_path('/assets/css/styles.min.css') ), false);
     wp_enqueue_style('funnycoon-fontawesome', get_template_directory_uri() . '/assets/fontawesome/css/all.min.css');
-    wp_enqueue_script('magnific-js', get_stylesheet_directory_uri() . '/assets/js/magnific_popup/jquery.magnific-popup.js', array("jquery"), false );
-    wp_enqueue_script('magnific-js-2', get_stylesheet_directory_uri() . '/assets/js/magnific_popup/jquery.magnific-popup.min.js', array("jquery"), false );
-    wp_enqueue_script('funnycoon-scripts', get_template_directory_uri() . '/assets/js/funnycoon_scripts.min.js', [], false, time());
-    wp_enqueue_script('funnycoon-loadmore-script', get_template_directory_uri() . '/assets/js/funnycoon_loadmore.min.js', [], false, time());
-    wp_enqueue_script('funnycoon-review-loadmore-script', get_template_directory_uri() . '/assets/js/funnycoon_review_loadmore.min.js', [], false, time());
-    wp_enqueue_script('funnycoon-tops-loadmore-script', get_template_directory_uri() . '/assets/js/funnycoon_tops_loadmore.min.js', [], false, time());
+    wp_enqueue_script('magnific-js', get_stylesheet_directory_uri() . '/assets/js/magnific_popup/jquery.magnific-popup.min.js', array("jquery"), filemtime( get_theme_file_path('/assets/js/magnific_popup/jquery.magnific-popup.min.js') ), false);
+    wp_enqueue_script('funnycoon-scripts', get_template_directory_uri() . '/assets/js/funnycoon_scripts.min.js', [], filemtime( get_theme_file_path('/assets/js/funnycoon_scripts.min.js') ), false);
+    wp_enqueue_script('funnycoon-loadmore-script', get_template_directory_uri() . '/assets/js/funnycoon_loadmore.min.js', [], filemtime( get_theme_file_path('/assets/js/funnycoon_loadmore.min.js') ), false);
+    wp_enqueue_script('funnycoon-review-loadmore-script', get_template_directory_uri() . '/assets/js/funnycoon_review_loadmore.min.js', [], filemtime( get_theme_file_path('/assets/js/funnycoon_review_loadmore.min.js') ), false);
+    wp_enqueue_script('funnycoon-tops-loadmore-script', get_template_directory_uri() . '/assets/js/funnycoon_tops_loadmore.min.js', [], filemtime( get_theme_file_path('/assets/js/funnycoon_tops_loadmore.min.js') ), false);
 
     wp_localize_script('funnycoon-loadmore-script', 'siteConfig', array(
         'ajaxUrl' => admin_url('admin-ajax.php'),
