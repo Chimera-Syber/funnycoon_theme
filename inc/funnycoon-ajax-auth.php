@@ -4,7 +4,7 @@ function ajax_auth_init() {
     wp_register_script('validate-script', get_template_directory_uri() . '/assets/js/jquery/jquery.validate.min.js', array('jquery'), false, true );
     wp_enqueue_script('validate-script');
 
-    wp_register_script('ajax-auth-script', get_template_directory_uri() . '/assets/js/funnycoon-ajax-auth-script.js', array('jquery'), false, true);
+    wp_register_script('ajax-auth-script', get_template_directory_uri() . '/assets/js/funnycoon-ajax-auth-script.min.js', array('jquery'), filemtime( get_theme_file_path('/assets/js/funnycoon-ajax-auth-script.min.js') ), true);
     wp_enqueue_script('ajax-auth-script');
 
     wp_localize_script('ajax-auth-script', 'ajax_auth_object', array(
