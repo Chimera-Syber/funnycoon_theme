@@ -6,7 +6,7 @@ $JostFontVersion: 3.7;
 @mixin font-face-jost($fontFamily, $fileName, $fontWeight, $fontStyle, $fontPath: $JostFontPath) {
     @font-face {
         font-family: $fontFamily;
-        font-display: auto;
+        font-display: swap;
         src: url('#{$fontPath}/#{$fileName}.eot');
         src: local('^'),
         url('#{$fontPath}/#{$fileName}.eot?#iefix') format('embedded-opentype'),
@@ -34,7 +34,7 @@ $RobotoFontVersion: 2.0;
 @mixin font-face-roboto($fontFamily, $fileName, $fontWeight, $fontStyle, $fontPath: $RobotoFontPath) {
     @font-face {
         font-family: $fontFamily;
-        font-display: auto;
+        font-display: swap;
         src: url('#{$fontPath}/#{$fileName}.eot');
         src: local('^'),
         url('#{$fontPath}/#{$fileName}.eot?#iefix') format('embedded-opentype'),
