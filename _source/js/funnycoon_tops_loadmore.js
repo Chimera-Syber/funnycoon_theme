@@ -100,7 +100,7 @@
                 },
                 success: ( response ) => {
                     if ( 0 === parseInt( response ) ) {
-                        console.log('123');
+                        console.log('Data not found');
                     } else {
                         $( '.tops_slider' ).empty();
                         $( '.tops_slider').append( response );
