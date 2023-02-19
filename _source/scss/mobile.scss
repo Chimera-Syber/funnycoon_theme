@@ -1052,7 +1052,24 @@
     }
 }
 
+@media screen and (max-width: 425px) {
+
+    .archive_post_wrp {
+        margin-left: 0;
+    }
+
+    .archive_post_img {
+        width: 240px;
+        height: 180px;
+    }
+
+}
+
 @media screen and (max-width: 375px)  {
+
+    .archive_post_wrp {
+        padding: 15px;
+    }
 
     .primary_posts_slide:first-child {
         width: 350px;
@@ -1176,6 +1193,14 @@
 }
 
 @media screen and (max-width: 320px) {
+
+    .archive_post_wrp {
+        padding: 10px;
+    }
+
+    .archive_post_info {
+        padding-left: 11px;
+    }
 
     .main_posts_posts {
         align-items: center;
