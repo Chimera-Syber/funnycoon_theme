@@ -86,6 +86,24 @@ function social_icons() {
 }
 
 /**
+ * Social links options for social links block
+ * in sidebar
+ * Item name and title
+ *
+ * @return array
+ */
+function social_links_block_items() {
+
+    return array(
+        'telegram' => 'Telegram',
+        'vk'       => 'ВКонтакте',
+        'boosty'   => 'Boosty',
+        'dzen'     => 'Dzen'
+    );
+
+}
+
+/**
  * 
  * Metricas fields names
  * 

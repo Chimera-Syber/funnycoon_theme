@@ -31,7 +31,7 @@ function funnycoon_loadmore_ajax_handler( $initial_request = false ) {
         'post_type'           => 'post',
         'post_status'         => 'publish',
         'ignore_sticky_posts' => true,
-        'posts_per_page'      => 12, // Number of posts per page - default
+        'posts_per_page'      => 15, // Number of posts per page - default
         'paged'               => $page_no,
 
     ];

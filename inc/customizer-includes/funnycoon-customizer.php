@@ -302,6 +302,43 @@ function funnycoon_social_icons_header_footer_mobile($wp_customizer) {
 add_action('customize_register', 'funnycoon_social_icons_header_footer_mobile' );
 
 /**
+ * Social links block (in sidebar)
+ */
+
+function funnycoon_social_links_block($wp_customizer) {
+
+    $wp_customizer->add_panel('funnycoon_social_links_block_panel', array(
+       'title' => 'Social links block',
+       'priority' => 165,
+    ));
+
+    $wp_customizer->add_section('funnycoon_social_links_block_section', array(
+       'title' => 'Social links block',
+       'panel' => 'funnycoon_social_links_block_panel',
+    ));
+
+    foreach( social_links_block_items() as $key => $name ) {
+
+        $setting_name = 'funnycoon_social_links_block_setting_' . $key;
+
+        $wp_customizer->add_setting($setting_name, array(
+           'default'   => '',
+           'transport' => 'refresh',
+        ));
+
+        $wp_customizer->add_control($setting_name, array(
+           'type'        => 'string',
+           'label'       => $name,
+           'description' => 'Добавить ' . $name,
+           'section'     => 'funnycoon_social_links_block_section'
+        ));
+    }
+
+}
+
+add_action('customize_register', 'funnycoon_social_links_block' );
+
+/**
  * Advertisement setting
  */
 
@@ -309,7 +346,7 @@ add_action('customize_register', 'funnycoon_social_icons_header_footer_mobile' )
 
     $wp_customizer->add_panel('funnycoon_adv_panel', array(
         'title' => 'Advertisement',
-        'priority' => 165,
+        'priority' => 166,
     ) );
 
     $wp_customizer->add_section('funnycoon_adv_section', array(
@@ -402,7 +439,7 @@ function funnycoon_seo_settings($wp_customizer) {
 
    $wp_customizer->add_panel('funnycoon_seo_panel', array(
        'title' => 'SEO settings',
-       'priority' => 166,
+       'priority' => 167,
    ) );
 
    // Metrica section
