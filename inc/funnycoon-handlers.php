@@ -347,6 +347,22 @@ function funnycoon_get_social_links( $place ) {
 
 }
 
+function funnycoon_get_social_links_block_items() {
+    foreach( social_links_block_items() as $key => $name) {
+        $setting_full_name = 'funnycoon_social_links_block_setting_' . $key;
+        $setting_value = get_theme_mod($setting_full_name);
+
+        if($setting_value) {
+            printf(
+                '<div class="social_links_block_item"><span class="slb_item slb_%s">%s</span><a class="slb_item_link" href="%s">Перейти</a></div>',
+                $key,
+                $name,
+                $setting_value,
+            );
+        }
+    }
+}
+
 /**
  * 
  * Metrica code for site (in header)
