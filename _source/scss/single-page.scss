@@ -476,6 +476,15 @@
     & > .wp-block-gallery {
         margin-bottom: 20px;
     }
+
+    & > .wp-block-code {
+        padding: 10px 20px;
+        & code {
+            background-color: var(--background-color-code-block);
+            border-radius: 10px;
+            padding: 10px;
+        }
+    }
 }
 
 // Tags
